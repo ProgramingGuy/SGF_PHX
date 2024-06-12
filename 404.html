@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/8ca320a1c2c0f76d775f94c49146cdfab07848f9/assets/Img/Logo.png" alt="Logo">
+
+    <style>
+        /* General Reset */
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+
+        #background-video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .nav-buttons {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0;
+        }
+
+        .nav-buttons li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        /* Added CSS for the purchase button */
+        .purchase-button {
+            background-color: #5477f5;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay loop muted playsinline id="background-video">
+        <source src="https://i.imgur.com/1DlAmZ0.mp4" type="video/mp4">
+        <!-- Fallback for browsers that don't support video -->
+        Your browser does not support the video tag.
+    </video>
+    <div class="container">
+        <img src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/8ca320a1c2c0f76d775f94c49146cdfab07848f9/assets/Img/Logo.png" alt="Logo">
+        <h1>The page you are looking for does not exist.</h1>
+
+        <nav>
+            <ul class="nav-buttons">
+                <li><button type="button" id="home" data-url="/" class="purchase-button">Home</button></li>
+            </ul>
+        </nav>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                function handleButtonClick(buttonId, defaultURL) {
+                    var button = document.getElementById(buttonId);
+                    if (!button) return;
+                    button.addEventListener('click', function() {
+                        var customURL = button.dataset.url;
+                        window.location.href = customURL || defaultURL;
+                    });
+                }
+
+                handleButtonClick("home", "/");
+            });
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<!--
+© Saint Germain Foundation 2024
+-->
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Prload images -->
+    <link rel="preload" href="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/8ca320a1c2c0f76d775f94c49146cdfab07848f9/assets/Img/Logo.png" as="image" importance="high">
+
+    <!-- Regular stylesheet link -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <meta name="description" content="Discover the transformative teachings of the I AM Activity at the Temple in Phoenix AZ, part of the Saint Germain Foundation.">
+
+    <title>“I AM” Activity - Phoenix</title>
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/8ca320a1c2c0f76d775f94c49146cdfab07848f9/assets/Img/Logo.png" alt="Logo">
+
+    <!--
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="folder" href="folder/folder">
+    -->
+
+    <!-- Link Icon -->
+    <meta property="og:image" content="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/8ca320a1c2c0f76d775f94c49146cdfab07848f9/assets/Img/Logo.png" alt="Logo">
+    <meta property="og:image:width" content="500">
+    <meta property="og:image:height" content="500">
+
+    <!-- Keywords for search engines. -->
+    <meta name="keywords" content="“I AM” Temple, Saint Germain Foundation, Phoenix Arizona, “I AM” Temple of Immortal Purity, The Finishing School, Saint Germain, Ascended Master, God Presence, Authentic Teachings, Ascended Masters, Jesus Christ, Mother Mary, Elohim, G.W. Ballard, Godfre Ray King, Edna Ballard, Nada, Divine Director, Sacred Fire, Violet Flame, Christ Self, Inner Instruction, Discourses, Unveiled Mysteries, The Magic Presence, Decrees, Victory, Ascension, Archangel Michael, Cosmic Beings, Saint Germain Press, Great Central Sun, Love Wisdom Power, Student of Light, Youthlets, Violet Flame, Cosmic Law, Approved Messengers, Cleanse Earth, Group Meetings, Temples, Sanctuaries, Freedom, Eternal Freedom.">
+  </head>
+
+  <!-- Disable right click -->
+
+  <body oncontextmenu="return false;">
+    <script>
+      document.addEventListener('contextmenu', function(event) {
+        event.preventDefault();
+      });
+
+    </script>
+  </body>
+
+
+  <body>
+    <header class="header">
+
+      <video autoplay muted loop id="background-video">
+        <!-- Desktop video -->
+        <source src="https://i.imgur.com/1DlAmZ0.mp4" type="video/mp4" media="(min-width: 769px)">
+        <!-- Mobile video -->
+        <source src="https://i.imgur.com/VEhZkXc.mp4" type="video/mp4" media="(max-width: 768px)">
+        Your browser does not support the video tag.
+      </video>
+
+      <div class="header_content">
+        <img src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/8ca320a1c2c0f76d775f94c49146cdfab07848f9/assets/Img/Logo.png" alt="Logo">
+        <h1>“I AM” Temple - Saint Germain Foundation</h1>
+        <p>Phoenix, Arizona</p>
+
+        <nav>
+          <ul class="nav-buttons">
+            <li><button type="button" class="purchase-button" id="home">Home</button></li>
+            <li><button type="button" class="purchase-button" id="test" data-url="test">Test</button></li>
+           <!-- <li><button type="button" class="purchase-button" id="admin" data-url="admin">Login</button></li> -->
+          </ul>
+        </nav>
+
+        <style>
+          .nav-buttons {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+          }
+
+          .nav-buttons li {
+            display: inline-block;
+            margin-right: 10px;
+          }
+        </style>
+
+        <h1>Page for testing new features.</h1>
+        
+        <script>
+          document.addEventListener('DOMContentLoaded', function() {
+            function handleButtonClick(buttonId, defaultURL) {
+              var button = document.getElementById(buttonId);
+              if (!button) return;
+              button.addEventListener('click', function() {
+                var customURL = button.dataset.url;
+                window.location.href = customURL || defaultURL;
+              });
+            }
+
+            handleButtonClick("home", "/");
+            handleButtonClick("test", "");
+            handleButtonClick("admin", "");
+          });
+
+        </script>
+
+      </div>
+    </header>
+
+    <script>
+      document.addEventListener('visibilitychange', function() {
+        var video = document.getElementById('background-video');
+        if (!video) {
+          // console.error("Video element not found!");
+          return;
+        }
+        if (document.visibilityState === 'hidden') {
+          if (!video.paused) {
+            video.pause();
+            // console.log("Video paused.");
+          }
+        } else {
+          if (video.paused) {
+            video.play();
+            // console.log("Video played.");
+          }
+        }
+      });
+
+    </script>
+
+    <main>
+      <!-- Page grouping -->
+
+
+      <!-- Audio Player 4 -->
+       <div class="radio">
+            <div class="audio-container">
+              <p>Audio Book</p>
+              <div id="customAudioPlayer4">
+                <audio id="audioPlayer4" controls>
+                  <source id="audioSource4" src="" type="audio/mpeg">
+                </audio>
+                <img class='playPauseButton' src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/95d2e1ef131bd1841959300e908665d7aa72a9b8/assets/Img/IAM_Play.png" width=100 height="100">
+                <div class="audio-controls">
+                  <input type="range" id="customSeekBar4" min="0" value="0" step="1">
+                  <span id="currentTime4">00:00</span> / <span id="duration4">00:00</span>
+                </div>
+              </div>
+              <div id="dropdownContainer">
+                <select id="audioSelect_v4">
+                  <!-- Options will be populated dynamically -->
+                </select>
+              </div>
+            </div>
+
+        <section id="Books" class="centered-section">
+          <h2>Start Now</h2>
+
+          <div class="book-container">
+
+          <div class="book-item">
+            <img src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/1cc1335ce32ce70f0bd09fe98f595ec94150eaeb/assets/Img/V1.png" width=auto height="180" alt="Volume 1">
+
+            <!-- Hover Data / Text -->
+            <div class="hover-container">
+              <h1 class="hover-text">Volume 1. Unveiled Mysteries</h1>
+              <div class="info-box">Mr. G. W. Ballard wrote under the pen name of Godfre Ray King.</div>
+            </div>
+
+            <button class="purchase-button">
+              <a href="https://saintgermainpress.com/volume-01-unveiled-mysteries/" target="_blank">Purchase a Physical Copy</a>
+            </button>
+
+            <button class="purchase-button" book="V1">View the Digital Copy</button>
+
+            <!-- Audio Player 1 -->
+            <div class="audio-container">
+              <p>Audio Book</p>
+              <div id="customAudioPlayer1">
+                <audio id="audioPlayer1" controls>
+                  <source id="audioSource1" src="" type="audio/mpeg">
+                </audio>
+                <img class='playPauseButton' src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/95d2e1ef131bd1841959300e908665d7aa72a9b8/assets/Img/IAM_Play.png" width="100" height="100">
+                <div class="audio-controls">
+                  <input type="range" id="customSeekBar1" min="0" value="0" step="1">
+                  <span id="currentTime1">00:00</span> / <span id="duration1">00:00</span>
+                </div>
+              </div>
+              <div id="dropdownContainer">
+                <select id="audioSelect_v1">
+                  <!-- Options will be populated dynamically -->
+                </select>
+              </div>
+            </div>
+
+          </div> <!-- end of book section -->
+
+          <div class="book-item">
+            <img src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/1cc1335ce32ce70f0bd09fe98f595ec94150eaeb/assets/Img/V2.png" width=auto height="180" alt="Volume 2">
+            <!-- Hover Data / Text -->
+            <div class="hover-container">
+              <h1 class="hover-text">Volume 2. The Magic Presence</h1>
+              <div class="info-box">By Godfre Ray King.</div>
+            </div>
+
+
+            <button class="purchase-button">
+              <a href="https://saintgermainpress.com/volume-02-the-magic-presence/" target="_blank">Purchase a Physical Copy</a>
+            </button>
+
+            <button class="purchase-button" book="V2">View the Digital Copy</button>
+
+            <!-- Audio Player 2 -->
+            <div class="audio-container">
+              <p>Audio Book</p>
+              <div id="customAudioPlayer2">
+                <audio id="audioPlayer2" controls>
+                  <source id="audioSource2" src="" type="audio/mpeg">
+                </audio>
+                <img class='playPauseButton' src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/95d2e1ef131bd1841959300e908665d7aa72a9b8/assets/Img/IAM_Play.png" width="100" height="100">
+                <div class="audio-controls">
+                  <input type="range" id="customSeekBar2" min="0" value="0" step="1">
+                  <span id="currentTime2">00:00</span> / <span id="duration2">00:00</span>
+                </div>
+              </div>
+              <div id="dropdownContainer">
+                <select id="audioSelect_v2">
+                  <!-- Options will be populated dynamically -->
+                </select>
+              </div>
+            </div>
+          </div> <!-- end of book section -->
+
+          <div class="book-item">
+            <img src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/1cc1335ce32ce70f0bd09fe98f595ec94150eaeb/assets/Img/V3.png" width=auto height="180" alt="Volume 3">
+
+            <!-- Hover Data / Text -->
+            <div class="hover-container">
+              <h1 class="hover-text">Volume 3. “I AM” Discourses</h1>
+              <div class="info-box">By Ascended Master Saint Germain.</div>
+            </div>
+
+
+            <button class="purchase-button">
+              <a href="https://saintgermainpress.com/volume-3-the-i-am-discourses/" target="_blank">Purchase a Physical Copy</a>
+            </button>
+
+            <button class="purchase-button" book="V3">View the Digital Copy</button>
+
+
+            <!-- Audio Player 3 -->
+            <div class="audio-container">
+              <p>Audio Book</p>
+              <div id="customAudioPlayer3">
+                <audio id="audioPlayer3" controls>
+                  <source id="audioSource3" src="" type="audio/mpeg">
+                </audio>
+                <img class='playPauseButton' src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/95d2e1ef131bd1841959300e908665d7aa72a9b8/assets/Img/IAM_Play.png" width=100 height="100">
+                <div class="audio-controls">
+                  <input type="range" id="customSeekBar3" min="0" value="0" step="1">
+                  <span id="currentTime3">00:00</span> / <span id="duration3">00:00</span>
+                </div>
+              </div>
+              <div id="dropdownContainer">
+                <select id="audioSelect_v3">
+                  <!-- Options will be populated dynamically -->
+                </select>
+              </div>
+            </div>
+
+          </div><!-- end of book section -->
+
+            <div id="pdfContainer"></div> <!-- Specify the target container -->
+
+          </div> <!-- end of book-container -->
+
+
+
+
+          <!DOCTYPE html>
+          <html lang="en">
+          <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>PDF Viewer</title>
+            <style>
+              /* Hide scrollbar for the book container */
+              .pdf-container::-webkit-scrollbar {
+                display: none; /* For Chrome, Safari, and Opera */
+              }
+              .pdf-container {
+                scrollbar-width: none; /* For Firefox */
+                -ms-overflow-style: none; /* For Internet Explorer and Edge */
+              }
+          
+              /* Center the container */
+              .container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center; /* Horizontally center */
+                align-items: center; /* Vertically center */
+              }
+          
+              .pdf-container {
+                overflow-y: auto; /* Enable vertical scrolling */
+                position: relative;
+              }
+          
+              .page {
+                margin-bottom: 20px; /* Add space between pages */
+              }
+          
+              #pageNumbers {
+                color: violet; /* Change text color to violet */
+                margin-bottom: 10px; /* Add space below the text */
+              }
+          
+              #fullscreenButton {
+                margin-top: 10px; /* Add space above the button */
+              }
+          
+              /* Set white background color in full-screen mode */
+              .container.fullscreen {
+                background-color: white;
+              }
+          
+              .hidden {
+                display: none;
+              }
+            </style>
+          </head>
+          <body>
+            <div id="pdfViewer"></div>
+          
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+            <script>
+              let currentPdfViewer = null;
+              let currentPdfDocument = null;
+          
+              function loadPDF(pdfUrl) {
+                // Check if the PDF is already loaded
+                if (currentPdfDocument === pdfUrl) {
+                  // Toggle visibility of the PDF container
+                  const pdfContainer = document.getElementById('pdfContainer');
+                  pdfContainer.classList.toggle('hidden');
+                  return; // Exit the function, no need to load PDF again
+                }
+          
+                // Remove previously loaded PDF viewer if exists
+                if (currentPdfViewer) {
+                  currentPdfViewer.remove();
+                }
+          
+                const container = document.createElement('div');
+                container.classList.add('container');
+                currentPdfViewer = container;
+          
+                const fullscreenButton = document.createElement('button');
+                fullscreenButton.textContent = 'Full Screen';
+                fullscreenButton.id = 'fullscreenButton'; // Assign ID for styling
+                fullscreenButton.classList.add('purchase-button');
+          
+                const pageNumbersIndicator = document.createElement('span');
+                pageNumbersIndicator.id = 'pageNumbers';
+                pageNumbersIndicator.textContent = 'Page: 1, Book Page: Cover';
+          
+                const pdfContainer = document.createElement('div');
+                pdfContainer.classList.add('pdf-container');
+                pdfContainer.id = 'pdfContainer';
+          
+                container.appendChild(fullscreenButton);
+                container.appendChild(pageNumbersIndicator);
+                container.appendChild(pdfContainer);
+                
+                document.getElementById('pdfContainer').appendChild(container);
+          
+          
+                let pdfDocument;
+                const pagesRendered = {};
+          
+                pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.worker.min.js';
+          
+                pdfjsLib.getDocument(pdfUrl).promise.then(function(pdf) {
+                  pdfDocument = pdf;
+                  renderAllPages();
+                  updatePageNumbers();
+                }).catch(function(error) {
+                  console.error('Error loading PDF:', error);
+                });
+          
+                function renderAllPages() {
+                  for (let i = 1; i <= pdfDocument.numPages; i++) {
+                    renderPage(i);
+                  }
+                }
+          
+                function renderPage(pageNumber) {
+                  pdfDocument.getPage(pageNumber).then(function(page) {
+                    const viewport = page.getViewport({ scale: 1 });
+                    const scale = getScaleFactor(viewport);
+                    const viewportScaled = page.getViewport({ scale });
+          
+                    const canvas = document.createElement('canvas');
+                    const context = canvas.getContext('2d');
+                    canvas.width = viewportScaled.width;
+                    canvas.height = viewportScaled.height;
+          
+                    const renderContext = {
+                      canvasContext: context,
+                      viewport: viewportScaled
+                    };
+          
+                    page.render(renderContext).promise.then(function() {
+                      const pageDiv = document.createElement('div');
+                      pageDiv.className = 'page';
+                      pageDiv.appendChild(canvas);
+                      pdfContainer.appendChild(pageDiv);
+                      pagesRendered[pageNumber] = true;
+                      updateContainerSize();
+                    });
+                  });
+                }
+          
+                function updateContainerSize() {
+                  const pageDivs = document.querySelectorAll('.page');
+                  let maxWidth = 0;
+                  let maxHeight = 0;
+          
+                  pageDivs.forEach(function(pageDiv) {
+                    const rect = pageDiv.getBoundingClientRect();
+                    maxWidth = Math.max(maxWidth, rect.width);
+                    maxHeight = Math.max(maxHeight, rect.height);
+                  });
+          
+                  container.style.width = maxWidth + 'px';
+                  container.style.height = maxHeight + 'px';
+                }
+                
+                function updatePageNumbers() {
+                  const scrollTop = pdfContainer.scrollTop;
+                  const pageHeight = pdfContainer.scrollHeight / pdfDocument.numPages;
+                  const currentPage = Math.floor(scrollTop / pageHeight) + 1;
+                  const correspondingBookPage = getCorrespondingBookPage(currentPage);
+                  pageNumbersIndicator.textContent = `Page: ${currentPage}, Book Page: ${correspondingBookPage}`;
+                }
+          
+                function getCorrespondingBookPage(pdfPage) {
+                  if (pdfPage > 28) {
+                    return pdfPage - 28;
+                  } else if (pdfPage === 1) {
+                    return 'Cover';
+                  } else {
+                    return 'Forward';
+                  }
+                }
+          
+                function getScaleFactor(viewport) {
+                  const screenWidth = window.screen.width;
+                  const screenHeight = window.screen.height;
+                  const scaleWidth = screenWidth / viewport.width;
+                  const scaleHeight = screenHeight / viewport.height;
+                  return Math.min(scaleWidth, scaleHeight);
+                }
+          
+                pdfContainer.addEventListener('scroll', updatePageNumbers);
+                window.addEventListener('resize', updatePageNumbers);
+          
+                fullscreenButton.addEventListener('click', function() {
+                  const container = document.querySelector('.container');
+                  if (container.requestFullscreen) {
+                    container.requestFullscreen();
+                  } else if (container.mozRequestFullScreen) {
+                    container.mozRequestFullScreen();
+                  } else if (container.webkitRequestFullscreen) {
+                    container.webkitRequestFullscreen();
+                  } else if (container.msRequestFullscreen) {
+                    container.msRequestFullscreen();
+                  }
+                  setTimeout(updateContainerSize, 1000);
+                });
+              }
+          
+              document.addEventListener('fullscreenchange', handleFullscreenChange);
+              document.addEventListener('webkitfullscreenchange', handleFullscreenChange);
+              document.addEventListener('mozfullscreenchange', handleFullscreenChange);
+              document.addEventListener('MSFullscreenChange', handleFullscreenChange);
+          
+              function handleFullscreenChange() {
+                const container = document.querySelector('.container');
+                if (document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement) {
+                  container.classList.add('fullscreen');
+                } else {
+                  container.classList.remove('fullscreen');
+                }
+              }
+          
+              const buttons = document.querySelectorAll('.purchase-button');
+          buttons.forEach(button => {
+            const book = button.getAttribute('book');
+            if (book) { // Check if the 'book' attribute exists
+              button.addEventListener('click', function() {
+                let pdfUrl;
+                switch (book) {
+                  case 'V1':
+                    pdfUrl = 'https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/e6ac4aa9608aa6749dfdbf1a8f0b99b017defca6/assets/Vol1.pdf';
+                    break;
+                  case 'V2':
+                    pdfUrl = 'https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/e6ac4aa9608aa6749dfdbf1a8f0b99b017defca6/assets/Vol2.pdf';
+                    break;
+                  case 'V3':
+                    pdfUrl = 'https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/e6ac4aa9608aa6749dfdbf1a8f0b99b017defca6/assets/Vol3.pdf';
+                    break;
+                  default:
+                    break;
+                }
+                togglePDFVisibility(pdfUrl);
+              });
+            }
+          });
+          
+          function togglePDFVisibility(pdfUrl) {
+            const pdfContainer = document.getElementById('pdfContainer');
+            // Check if the same PDF is already loaded
+            if (pdfContainer.getAttribute('data-loaded-pdf') === pdfUrl) {
+              if (pdfContainer.classList.contains('hidden')) {
+                // PDF is hidden, so make it visible
+                pdfContainer.classList.remove('hidden');
+              } else {
+                // PDF is visible, so hide it
+                pdfContainer.classList.add('hidden');
+              }
+            } else {
+              loadPDF(pdfUrl);
+              pdfContainer.setAttribute('data-loaded-pdf', pdfUrl);
+            }
+          }
+          
+          
+            </script>
+          </body>
+          </html>
+
+
+
+          <iframe id='Digital-book' scrolling="auto" height="530px" width="370px" style="background-color: white; border: 2px solid blue; border-radius: 10px; display: none;" sandbox="allow-scripts allow-same-origin"></iframe>
+
+        </section>
+
+    </main>
+    
+    
+    
+    
+    <footer class="header">
+
+      <video autoplay muted loop id="background-video">
+        <!-- Desktop video -->
+        <source src="https://i.imgur.com/1DlAmZ0.mp4" type="video/mp4" media="(min-width: 769px)">
+        <!-- Mobile video -->
+        <source src="https://i.imgur.com/VEhZkXc.mp4" type="video/mp4" media="(max-width: 768px)">
+        Your browser does not support the video tag.
+      </video>
+
+      <div class="header_content">
+        <div class="footer-content">
+
+          <div>
+            <h2>Address</h2>
+
+            <p><a class="map-link" href="https://maps.app.goo.gl/tCqYmX7VeFkEDpjK8" target="_blank"><i class="fas fa-map-marker-alt"></i> View on Google Maps</a></p>
+            <p> <br> </p>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+            <button class='CopyButton' onclick="copyToClipboard('1625 N 3rd St Phoenix, Arizona 85004')">📋 1625 N 3rd St<br>Phoenix, Arizona 85004</button>
+
+          </div>
+
+          <div>
+            <h2>Contact Info</h2>
+            <button class='CopyButton' onclick="copyToClipboard('602-800-6112')">📋 (602) 800-6112</button>
+            <p> <br> </p>
+            <button class='CopyButton' onclick="copyToClipboard('IAMTemplePhoenix@gmail.com')">📋 IAMTemplePhoenix@gmail.com</button>
+          </div>
+
+
+          <div>
+            <h2>Mailing Address</h2>
+            <button class='CopyButton' onclick="copyToClipboard('The Saint Germain Foundation P.O. Box 30645 Phoenix, Arizona 85046')">📋 Saint Germain Foundation<br>P.O. Box 30645<br>Phoenix, Arizona 85046</button>
+          </div>
+        </div>
+
+        <!-- Copy right section -->
+        <div class="hover-container">
+          <p>
+            <br>
+          </p>
+          <p class="hover-text">© Saint Germain Foundation 2024</p>
+
+          <div class="info-box-c">
+            <!-- Updated text 6/3/2024 -->
+            <h2 style="color: blueviolet;">Protection of Copyrights</h2>
+            <p style="color: blue;">All materials within the Saint Germain Series, including books, "I AM" radio broadcasts, sound and video recordings, films, sheet music, pictures, and any derived excerpts, are protected by copyright. Worldwide rights are reserved, including translations. Reproduction or copying in any form, including electronic or mechanical methods, without written permission from the publisher is prohibited.</p>
+            <p style="color: blueviolet;">&copy;Saint Germain Foundation <br> &copy;Saint Germain Press</p>
+          </div>
+
+        </div>
+
+      </div>
+    </footer>
+
+  </body>
+
+</html>
+
+<script>
+  function copyToClipboard(textToCopy) {
+    navigator.clipboard.writeText(textToCopy)
+      .then(() => {
+        alert("Text copied to clipboard!");
+      })
+      .catch(err => {
+        console.error('Failed to copy: ', err);
+      });
+  }
+
+</script>
+
+<script>
+  const url = 'https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/';
+	const url2 = url + 'd8c8060ed5ae47622b77a684aef3f707c80bde77/assets/Radio/';
+
+  const audioSelect1 = document.getElementById("audioSelect_v1");
+  const audioSelect2 = document.getElementById("audioSelect_v2");
+  const audioSelect3 = document.getElementById("audioSelect_v3");
+  const audioSelect4 = document.getElementById("audioSelect_v4");
+
+  const audioPlayer1 = document.getElementById("audioPlayer1");
+  const audioPlayer2 = document.getElementById("audioPlayer2");
+  const audioPlayer3 = document.getElementById("audioPlayer3");
+  const audioPlayer4 = document.getElementById("audioPlayer4");
+
+  const audioSource1 = document.getElementById("audioSource1");
+  const audioSource2 = document.getElementById("audioSource2");
+  const audioSource3 = document.getElementById("audioSource3");
+  const audioSource4 = document.getElementById("audioSource4");
+
+  const audioFiles_v1 = [{
+      name: "Foreword",
+      src: url + "08d44eef3826406f1f16c197c78ddbd0b791ea90/assets/Vol1/Foreword.mp3"
+    },
+    {
+      name: "Chapter 1",
+      src: url + "e7fae4a58ac668b85d2eeb731882ef88771f55f5/assets/Vol1/Chapter-01.mp3"
+    },
+    {
+      name: "Chapter 2",
+      src: url + "e7fae4a58ac668b85d2eeb731882ef88771f55f5/assets/Vol1/Chapter-02.mp3"
+    },
+    {
+      name: "Chapter 3",
+      src: url + "b5f3ec240740d1a1302ccccc858066dbd11a15bc/assets/Vol1/Chapter-03.mp3"
+    },
+    {
+      name: "Chapter 4",
+      src: url + "b5f3ec240740d1a1302ccccc858066dbd11a15bc/assets/Vol1/Chapter-04.mp3"
+    },
+    {
+      name: "Chapter 5",
+      src: url + "b5f3ec240740d1a1302ccccc858066dbd11a15bc/assets/Vol1/Chapter-05.mp3"
+    },
+    {
+      name: "Chapter 6",
+      src: url + "b5f3ec240740d1a1302ccccc858066dbd11a15bc/assets/Vol1/Chapter-06.mp3"
+    },
+    {
+      name: "Chapter 7",
+      src: url + "b5f3ec240740d1a1302ccccc858066dbd11a15bc/assets/Vol1/Chapter-07.mp3"
+    },
+    {
+      name: "Chapter 8",
+      src: url + "b5f3ec240740d1a1302ccccc858066dbd11a15bc/assets/Vol1/Chapter-08.mp3"
+    },
+    {
+      name: "Chapter 9",
+      src: url + "b5f3ec240740d1a1302ccccc858066dbd11a15bc/assets/Vol1/Chapter-09.mp3"
+    },
+  ];
+
+
+
+  const audioFiles_v2 = [{
+      name: "Foreword",
+      src: url + "c36191b6e89dbd60ba952f484663b7c5b9e07037/assets/Vol2/Foreword.mp3"
+    },
+    {
+      name: "Chapter 1",
+      src: url + "c36191b6e89dbd60ba952f484663b7c5b9e07037/assets/Vol2/Chapter-01.mp3"
+    },
+    {
+      name: "Chapter 2",
+      src: url + "c36191b6e89dbd60ba952f484663b7c5b9e07037/assets/Vol2/Chapter-02.mp3"
+    },
+    {
+      name: "Chapter 3",
+      src: url + "c36191b6e89dbd60ba952f484663b7c5b9e07037/assets/Vol2/Chapter-03.mp3"
+    },
+    {
+      name: "Chapter 4",
+      src: url + "a2a34f52937d0e97874c4b1deb130ad347f6f65e/assets/Vol2/Chapter-04.mp3"
+    },
+    {
+      name: "Chapter 5",
+      src: url + "468caa05c45096df36c39fb4bec12fb279070de0/assets/Vol2/Chapter-05.mp3"
+    },
+    {
+      name: "Chapter 6",
+      src: url + "468caa05c45096df36c39fb4bec12fb279070de0/assets/Vol2/Chapter-06.mp3"
+    },
+    {
+      name: "Chapter 7",
+      src: url + "095dc79d7af3978e947615afe84117ee97c678e1/assets/Vol2/Chapter-07.mp3"
+    },
+    {
+      name: "Chapter 8",
+      src: url + "095dc79d7af3978e947615afe84117ee97c678e1/assets/Vol2/Chapter-08.mp3"
+    },
+    {
+      name: "Chapter 9",
+      src: url + "095dc79d7af3978e947615afe84117ee97c678e1/assets/Vol2/Chapter-09.mp3"
+    },
+    {
+      name: "Chapter 10",
+      src: url + "095dc79d7af3978e947615afe84117ee97c678e1/assets/Vol2/Chapter-10.mp3"
+    },
+    {
+      name: "Chapter 11",
+      src: url + "973bfecaf9e647c28c7df5b270c95a0c9d3b6832/assets/Vol2/Chapter-11.mp3"
+    },
+  ];
+
+
+
+  const audioFiles_v3 = [{
+      name: 'Foreword',
+      src: url + '973bfecaf9e647c28c7df5b270c95a0c9d3b6832/assets/Vol3/Foreword.mp3'
+    },
+    {
+      name: 'Discourse 1',
+      src: url + '973bfecaf9e647c28c7df5b270c95a0c9d3b6832/assets/Vol3/Discourse-01.mp3'
+    },
+    {
+      name: 'Discourse 2',
+      src: url + '973bfecaf9e647c28c7df5b270c95a0c9d3b6832/assets/Vol3/Discourse-02.mp3'
+    },
+    {
+      name: 'Discourse 3',
+      src: url + '973bfecaf9e647c28c7df5b270c95a0c9d3b6832/assets/Vol3/Discourse-03.mp3'
+    },
+    {
+      name: 'Discourse 4',
+      src: url + '973bfecaf9e647c28c7df5b270c95a0c9d3b6832/assets/Vol3/Discourse-04.mp3'
+    },
+    {
+      name: 'Discourse 5',
+      src: url + '973bfecaf9e647c28c7df5b270c95a0c9d3b6832/assets/Vol3/Discourse-05.mp3'
+    },
+    {
+      name: 'Discourse 6',
+      src: url + '973bfecaf9e647c28c7df5b270c95a0c9d3b6832/assets/Vol3/Discourse-06.mp3'
+    },
+    {
+      name: 'Discourse 7',
+      src: url + '973bfecaf9e647c28c7df5b270c95a0c9d3b6832/assets/Vol3/Discourse-07.mp3'
+    },
+    {
+      name: 'Discourse 8',
+      src: url + '973bfecaf9e647c28c7df5b270c95a0c9d3b6832/assets/Vol3/Discourse-08.mp3'
+    },
+    {
+      name: 'Discourse 9',
+      src: url + '973bfecaf9e647c28c7df5b270c95a0c9d3b6832/assets/Vol3/Discourse-09.mp3'
+    },
+    {
+      name: 'Discourse 10',
+      src: url + '973bfecaf9e647c28c7df5b270c95a0c9d3b6832/assets/Vol3/Discourse-10.mp3'
+    },
+    {
+      name: 'Discourse 11',
+      src: url + '973bfecaf9e647c28c7df5b270c95a0c9d3b6832/assets/Vol3/Discourse-11.mp3'
+    },
+    {
+      name: 'Discourse 12',
+      src: url + '973bfecaf9e647c28c7df5b270c95a0c9d3b6832/assets/Vol3/Discourse-12.mp3'
+    },
+    {
+      name: 'Discourse 13',
+      src: url + '973bfecaf9e647c28c7df5b270c95a0c9d3b6832/assets/Vol3/Discourse-13.mp3'
+    },
+    {
+      name: 'Discourse 14',
+      src: url + '973bfecaf9e647c28c7df5b270c95a0c9d3b6832/assets/Vol3/Discourse-14.mp3'
+    },
+    {
+      name: 'Discourse 15',
+      src: url + '973bfecaf9e647c28c7df5b270c95a0c9d3b6832/assets/Vol3/Discourse-15.mp3'
+    },
+    {
+      name: 'Discourse 16',
+      src: url + '973bfecaf9e647c28c7df5b270c95a0c9d3b6832/assets/Vol3/Discourse-16.mp3'
+    },
+    {
+      name: 'Discourse 17',
+      src: url + '251f176f5a76fc30251b8effd5634d294597a47d/assets/Vol3/Discourse-17.mp3'
+    },
+    {
+      name: 'Discourse 18',
+      src: url + '251f176f5a76fc30251b8effd5634d294597a47d/assets/Vol3/Discourse-18.mp3'
+    },
+    {
+      name: 'Discourse 19',
+      src: url + '251f176f5a76fc30251b8effd5634d294597a47d/assets/Vol3/Discourse-19.mp3'
+    },
+    {
+      name: 'Discourse 20',
+      src: url + '251f176f5a76fc30251b8effd5634d294597a47d/assets/Vol3/Discourse-20.mp3'
+    },
+    {
+      name: 'Discourse 21',
+      src: url + '251f176f5a76fc30251b8effd5634d294597a47d/assets/Vol3/Discourse-21.mp3'
+    },
+    {
+      name: 'Discourse 22',
+      src: url + '251f176f5a76fc30251b8effd5634d294597a47d/assets/Vol3/Discourse-22.mp3'
+    },
+    {
+      name: 'Discourse 23',
+      src: url + '251f176f5a76fc30251b8effd5634d294597a47d/assets/Vol3/Discourse-23.mp3'
+    },
+    {
+      name: 'Discourse 24',
+      src: url + '251f176f5a76fc30251b8effd5634d294597a47d/assets/Vol3/Discourse-24.mp3'
+    },
+    {
+      name: 'Discourse 25',
+      src: url + '251f176f5a76fc30251b8effd5634d294597a47d/assets/Vol3/Discourse-25.mp3'
+    },
+    {
+      name: 'Discourse 26',
+      src: url + '251f176f5a76fc30251b8effd5634d294597a47d/assets/Vol3/Discourse-26.mp3'
+    },
+    {
+      name: 'Discourse 27',
+      src: url + '251f176f5a76fc30251b8effd5634d294597a47d/assets/Vol3/Discourse-27.mp3'
+    },
+    {
+      name: 'Discourse 28',
+      src: url + '251f176f5a76fc30251b8effd5634d294597a47d/assets/Vol3/Discourse-28.mp3'
+    },
+    {
+      name: 'Discourse 29',
+      src: url + '251f176f5a76fc30251b8effd5634d294597a47d/assets/Vol3/Discourse-29.mp3'
+    },
+    {
+      name: 'Discourse 30',
+      src: url + '251f176f5a76fc30251b8effd5634d294597a47d/assets/Vol3/Discourse-30.mp3'
+    },
+    {
+      name: 'Discourse 31',
+      src: url + '251f176f5a76fc30251b8effd5634d294597a47d/assets/Vol3/Discourse-31.mp3'
+    },
+    {
+      name: 'Discourse 32',
+      src: url + '251f176f5a76fc30251b8effd5634d294597a47d/assets/Vol3/Discourse-32.mp3'
+    },
+    {
+      name: 'Discourse 33',
+      src: url + '251f176f5a76fc30251b8effd5634d294597a47d/assets/Vol3/Discourse-33.mp3'
+    }
+  ];
+
+const audioFiles_v4 = [
+    { 
+    name: 'The Word I AM The Use of Li', 
+    src: url + 'f293ba4de4df50fc77475aa63ee372775d785478/assets/Radio/01-The-Word-I-AM-The-Use-of-Li.mp3'
+ },
+    { name: 'Beloved Jesus The I AM Stat', src: url2 + '02-Beloved-Jesus-The-I-AM-Stat.mp3' },
+    { name: 'The I AM Presence Violet Fl', src: url2 + '03-The-I-AM-Presence-Violet-Fl.mp3' },
+    { name: 'Attention Vision Qualificat', src: url2 + '04-Attention-Vision-Qualificat.mp3' },
+    { name: 'Attention to the I AM Prese', src: url2 + '05-Attention-to-the-I-AM-Prese.mp3' },
+    { name: 'Obedience to the I AM Prese', src: url2 + '06-Obedience-to-the-I-AM-Prese.mp3' },
+    { name: 'Divine Service', src: url2 + '07-Divine-Service-Americas-Rol.mp3' },
+    { name: 'Self-Control The Attention', src: url2 + '08-Self-Control-The-Attention.mp3' },
+    { name: 'Contemplation Business', src: url2 + '09-Contemplation-Business.mp3' },
+    { name: 'Love to the Mighty I AM Pre', src: url2 + '10-Love-to-the-Mighty-I-AM-Pre.mp3' },
+    { name: 'Give to the Mighty I AM Pre', src: url2 + '11-Give-to-the-Mighty-I-AM-Pre.mp3' },
+    { name: 'Use of the Mighty I AM Pres', src: url2 + '12-Use-of-the-Mighty-I-AM-Pres.mp3' },
+    { name: 'Power of the I AM Presence', src: url2 + '13-Power-of-the-I-AM-Presence.mp3' },
+    { name: 'Faith Hope and Charity', src: url2 + '14-Faith-Hope-and-Charity.mp3' },
+    { name: 'Attention to the I AM Prese', src: url2 + '15-Attention-to-the-I-AM-Prese.mp3' },
+    { name: 'Beloved Jesus Ray Other Ray', src: url2 + '16-Beloved-Jesus-Ray-Other-Ray.mp3' },
+    { name: 'The I AM Presence and Ameri', src: url2 + '17-The-I-AM-Presence-and-Ameri.mp3' },
+    { name: 'Gods Will and Free Will', src: url2 + '18-Gods-Will-and-Free-Will.mp3' },
+    { name: 'Beloved Jesus and The Ascen', src: url2 + '19-Beloved-Jesus-and-The-Ascen.mp3' },
+    { name: 'Anchor to the I AM Presence', src: url2 + '20-Anchor-to-the-I-AM-Presence.mp3' },
+    { name: 'The I AM Presence The Word', src: url2 + '21-The-I-AM-Presence-The-Word.mp3' },
+    { name: 'Attention to the I AM Prese', src: url2 + '22-Attention-to-the-I-AM-Prese.mp3' },
+    { name: 'The I AM Beloved Jesus Teac', src: url2 + '23-The-I-AM-Beloved-Jesus-Teac.mp3' },
+    { name: 'Self-Correction', src: url2 + '24-Self-Correction.mp3' },
+    { name: 'I AM Creating Perfection', src: url2 + '25-I-AM-Creating-Perfection.mp3' },
+    { name: 'I AM The Forgiving Sacred F', src: url2 + '26-I-AM-The-Forgiving-Sacred-F.mp3' }
+];
+
+
+  document.addEventListener("DOMContentLoaded", function() {
+    function populateDropdown(audioFiles, selectElement) {
+      audioFiles.forEach((audio, index) => {
+        const option = document.createElement('option');
+        option.value = index;
+        option.textContent = audio.name;
+        selectElement.appendChild(option);
+      });
+    }
+
+    function setAudioSource(audioElement, sourceElement, audioFiles, index) {
+      const source = audioFiles[index].src;
+      sourceElement.src = source;
+      audioElement.load();
+
+      audioElement.addEventListener('loadedmetadata', function() {
+        const seekBarId = 'customSeekBar' + audioElement.id.slice(-1);
+        const seekBar = document.getElementById(seekBarId);
+        seekBar.value = 0;
+      });
+    }
+
+    function resetPlayPauseButton(playerId) {
+      const playPauseButton = document.querySelector(`#${playerId} .playPauseButton`);
+      playPauseButton.src = 'https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/95d2e1ef131bd1841959300e908665d7aa72a9b8/assets/Img/IAM_Play.png';
+    }
+
+    function updateAudioTime() {
+      const audioId = this.id.replace('customSeekBar', 'audioPlayer');
+      const audio = document.getElementById(audioId);
+      if (audio) {
+        audio.currentTime = (this.value / 100) * audio.duration;
+      }
+    }
+
+    function formatTime(seconds) {
+      const minutes = Math.floor(seconds / 60);
+      const remainderSeconds = Math.floor(seconds % 60);
+      const formattedSeconds = remainderSeconds < 10 ? '0' + remainderSeconds : remainderSeconds;
+      return `${minutes}:${formattedSeconds}`;
+    }
+
+    // Populating dropdowns
+    populateDropdown(audioFiles_v1, audioSelect1);
+    populateDropdown(audioFiles_v2, audioSelect2);
+    populateDropdown(audioFiles_v3, audioSelect3);
+    populateDropdown(audioFiles_v4, audioSelect4);
+    
+    // Event listeners for dropdowns
+    audioSelect1.addEventListener("change", function() {
+      const selectedIndex = this.value;
+      setAudioSource(audioPlayer1, audioSource1, audioFiles_v1, selectedIndex);
+      resetPlayPauseButton('customAudioPlayer1');
+    });
+
+    audioSelect2.addEventListener("change", function() {
+      const selectedIndex = this.value;
+      setAudioSource(audioPlayer2, audioSource2, audioFiles_v2, selectedIndex);
+      resetPlayPauseButton('customAudioPlayer2');
+    });
+
+    audioSelect3.addEventListener("change", function() {
+      const selectedIndex = this.value;
+      setAudioSource(audioPlayer3, audioSource3, audioFiles_v3, selectedIndex);
+      resetPlayPauseButton('customAudioPlayer3');
+    });
+    
+    audioSelect4.addEventListener("change", function() {
+      const selectedIndex = this.value;
+      setAudioSource(audioPlayer4, audioSource4, audioFiles_v4, selectedIndex);
+      resetPlayPauseButton('customAudioPlayer4');
+    });
+
+    // Play/Pause Button functionality
+    document.querySelectorAll('.playPauseButton').forEach(button => {
+      button.addEventListener('click', function() {
+        const audio = this.parentNode.querySelector('audio');
+        if (audio.paused) {
+          audio.play();
+          this.src = 'https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/cefb44d04013542471ecaa590d45ccfc2b4bfc16/assets/Img/IAM_Pause.png';
+        } else {
+          audio.pause();
+          this.src = 'https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/95d2e1ef131bd1841959300e908665d7aa72a9b8/assets/Img/IAM_Play.png';
+        }
+      });
+    });
+
+    // Time Update - Updated 5/29/2024
+    document.querySelectorAll('audio').forEach(audio => {
+      const currentTime = document.querySelector('#currentTime' + audio.id.slice(-1));
+      if (currentTime) {
+        audio.addEventListener('timeupdate', function() {
+          const progressBar = this.parentNode.querySelector('input[type="range"]');
+          progressBar.value = (this.currentTime / this.duration) * 100;
+          currentTime.textContent = formatTime(this.currentTime);
+        });
+      }
+    });
+
+
+    // Duration Update - if statement added 5/29/2024
+    document.querySelectorAll('audio').forEach(audio => {
+      const duration = document.querySelector('#duration' + audio.id.slice(-1));
+      if (duration) {
+        audio.addEventListener('durationchange', function() {
+          duration.textContent = formatTime(this.duration);
+        });
+      }
+    });
+
+    // Seekbar functionality
+    document.querySelectorAll('input[type="range"]').forEach(seekBar => {
+      seekBar.addEventListener('input', updateAudioTime);
+      seekBar.addEventListener('change', updateAudioTime);
+    });
+
+    // Preload audio for the first file in each array
+    preloadAudio(audioPlayer1, audioSource1, audioFiles_v1, 0);
+    preloadAudio(audioPlayer2, audioSource2, audioFiles_v2, 0);
+    preloadAudio(audioPlayer3, audioSource3, audioFiles_v3, 0);
+    preloadAudio(audioPlayer4, audioSource4, audioFiles_v4, 0);
+  });
+
+
+  function preloadAudio(audioElement, sourceElement, audioFiles, index) {
+
+    const source = audioFiles[index].src;
+    sourceElement.src = source;
+    audioElement.load();
+
+    // Reset time scroller to zero after loading
+    audioElement.onloadeddata = function() {
+      audioElement.currentTime = 0;
+    };
+  }
+
+</script>

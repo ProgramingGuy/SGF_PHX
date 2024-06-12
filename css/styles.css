@@ -1,0 +1,440 @@
+/* © Saint Germain Foundation 2024 */
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: #fff;
+  color: #c111e5;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+/* Desktop background */
+@media (min-width: 769px) {
+    body {
+        background-image: url('https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/1c1bb344e46d367cd698815b24c5e30a3dc58f74/assets/Desktop_BG.jpg');
+    }
+}
+
+/* Mobile background */
+@media (max-width: 768px) {
+    body {
+        background-image: url('https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/1c1bb344e46d367cd698815b24c5e30a3dc58f74/assets/Mobile_BG.jpg');
+    }
+}
+
+header {
+  color: #fff;
+  text-shadow: 2px 2px 2px rgba(255, 105, 180, 0.5);
+  background-color: #b300ca;
+  padding: 20px;
+  text-align: center;
+  z-index: 1000;
+  position: sticky;
+}
+
+header img {
+  width: 150px;
+  height: 150px;
+}
+
+header h1 {
+  color: #fff;
+  text-shadow: 2px 2px 2px rgba(255, 105, 180, 0.5);
+  margin: 0;
+  font-size: 24px;
+}
+
+main {
+  padding: 20px;
+}
+
+/* how come these wouldn't work???
+put them into the html with style and worked??? :l
+.nav-buttons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-buttons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+*/
+section {
+  margin-bottom: 20px;
+}
+
+section h2 {
+  color: #5477f5;
+  text-shadow: 2px 2px 2px rgba(138, 43, 226, 0.3);
+  margin: 0;
+}
+
+footer {
+  position: relative;
+  background-color: #b300ca;
+  text-align: center;
+  z-index: 999;
+  font-size: 1.4rem;
+
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+footer p {
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.item-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 600px) {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  footer {
+    font-size: 1.2rem;
+  }
+
+  footer p {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+  }
+}
+
+/* Book Styles */
+
+.book-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.book-item {
+  max-width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 2px solid #5477f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(45, 45, 231, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.book-item img {
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.book-item .purchase-button {
+  margin: 5px;
+}
+
+/* Header Styles */
+
+#background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.header_content {
+  position: relative;
+  z-index: 1;
+}
+
+.centered-link {
+  text-align: center;
+}
+
+/* Button Styles */
+
+.purchase-button {
+  background-color: #5477f5;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.purchase-button:hover {
+  background-color: #4055b5;
+}
+
+.purchase-button a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Player Styles */
+
+.player {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(241, 222, 241, 0.7);
+  border: 2px solid #5477f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(45, 45, 231, 0.5);
+}
+
+.player img {
+  display: block;
+  margin: 0 auto;
+}
+
+.player h1 {
+  color: #c111e5;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.player-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Tooltip Styles */
+
+.hover-container {
+  position: relative;
+}
+
+.info-box {
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 50%;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  display: none;
+  box-shadow: 0 2px 4px rgba(45, 45, 231, 0.1);
+  z-index: 1;
+  transform: translateX(-50%);
+}
+
+.info-box-c {
+  position: absolute;
+  bottom: calc(100% - 5px);
+  left: 50%;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 3px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  display: none;
+  box-shadow: 0 2px 4px rgba(45, 45, 231, 0.25);
+  z-index: 1;
+  transform: translateX(-50%);
+  color: blue;
+  width: 90%;
+  font-size: 1rem;
+}
+
+.info-box-c h2 {
+  font-size: 1rem;
+}
+
+.info-box-c p {
+  font-size: 1rem;
+}
+
+.hover-text:hover + .info-box,
+.hover-text:hover + .info-box-c {
+  display: block;
+  border-color: #5477f5;
+}
+
+/* Image Styles */
+
+.rounded-image {
+  border-radius: 10px;
+}
+
+/* Section Styles */
+
+.centered-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  word-wrap: break-word;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 3px 4px rgba(255, 255, 0, 0.7);
+  padding: 5px;
+  border: 2px solid white;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  gap: 10px;
+}
+
+.centered-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.centered-section p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Audio Player Styles */
+
+#audioPlayer_v1,
+#audioPlayer_v2,
+#audioPlayer_v3 {
+  color: blueviolet;
+}
+
+#audioSelect_v1,
+#audioSelect_v2,
+#audioSelect_v3 {
+  background-color: blueviolet;
+  color: #fff;
+}
+
+.audio-container {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  border: 3px solid blueviolet;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: blueviolet;
+}
+
+.audio-container p {
+  font-size: 20px;
+  margin: 0;
+}
+
+#customAudioPlayer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+audio {
+  display: none;
+}
+
+.playPauseButton {
+  cursor: pointer;
+}
+
+.audio-controls {
+  display: flex;
+  align-items: center;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin: 0 10px;
+}
+
+#currentTime,
+#duration {
+  color: purple;
+}
+
+select {
+  background-color: purple;
+  color: white;
+}
+
+/* Footer Styles */
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-content h2 {
+  color: white;
+}
+
+.info-section {
+  flex: 1;
+}
+
+.map-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.CopyButton {
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.radio-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px;
+  border: 2px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  gap: 10px;
+}
+
+.radio-container > * {
+  margin: 0 5px;
+}

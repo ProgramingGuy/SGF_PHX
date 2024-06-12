@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/8ca320a1c2c0f76d775f94c49146cdfab07848f9/assets/Img/Logo.png" alt="Logo">
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: purple;
+        /* Purple */
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .login-container {
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h2 {
+        text-align: center;
+        color: blue;
+      }
+
+      input[type="text"],
+      input[type="password"],
+      button {
+        display: block;
+        margin: 10px auto;
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        color: blue;
+      }
+
+      button {
+        background-color: #800080;
+        color: #ffffff;
+        cursor: pointer;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="login-container">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="Username">
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Password">
+        <button id="loginBtn">Login</button>
+      </form>
+    </div>
+
+    <script>
+      var loginAttempts = 0;
+      var loginBtn = document.getElementById('loginBtn');
+      var loginForm = document.getElementById('loginForm');
+
+      loginBtn.addEventListener('click', function(event) {
+        event.preventDefault();
+        var username = document.getElementById('username').value;
+        var password = document.getElementById('password').value;
+
+        if (username === 'admin' && password === 'password') {
+          alert('Watcha doin?');
+        } else {
+          loginAttempts++;
+          if (loginAttempts >= 5) {
+            loginBtn.disabled = true;
+            setTimeout(function() {
+              loginBtn.disabled = false;
+              loginAttempts = 0;
+            }, 60000); // 60 seconds
+            alert('You have made 5 unsuccessful attempts. Please wait for 60 seconds before trying again.');
+          } else {
+            alert('Incorrect username or password. Please try again.');
+          }
+        }
+      });
+
+    </script>
+  </body>
+
+</html>
