@@ -29,18 +29,20 @@
   </head>
 
   <body oncontextmenu="return false;">
-    <script> // Disable right click
+    <script>
+      // Disable right click
       document.addEventListener('contextmenu', function(event) {
         event.preventDefault();
       });
+
     </script>
   </body>
 
 
   <body>
     <header class="header">
-    
-    <video autoplay muted loop id="background-video">
+
+      <video autoplay muted loop id="background-video">
         <source src="https://i.imgur.com/1DlAmZ0.mp4" type="video/mp4">
 
         <!-- Desktop video
@@ -50,8 +52,8 @@
         <source src="https://i.imgur.com/VEhZkXc.mp4" type="video/mp4" media="(max-width: 768px)">
         Your browser does not support the video tag.
     -->
-    </video>
-     
+      </video>
+
       <div class="header_content">
         <img src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/8ca320a1c2c0f76d775f94c49146cdfab07848f9/assets/Img/Logo.png" alt="Logo">
         <h1>“I AM” Temple - Saint Germain Foundation</h1>
@@ -78,7 +80,7 @@
           }
         </style>
         -->
-      
+
       </div>
     </header>
 
@@ -356,48 +358,56 @@
 
         <!-- Edit to not load audio files on web page load -->
         <section id="Radio" class="centered-section">
-          <h2>“I AM” Radio channels</h2>
 
-          <div class="radio-container">
-            <div class="player">
-              <h1>“I AM” Music</h1>
-              <img id="button-music" class="play-button" src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/95d2e1ef131bd1841959300e908665d7aa72a9b8/assets/Img/IAM_Play.png" alt="Play" width="100" height="100">
-              <audio id="music" data-src="https://ice24.securenetsystems.net/SGFBM?playSessionID=B321E2AC-37F4-46DE-91708A1610F70E6F"></audio>
-            </div>
+          <section>
+            <h2>“I AM” Radio channels</h2>
 
-            <div class="player">
-              <h1>“I AM” Voice</h1>
-              <img id="button-voice" class="play-button" src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/95d2e1ef131bd1841959300e908665d7aa72a9b8/assets/Img/IAM_Play.png" alt="Play" width="100" height="100">
-              <audio id="voice" data-src="https://ice24.securenetsystems.net/SGFBV?playSessionID=57E76393-2AE9-4717-BA3227191BCFE969"></audio>
-            </div>
+            <div class="radio-container">
+              <div class="player">
+                <h1>“I AM” Music</h1>
+                <img id="button-music" class="play-button" src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/95d2e1ef131bd1841959300e908665d7aa72a9b8/assets/Img/IAM_Play.png" alt="Play" width="100" height="100">
+                <audio id="music" data-src="https://ice24.securenetsystems.net/SGFBM?playSessionID=B321E2AC-37F4-46DE-91708A1610F70E6F"></audio>
+              </div>
 
-            <h2>“I AM” Radio Recordings & Violet Flame Recording</h2>
-            <!-- Audio Player 4 -->
-      <div class="radio">
-        <div class="audio-container">
-          <p>Audio Book</p>
-          <div id="customAudioPlayer4">
-            <audio id="audioPlayer4" controls>
-              <source id="audioSource4" src="" type="audio/mpeg">
-            </audio>
-            <img class='playPauseButton' src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/95d2e1ef131bd1841959300e908665d7aa72a9b8/assets/Img/IAM_Play.png" width=100 height="100">
-            <div class="audio-controls">
-              <input type="range" id="customSeekBar4" min="0" value="0" step="1">
-              <span id="currentTime4">00:00</span> / <span id="duration4">00:00</span>
-            </div>
-          </div>
-          <div id="dropdownContainer">
-            <select id="audioSelect_v4">
-              <!-- Options will be populated dynamically -->
-            </select>
-          </div>
-        </div>
+              <div class="player">
+                <h1>“I AM” Voice</h1>
+                <img id="button-voice" class="play-button" src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/95d2e1ef131bd1841959300e908665d7aa72a9b8/assets/Img/IAM_Play.png" alt="Play" width="100" height="100">
+                <audio id="voice" data-src="https://ice24.securenetsystems.net/SGFBV?playSessionID=57E76393-2AE9-4717-BA3227191BCFE969"></audio>
+              </div>
+          </section>
+
+          <section>
+            <h2>“I AM” Recordings</h2>
 
             <div class="player">
               <h1>Violet Flame</h1>
               <img id="button-flame" class="play-button" src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/95d2e1ef131bd1841959300e908665d7aa72a9b8/assets/Img/IAM_Play.png" width="100" height="100">
               <audio id="flame" data-src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/9815ad2c0cb0813c42cdeddd2b16a8bb58853653/assets/Violet-Flame.mp3" type="audio/mpeg" loop></audio>
             </div>
+
+
+            <!-- Audio Player 4 -->
+            <div class="radio">
+              <div class="audio-container">
+                <p>Radio Recordings</p>
+                <div id="customAudioPlayer4">
+                  <audio id="audioPlayer4" controls>
+                    <source id="audioSource4" src="" type="audio/mpeg">
+                  </audio>
+                  <img class='playPauseButton' src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/95d2e1ef131bd1841959300e908665d7aa72a9b8/assets/Img/IAM_Play.png" width=100 height="100">
+                  <div class="audio-controls">
+                    <input type="range" id="customSeekBar4" min="0" value="0" step="1">
+                    <span id="currentTime4">00:00</span> / <span id="duration4">00:00</span>
+                  </div>
+                </div>
+                <div id="dropdownContainer">
+                  <select id="audioSelect_v4">
+                    <!-- Options will be populated dynamically -->
+                  </select>
+                </div>
+              </div>
+            </div>
+          </section>
 
           <div class="centered-link">
             <button class="purchase-button">
@@ -511,15 +521,15 @@
     </main>
 
     <footer class="header">
-    
+
       <video autoplay muted loop id="background-video">
         <!-- Desktop video -->
         <source src="https://i.imgur.com/1DlAmZ0.mp4" type="video/mp4" media="(min-width: 769px)">
         <!-- Mobile video -->
         <source src="https://i.imgur.com/VEhZkXc.mp4" type="video/mp4" media="(max-width: 768px)">
         Your browser does not support the video tag.
-    </video>
-    
+      </video>
+
       <div class="header_content">
         <div class="footer-content">
 
@@ -583,6 +593,7 @@
       loadJSFiles(jsFiles);
     </script>
   -->
+
 </html>
 
 
@@ -596,27 +607,29 @@
         console.error('Failed to copy: ', err);
       });
   }
+
 </script>
 
 <script>
-document.addEventListener('visibilitychange', function() {
-  var video = document.getElementById('background-video');
-  if (!video) {
-    // console.error("Video element not found!");
-    return;
-  }
-  if (document.visibilityState === 'hidden') {
-    if (!video.paused) {
-      video.pause();
-      // console.log("Video paused.");
+  document.addEventListener('visibilitychange', function() {
+    var video = document.getElementById('background-video');
+    if (!video) {
+      // console.error("Video element not found!");
+      return;
     }
-  } else {
-    if (video.paused) {
-      video.play();
-      // console.log("Video played.");
+    if (document.visibilityState === 'hidden') {
+      if (!video.paused) {
+        video.pause();
+        // console.log("Video paused.");
+      }
+    } else {
+      if (video.paused) {
+        video.play();
+        // console.log("Video played.");
+      }
     }
-  }
-});
+  });
+
 </script>
 
 <script>
@@ -662,11 +675,12 @@ document.addEventListener('visibilitychange', function() {
       togglePlayPause(flame, playflame);
     });
   });
+
 </script>
 
 <script>
-// Updated PDF viewer code 5/31/2024 --- V2
-const frame = document.getElementById('Digital-book');
+  // Updated PDF viewer code 5/31/2024 --- V2
+  const frame = document.getElementById('Digital-book');
   const base = "https://drive.google.com/viewerng/viewer?embedded=true&url=https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/e6ac4aa9608aa6749dfdbf1a8f0b99b017defca6/assets/";
   const books = {
     V1: `${base}Vol1.pdf#toolbar=0&scrollbar=0`,
@@ -701,6 +715,7 @@ const frame = document.getElementById('Digital-book');
       });
     }
   });
+
 </script>
 
 <script>
@@ -722,100 +737,342 @@ const frame = document.getElementById('Digital-book');
   const audioSource3 = document.getElementById("audioSource3");
   const audioSource4 = document.getElementById("audioSource4");
 
-// Update audioFiles_v1 to audioFiles_v4
-const audioFiles_v1 = [
-    { name: "Foreword", src: url + "Vol1/Foreword.mp3" },
-    { name: "Chapter 1", src: url + "Vol1/Chapter-01.mp3" },
-    { name: "Chapter 2", src: url + "Vol1/Chapter-02.mp3" },
-    { name: "Chapter 3", src: url + "Vol1/Chapter-03.mp3" },
-    { name: "Chapter 4", src: url + "Vol1/Chapter-04.mp3" },
-    { name: "Chapter 5", src: url + "Vol1/Chapter-05.mp3" },
-    { name: "Chapter 6", src: url + "Vol1/Chapter-06.mp3" },
-    { name: "Chapter 7", src: url + "Vol1/Chapter-07.mp3" },
-    { name: "Chapter 8", src: url + "Vol1/Chapter-08.mp3" },
-    { name: "Chapter 9", src: url + "Vol1/Chapter-09.mp3" }
-];
+  // Update audioFiles_v1 to audioFiles_v4
+  const audioFiles_v1 = [{
+      name: "Foreword",
+      src: url + "Vol1/Foreword.mp3"
+    },
+    {
+      name: "Chapter 1",
+      src: url + "Vol1/Chapter-01.mp3"
+    },
+    {
+      name: "Chapter 2",
+      src: url + "Vol1/Chapter-02.mp3"
+    },
+    {
+      name: "Chapter 3",
+      src: url + "Vol1/Chapter-03.mp3"
+    },
+    {
+      name: "Chapter 4",
+      src: url + "Vol1/Chapter-04.mp3"
+    },
+    {
+      name: "Chapter 5",
+      src: url + "Vol1/Chapter-05.mp3"
+    },
+    {
+      name: "Chapter 6",
+      src: url + "Vol1/Chapter-06.mp3"
+    },
+    {
+      name: "Chapter 7",
+      src: url + "Vol1/Chapter-07.mp3"
+    },
+    {
+      name: "Chapter 8",
+      src: url + "Vol1/Chapter-08.mp3"
+    },
+    {
+      name: "Chapter 9",
+      src: url + "Vol1/Chapter-09.mp3"
+    }
+  ];
 
-const audioFiles_v2 = [
-    { name: "Foreword", src: url + "Vol2/Foreword.mp3" },
-    { name: "Chapter 1", src: url + "Vol2/Chapter-01.mp3" },
-    { name: "Chapter 2", src: url + "Vol2/Chapter-02.mp3" },
-    { name: "Chapter 3", src: url + "Vol2/Chapter-03.mp3" },
-    { name: "Chapter 4", src: url + "Vol2/Chapter-04.mp3" },
-    { name: "Chapter 5", src: url + "Vol2/Chapter-05.mp3" },
-    { name: "Chapter 6", src: url + "Vol2/Chapter-06.mp3" },
-    { name: "Chapter 7", src: url + "Vol2/Chapter-07.mp3" },
-    { name: "Chapter 8", src: url + "Vol2/Chapter-08.mp3" },
-    { name: "Chapter 9", src: url + "Vol2/Chapter-09.mp3" },
-    { name: "Chapter 10", src: url + "Vol2/Chapter-10.mp3" },
-    { name: "Chapter 11", src: url + "Vol2/Chapter-11.mp3" }
-];
+  const audioFiles_v2 = [{
+      name: "Foreword",
+      src: url + "Vol2/Foreword.mp3"
+    },
+    {
+      name: "Chapter 1",
+      src: url + "Vol2/Chapter-01.mp3"
+    },
+    {
+      name: "Chapter 2",
+      src: url + "Vol2/Chapter-02.mp3"
+    },
+    {
+      name: "Chapter 3",
+      src: url + "Vol2/Chapter-03.mp3"
+    },
+    {
+      name: "Chapter 4",
+      src: url + "Vol2/Chapter-04.mp3"
+    },
+    {
+      name: "Chapter 5",
+      src: url + "Vol2/Chapter-05.mp3"
+    },
+    {
+      name: "Chapter 6",
+      src: url + "Vol2/Chapter-06.mp3"
+    },
+    {
+      name: "Chapter 7",
+      src: url + "Vol2/Chapter-07.mp3"
+    },
+    {
+      name: "Chapter 8",
+      src: url + "Vol2/Chapter-08.mp3"
+    },
+    {
+      name: "Chapter 9",
+      src: url + "Vol2/Chapter-09.mp3"
+    },
+    {
+      name: "Chapter 10",
+      src: url + "Vol2/Chapter-10.mp3"
+    },
+    {
+      name: "Chapter 11",
+      src: url + "Vol2/Chapter-11.mp3"
+    }
+  ];
 
-const audioFiles_v3 = [
-    { name: 'Foreword', src: url + 'Vol3/Foreword.mp3' },
-    { name: 'Discourse 1', src: url + 'Vol3/Discourse-01.mp3' },
-    { name: 'Discourse 2', src: url + 'Vol3/Discourse-02.mp3' },
-    { name: 'Discourse 3', src: url + 'Vol3/Discourse-03.mp3' },
-    { name: 'Discourse 4', src: url + 'Vol3/Discourse-04.mp3' },
-    { name: 'Discourse 5', src: url + 'Vol3/Discourse-05.mp3' },
-    { name: 'Discourse 6', src: url + 'Vol3/Discourse-06.mp3' },
-    { name: 'Discourse 7', src: url + 'Vol3/Discourse-07.mp3' },
-    { name: 'Discourse 8', src: url + 'Vol3/Discourse-08.mp3' },
-    { name: 'Discourse 9', src: url + 'Vol3/Discourse-09.mp3' },
-    { name: 'Discourse 10', src: url + 'Vol3/Discourse-10.mp3' },
-    { name: 'Discourse 11', src: url + 'Vol3/Discourse-11.mp3' },
-    { name: 'Discourse 12', src: url + 'Vol3/Discourse-12.mp3' },
-    { name: 'Discourse 13', src: url + 'Vol3/Discourse-13.mp3' },
-    { name: 'Discourse 14', src: url + 'Vol3/Discourse-14.mp3' },
-    { name: 'Discourse 15', src: url + 'Vol3/Discourse-15.mp3' },
-    { name: 'Discourse 16', src: url + 'Vol3/Discourse-16.mp3' },
-    { name: 'Discourse 17', src: url + 'Vol3/Discourse-17.mp3' },
-    { name: 'Discourse 18', src: url + 'Vol3/Discourse-18.mp3' },
-    { name: 'Discourse 19', src: url + 'Vol3/Discourse-19.mp3' },
-    { name: 'Discourse 20', src: url + 'Vol3/Discourse-20.mp3' },
-    { name: 'Discourse 21', src: url + 'Vol3/Discourse-21.mp3' },
-    { name: 'Discourse 22', src: url + 'Vol3/Discourse-22.mp3' },
-    { name: 'Discourse 23', src: url + 'Vol3/Discourse-23.mp3' },
-    { name: 'Discourse 24', src: url + 'Vol3/Discourse-24.mp3' },
-    { name: 'Discourse 25', src: url + 'Vol3/Discourse-25.mp3' },
-    { name: 'Discourse 26', src: url + 'Vol3/Discourse-26.mp3' },
-    { name: 'Discourse 27', src: url + 'Vol3/Discourse-27.mp3' },
-    { name: 'Discourse 28', src: url + 'Vol3/Discourse-28.mp3' },
-    { name: 'Discourse 29', src: url + 'Vol3/Discourse-29.mp3' },
-    { name: 'Discourse 30', src: url + 'Vol3/Discourse-30.mp3' },
-    { name: 'Discourse 31', src: url + 'Vol3/Discourse-31.mp3' },
-    { name: 'Discourse 32', src: url + 'Vol3/Discourse-32.mp3' },
-    { name: 'Discourse 33', src: url + 'Vol3/Discourse-33.mp3' }
-];
+  const audioFiles_v3 = [{
+      name: 'Foreword',
+      src: url + 'Vol3/Foreword.mp3'
+    },
+    {
+      name: 'Discourse 1',
+      src: url + 'Vol3/Discourse-01.mp3'
+    },
+    {
+      name: 'Discourse 2',
+      src: url + 'Vol3/Discourse-02.mp3'
+    },
+    {
+      name: 'Discourse 3',
+      src: url + 'Vol3/Discourse-03.mp3'
+    },
+    {
+      name: 'Discourse 4',
+      src: url + 'Vol3/Discourse-04.mp3'
+    },
+    {
+      name: 'Discourse 5',
+      src: url + 'Vol3/Discourse-05.mp3'
+    },
+    {
+      name: 'Discourse 6',
+      src: url + 'Vol3/Discourse-06.mp3'
+    },
+    {
+      name: 'Discourse 7',
+      src: url + 'Vol3/Discourse-07.mp3'
+    },
+    {
+      name: 'Discourse 8',
+      src: url + 'Vol3/Discourse-08.mp3'
+    },
+    {
+      name: 'Discourse 9',
+      src: url + 'Vol3/Discourse-09.mp3'
+    },
+    {
+      name: 'Discourse 10',
+      src: url + 'Vol3/Discourse-10.mp3'
+    },
+    {
+      name: 'Discourse 11',
+      src: url + 'Vol3/Discourse-11.mp3'
+    },
+    {
+      name: 'Discourse 12',
+      src: url + 'Vol3/Discourse-12.mp3'
+    },
+    {
+      name: 'Discourse 13',
+      src: url + 'Vol3/Discourse-13.mp3'
+    },
+    {
+      name: 'Discourse 14',
+      src: url + 'Vol3/Discourse-14.mp3'
+    },
+    {
+      name: 'Discourse 15',
+      src: url + 'Vol3/Discourse-15.mp3'
+    },
+    {
+      name: 'Discourse 16',
+      src: url + 'Vol3/Discourse-16.mp3'
+    },
+    {
+      name: 'Discourse 17',
+      src: url + 'Vol3/Discourse-17.mp3'
+    },
+    {
+      name: 'Discourse 18',
+      src: url + 'Vol3/Discourse-18.mp3'
+    },
+    {
+      name: 'Discourse 19',
+      src: url + 'Vol3/Discourse-19.mp3'
+    },
+    {
+      name: 'Discourse 20',
+      src: url + 'Vol3/Discourse-20.mp3'
+    },
+    {
+      name: 'Discourse 21',
+      src: url + 'Vol3/Discourse-21.mp3'
+    },
+    {
+      name: 'Discourse 22',
+      src: url + 'Vol3/Discourse-22.mp3'
+    },
+    {
+      name: 'Discourse 23',
+      src: url + 'Vol3/Discourse-23.mp3'
+    },
+    {
+      name: 'Discourse 24',
+      src: url + 'Vol3/Discourse-24.mp3'
+    },
+    {
+      name: 'Discourse 25',
+      src: url + 'Vol3/Discourse-25.mp3'
+    },
+    {
+      name: 'Discourse 26',
+      src: url + 'Vol3/Discourse-26.mp3'
+    },
+    {
+      name: 'Discourse 27',
+      src: url + 'Vol3/Discourse-27.mp3'
+    },
+    {
+      name: 'Discourse 28',
+      src: url + 'Vol3/Discourse-28.mp3'
+    },
+    {
+      name: 'Discourse 29',
+      src: url + 'Vol3/Discourse-29.mp3'
+    },
+    {
+      name: 'Discourse 30',
+      src: url + 'Vol3/Discourse-30.mp3'
+    },
+    {
+      name: 'Discourse 31',
+      src: url + 'Vol3/Discourse-31.mp3'
+    },
+    {
+      name: 'Discourse 32',
+      src: url + 'Vol3/Discourse-32.mp3'
+    },
+    {
+      name: 'Discourse 33',
+      src: url + 'Vol3/Discourse-33.mp3'
+    }
+  ];
 
-const audioFiles_v4 = [
-    { name: 'The Word I AM The Use of Li', src: url + 'Radio/01-The-Word-I-AM-The-Use-of-Li.mp3' },
-    { name: 'Beloved Jesus The I AM Stat', src: url + 'Radio/02-Beloved-Jesus-The-I-AM-Stat.mp3' },
-    { name: 'The I AM Presence Violet Fl', src: url + 'Radio/03-The-I-AM-Presence-Violet-Fl.mp3' },
-    { name: 'Attention Vision Qualificat', src: url + 'Radio/04-Attention-Vision-Qualificat.mp3' },
-    { name: 'Attention to the I AM Prese', src: url + 'Radio/05-Attention-to-the-I-AM-Prese.mp3' },
-    { name: 'Obedience to the I AM Prese', src: url + 'Radio/06-Obedience-to-the-I-AM-Prese.mp3' },
-    { name: 'Divine Service', src: url + 'Radio/07-Divine-Service-Americas-Rol.mp3' },
-    { name: 'Self-Control The Attention', src: url + 'Radio/08-Self-Control-The-Attention.mp3' },
-    { name: 'Contemplation Business', src: url + 'Radio/09-Contemplation-Business.mp3' },
-    { name: 'Love to the Mighty I AM Pre', src: url + 'Radio/10-Love-to-the-Mighty-I-AM-Pre.mp3' },
-    { name: 'Give to the Mighty I AM Pre', src: url + 'Radio/11-Give-to-the-Mighty-I-AM-Pre.mp3' },
-    { name: 'Use of the Mighty I AM Pres', src: url + 'Radio/12-Use-of-the-Mighty-I-AM-Pres.mp3' },
-    { name: 'Power of the I AM Presence', src: url + 'Radio/13-Power-of-the-I-AM-Presence.mp3' },
-    { name: 'Faith Hope and Charity', src: url + 'Radio/14-Faith-Hope-and-Charity.mp3' },
-    { name: 'Attention to the I AM Prese', src: url + 'Radio/15-Attention-to-the-I-AM-Prese.mp3' },
-    { name: 'Beloved Jesus Ray Other Ray', src: url + 'Radio/16-Beloved-Jesus-Ray-Other-Ray.mp3' },
-    { name: 'The I AM Presence and Ameri', src: url + 'Radio/17-The-I-AM-Presence-and-Ameri.mp3' },
-    { name: 'Gods Will and Free Will', src: url + 'Radio/18-Gods-Will-and-Free-Will.mp3' },
-    { name: 'Beloved Jesus and The Ascen', src: url + 'Radio/19-Beloved-Jesus-and-The-Ascen.mp3' },
-    { name: 'Anchor to the I AM Presence', src: url + 'Radio/20-Anchor-to-the-I-AM-Presence.mp3' },
-    { name: 'The I AM Presence The Word', src: url + 'Radio/21-The-I-AM-Presence-The-Word.mp3' },
-    { name: 'Attention to the I AM Prese', src: url + 'Radio/22-Attention-to-the-I-AM-Prese.mp3' },
-    { name: 'The I AM Beloved Jesus Teac', src: url + 'Radio/23-The-I-AM-Beloved-Jesus-Teac.mp3' },
-    { name: 'Self-Correction', src: url + 'Radio/24-Self-Correction.mp3' },
-    { name: 'I AM Creating Perfection', src: url + 'Radio/25-I-AM-Creating-Perfection.mp3' },
-    { name: 'I AM The Forgiving Sacred F', src: url + 'Radio/26-I-AM-The-Forgiving-Sacred-F.mp3' }
-];
+  const audioFiles_v4 = [{
+      name: 'The Word I AM The Use of Li',
+      src: url + 'Radio/01-The-Word-I-AM-The-Use-of-Li.mp3'
+    },
+    {
+      name: 'Beloved Jesus The I AM Stat',
+      src: url + 'Radio/02-Beloved-Jesus-The-I-AM-Stat.mp3'
+    },
+    {
+      name: 'The I AM Presence Violet Fl',
+      src: url + 'Radio/03-The-I-AM-Presence-Violet-Fl.mp3'
+    },
+    {
+      name: 'Attention Vision Qualificat',
+      src: url + 'Radio/04-Attention-Vision-Qualificat.mp3'
+    },
+    {
+      name: 'Attention to the I AM Prese',
+      src: url + 'Radio/05-Attention-to-the-I-AM-Prese.mp3'
+    },
+    {
+      name: 'Obedience to the I AM Prese',
+      src: url + 'Radio/06-Obedience-to-the-I-AM-Prese.mp3'
+    },
+    {
+      name: 'Divine Service',
+      src: url + 'Radio/07-Divine-Service-Americas-Rol.mp3'
+    },
+    {
+      name: 'Self-Control The Attention',
+      src: url + 'Radio/08-Self-Control-The-Attention.mp3'
+    },
+    {
+      name: 'Contemplation Business',
+      src: url + 'Radio/09-Contemplation-Business.mp3'
+    },
+    {
+      name: 'Love to the Mighty I AM Pre',
+      src: url + 'Radio/10-Love-to-the-Mighty-I-AM-Pre.mp3'
+    },
+    {
+      name: 'Give to the Mighty I AM Pre',
+      src: url + 'Radio/11-Give-to-the-Mighty-I-AM-Pre.mp3'
+    },
+    {
+      name: 'Use of the Mighty I AM Pres',
+      src: url + 'Radio/12-Use-of-the-Mighty-I-AM-Pres.mp3'
+    },
+    {
+      name: 'Power of the I AM Presence',
+      src: url + 'Radio/13-Power-of-the-I-AM-Presence.mp3'
+    },
+    {
+      name: 'Faith Hope and Charity',
+      src: url + 'Radio/14-Faith-Hope-and-Charity.mp3'
+    },
+    {
+      name: 'Attention to the I AM Prese',
+      src: url + 'Radio/15-Attention-to-the-I-AM-Prese.mp3'
+    },
+    {
+      name: 'Beloved Jesus Ray Other Ray',
+      src: url + 'Radio/16-Beloved-Jesus-Ray-Other-Ray.mp3'
+    },
+    {
+      name: 'The I AM Presence and Ameri',
+      src: url + 'Radio/17-The-I-AM-Presence-and-Ameri.mp3'
+    },
+    {
+      name: 'Gods Will and Free Will',
+      src: url + 'Radio/18-Gods-Will-and-Free-Will.mp3'
+    },
+    {
+      name: 'Beloved Jesus and The Ascen',
+      src: url + 'Radio/19-Beloved-Jesus-and-The-Ascen.mp3'
+    },
+    {
+      name: 'Anchor to the I AM Presence',
+      src: url + 'Radio/20-Anchor-to-the-I-AM-Presence.mp3'
+    },
+    {
+      name: 'The I AM Presence The Word',
+      src: url + 'Radio/21-The-I-AM-Presence-The-Word.mp3'
+    },
+    {
+      name: 'Attention to the I AM Prese',
+      src: url + 'Radio/22-Attention-to-the-I-AM-Prese.mp3'
+    },
+    {
+      name: 'The I AM Beloved Jesus Teac',
+      src: url + 'Radio/23-The-I-AM-Beloved-Jesus-Teac.mp3'
+    },
+    {
+      name: 'Self-Correction',
+      src: url + 'Radio/24-Self-Correction.mp3'
+    },
+    {
+      name: 'I AM Creating Perfection',
+      src: url + 'Radio/25-I-AM-Creating-Perfection.mp3'
+    },
+    {
+      name: 'I AM The Forgiving Sacred F',
+      src: url + 'Radio/26-I-AM-The-Forgiving-Sacred-F.mp3'
+    }
+  ];
 
   document.addEventListener("DOMContentLoaded", function() {
     function populateDropdown(audioFiles, selectElement) {
