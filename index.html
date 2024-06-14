@@ -19,11 +19,6 @@
     <title>“I AM” Activity - Phoenix</title>
     <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/8ca320a1c2c0f76d775f94c49146cdfab07848f9/assets/Img/Logo.png" alt="Logo">
 
-    <!--
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="folder" href="folder/folder">
-    -->
-
     <!-- Link Icon -->
     <meta property="og:image" content="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/8ca320a1c2c0f76d775f94c49146cdfab07848f9/assets/Img/Logo.png" alt="Logo">
     <meta property="og:image:width" content="500">
@@ -33,14 +28,11 @@
     <meta name="keywords" content="“I AM” Temple, Saint Germain Foundation, Phoenix Arizona, “I AM” Temple of Immortal Purity, The Finishing School, Saint Germain, Ascended Master, God Presence, Authentic Teachings, Ascended Masters, Jesus Christ, Mother Mary, Elohim, G.W. Ballard, Godfre Ray King, Edna Ballard, Nada, Divine Director, Sacred Fire, Violet Flame, Christ Self, Inner Instruction, Discourses, Unveiled Mysteries, The Magic Presence, Decrees, Victory, Ascension, Archangel Michael, Cosmic Beings, Saint Germain Press, Great Central Sun, Love Wisdom Power, Student of Light, Youthlets, Violet Flame, Cosmic Law, Approved Messengers, Cleanse Earth, Group Meetings, Temples, Sanctuaries, Freedom, Eternal Freedom.">
   </head>
 
-  <!-- Disable right click -->
-
   <body oncontextmenu="return false;">
-    <script>
+    <script> // Disable right click
       document.addEventListener('contextmenu', function(event) {
         event.preventDefault();
       });
-
     </script>
   </body>
 
@@ -49,11 +41,15 @@
     <header class="header">
     
     <video autoplay muted loop id="background-video">
-        <!-- Desktop video -->
+        <source src="https://i.imgur.com/1DlAmZ0.mp4" type="video/mp4">
+
+        <!-- Desktop video
         <source src="https://i.imgur.com/1DlAmZ0.mp4" type="video/mp4" media="(min-width: 769px)">
-        <!-- Mobile video -->
+
+         Mobile video
         <source src="https://i.imgur.com/VEhZkXc.mp4" type="video/mp4" media="(max-width: 768px)">
         Your browser does not support the video tag.
+    -->
     </video>
      
       <div class="header_content">
@@ -68,7 +64,6 @@
             <li><button type="button" class="purchase-button" id="test" data-url="test">Test</button></li>
           </ul>
         </nav>
-      -->
 
         <style>
           .nav-buttons {
@@ -82,48 +77,10 @@
             margin-right: 10px;
           }
         </style>
-
-        <script>
-          document.addEventListener('DOMContentLoaded', function() {
-            function handleButtonClick(buttonId, defaultURL) {
-              var button = document.getElementById(buttonId);
-              if (!button) return;
-              button.addEventListener('click', function() {
-                var customURL = button.dataset.url;
-                window.location.href = customURL || defaultURL;
-              });
-            }
-
-            handleButtonClick("home", "/");
-            handleButtonClick("test", "");
-          });
-
-        </script>
+        -->
       
       </div>
     </header>
-
-    <script>
-      document.addEventListener('visibilitychange', function() {
-        var video = document.getElementById('background-video');
-        if (!video) {
-          // console.error("Video element not found!");
-          return;
-        }
-        if (document.visibilityState === 'hidden') {
-          if (!video.paused) {
-            video.pause();
-            // console.log("Video paused.");
-          }
-        } else {
-          if (video.paused) {
-            video.play();
-            // console.log("Video played.");
-          }
-        }
-      });
-
-    </script>
 
     <main>
       <!-- Page grouping -->
@@ -147,15 +104,6 @@
             </div>
           </div>
         </section>
-
-        <!--
-        <section id="Guardians" class="centered-section">
-          <h2>We are the Guardians</h2>
-          <p>
-            The “I AM” Temple of Phoenix is part of the Saint Germain Foundation headquartered in Schaumburg, Illinois, which is the guardian and protector of the authentic “I AM” Teaching, the Sacred Knowledge given to mankind by the Ascended Master Saint Germain through the Messengers Mr. and Mrs. G.W. Ballard (now Ascended).
-          </p>
-        </section>
--->
 
         <section id="SaintGermain" class="centered-section">
           <h2>Ascended Master Saint Germain</h2>
@@ -428,30 +376,6 @@
               <img id="button-flame" class="play-button" src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/95d2e1ef131bd1841959300e908665d7aa72a9b8/assets/Img/IAM_Play.png" width="100" height="100">
               <audio id="flame" data-src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/9815ad2c0cb0813c42cdeddd2b16a8bb58853653/assets/Violet-Flame.mp3" type="audio/mpeg" loop></audio>
             </div>
-          </div>
-
-          <!--
-          <div class="radio-container">
-            <div class="player">
-              <h1>“I AM” Music</h1>
-              <img id="button-music" src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/95d2e1ef131bd1841959300e908665d7aa72a9b8/assets/Img/IAM_Play.png" alt="Play" width="100" height="100">
-              <audio id="music" src="https://ice24.securenetsystems.net/SGFBM?playSessionID=B321E2AC-37F4-46DE-91708A1610F70E6F"></audio>
-            </div>
-
-            <div class="player">
-              <h1>“I AM” Voice</h1>
-              <img id="button-voice" src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/95d2e1ef131bd1841959300e908665d7aa72a9b8/assets/Img/IAM_Play.png" alt="Play" width="100" height="100">
-              <audio id="voice" src="https://ice24.securenetsystems.net/SGFBV?playSessionID=57E76393-2AE9-4717-BA3227191BCFE969"></audio>
-            </div>
-
-            <div class="player">
-              <h1>Violet Flame</h1>
-              <img id="button-flame" src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/95d2e1ef131bd1841959300e908665d7aa72a9b8/assets/Img/IAM_Play.png" width="100" height="100">
-
-              <audio id="flame" src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/9815ad2c0cb0813c42cdeddd2b16a8bb58853653/assets/Violet-Flame.mp3" type="audio/mpeg" loop></audio>
-            </div>
-          </div>
--->
 
           <div class="centered-link">
             <button class="purchase-button">
@@ -614,19 +538,6 @@
             <p style="color: blue;">All materials within the Saint Germain Series, including books, "I AM" radio broadcasts, sound and video recordings, films, sheet music, pictures, and any derived excerpts, are protected by copyright. Worldwide rights are reserved, including translations. Reproduction or copying in any form, including electronic or mechanical methods, without written permission from the publisher is prohibited.</p>
             <p style="color: blueviolet;">&copy;Saint Germain Foundation <br> &copy;Saint Germain Press</p>
           </div>
-          <!-- Old text
-            *PROTECTION OF OUR COPYRIGHTS*
-
-            All material in our Books of the Saint Germain Series. The Voice of the “I AM,” our Radio Broadcasts, Sound and Video, Recordings, Films, Sheet Music, Pictures, and all excerpts taken from the above are covered by our copyrights, with all rights reserved unconditionally throughout the world, including foreign translation. No part of this work may be reproduced or copied in any form or by any means – graphic, electronic, or mechanical, including photo-copying, recording, taping, or by information storage and retrieval systems – without written permission of the publisher.
-
-            We will not permit this Instruction on the Great Law of Life, the “Beloved Mighty I AM Presence,” or the material mentioned above to be copied, deleted, or misrepresented for any purpose whatsoever, and we shall protect It fully. We are determined that this GIFT OF LIGHT, TRUTH, AND FREEDOM from the Ascended Masters to mankind SHALL BE PROTECTED and kept PURE, TRUE, AND UNCHANGED FOREVER, that mankind may receive Its Eternal Freedom and the Greatest Possible Blessing.
-
-            We shall use our Full Power and our Full Rights to maintain complete protection at all times.
-
-            Saint Germain Foundation
-
-            Saint Germain Press
-            -->
         </div>
 
       </div>
@@ -637,551 +548,15 @@
 </html>
 
 <script>
-  function copyToClipboard(textToCopy) {
-    navigator.clipboard.writeText(textToCopy)
-      .then(() => {
-        alert("Text copied to clipboard!");
-      })
-      .catch(err => {
-        console.error('Failed to copy: ', err);
-      });
+  var jsFiles = ['js/Books.js', 'js/Copy.js', 'js/FlamePlay.js', 'js/PDF.js', 'js/Radio.js', 'js/URL.js'];
+
+  function loadJSFiles(files) {
+    files.forEach(function(file) {
+      var script = document.createElement('script');
+      script.src = file;
+      document.head.appendChild(script);
+    });
   }
 
-</script>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var music = document.getElementById('music');
-    var playmusic = document.getElementById('button-music');
-
-    var voice = document.getElementById('voice');
-    var playvoice = document.getElementById('button-voice');
-
-    var flame = document.getElementById('flame');
-    var playflame = document.getElementById('button-flame');
-    var playImg = 'https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/95d2e1ef131bd1841959300e908665d7aa72a9b8/assets/Img/IAM_Play.png';
-    var pauseImg = 'https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/cefb44d04013542471ecaa590d45ccfc2b4bfc16/assets/Img/IAM_Pause.png';
-
-    // 5/31/2024 Fix for audio load on webpage load and change for audio src keep assign each time played...
-
-    function togglePlayPause(audio, button) {
-      var src = audio.getAttribute('data-src');
-      if (audio.paused) {
-        if (src) {
-          if (audio.src === "") {
-            audio.src = src;
-          }
-          audio.play();
-          button.src = pauseImg;
-        }
-      } else {
-        audio.pause();
-        button.src = playImg;
-      }
-    }
-
-    playmusic.addEventListener('click', function() {
-      togglePlayPause(music, playmusic);
-    });
-
-    playvoice.addEventListener('click', function() {
-      togglePlayPause(voice, playvoice);
-    });
-
-    playflame.addEventListener('click', function() {
-      togglePlayPause(flame, playflame);
-    });
-  });
-
-</script>
-
-<script>
-  // Updated PDF viewer code 5/31/2024
-  const frame = document.getElementById('Digital-book');
-  const base = "https://drive.google.com/viewerng/viewer?embedded=true&url=https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/e6ac4aa9608aa6749dfdbf1a8f0b99b017defca6/assets/";
-  const books = {
-    V1: `${base}Vol1.pdf#toolbar=0&scrollbar=0`,
-    V2: `${base}Vol2.pdf#toolbar=0&scrollbar=0`,
-    V3: `${base}Vol3.pdf#toolbar=0&scrollbar=0`
-  };
-
-  function toggleFrame(input) {
-    const currentSrc = frame.src;
-
-    if (frame.style.display === 'none' || !currentSrc || currentSrc !== books[input]) {
-      frame.style.display = 'block';
-      frame.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
-
-      if (input && books[input]) {
-        frame.src = books[input];
-      }
-    } else {
-      frame.style.display = 'none';
-    }
-  }
-
-  document.querySelectorAll('.purchase-button').forEach(button => {
-    const book = button.getAttribute('book');
-    if (book) {
-      // console.log(book);
-      button.addEventListener('click', function() {
-        toggleFrame(book);
-      });
-    }
-  });
-
-</script>
-
-<!-- Old PDF viewer
-<script>
-  const b1 = document.getElementById('V1');
-  const b2 = document.getElementById('V2');
-  const b3 = document.getElementById('V3');
-  const frame = document.getElementById('Digital-book');
-
-  function status(input) {
-    if (frame.style.display === 'none') {
-      frame.style.display = 'block';
-      frame.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
-
-      // Set PDF src
-      if (input === 'V1') {
-        frame.src = "https://drive.google.com/viewerng/viewer?embedded=true&url=https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/e6ac4aa9608aa6749dfdbf1a8f0b99b017defca6/assets/Vol1.pdf#toolbar=0&scrollbar=0";
-      } else if (input === 'V2') {
-        frame.src = "https://drive.google.com/viewerng/viewer?embedded=true&url=https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/e6ac4aa9608aa6749dfdbf1a8f0b99b017defca6/assets/Vol2.pdf#toolbar=0&scrollbar=0";
-      } else if (input === 'V3') {
-        frame.src = "https://drive.google.com/viewerng/viewer?embedded=true&url=https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/e6ac4aa9608aa6749dfdbf1a8f0b99b017defca6/assets/Vol3.pdf#toolbar=0&scrollbar=0";
-         /*
-      if (input === 'V1') {
-        frame.src = "https://drive.google.com/viewerng/viewer?embedded=true&url=https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/dc311b9c6e276ac385401e5e58a90677fba4c60b/assets/Vol1.pdf#toolbar=0&scrollbar=0";
-      } else if (input === 'V2') {
-        frame.src = "https://drive.google.com/viewerng/viewer?embedded=true&url=https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/dc311b9c6e276ac385401e5e58a90677fba4c60b/assets/Vol2.pdf#toolbar=0&scrollbar=0";
-      } else if (input === 'V3') {
-        frame.src = "https://drive.google.com/viewerng/viewer?embedded=true&url=https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/dc311b9c6e276ac385401e5e58a90677fba4c60b/assets/Vol3.pdf#toolbar=0&scrollbar=0";
-*/
-      }
-    } else {
-      frame.style.display = 'none';
-    }
-  }
-
-  b1.addEventListener('click', function() {
-    status('V1');
-  });
-
-  b2.addEventListener('click', function() {
-    status('V2');
-  });
-
-  b3.addEventListener('click', function() {
-    status('V3');
-  });
-
-</script>
--->
-
-<script>
-  const url = 'https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/';
-
-  const audioSelect1 = document.getElementById("audioSelect_v1");
-  const audioSelect2 = document.getElementById("audioSelect_v2");
-  const audioSelect3 = document.getElementById("audioSelect_v3");
-
-  const audioPlayer1 = document.getElementById("audioPlayer1");
-  const audioPlayer2 = document.getElementById("audioPlayer2");
-  const audioPlayer3 = document.getElementById("audioPlayer3");
-
-  const audioSource1 = document.getElementById("audioSource1");
-  const audioSource2 = document.getElementById("audioSource2");
-  const audioSource3 = document.getElementById("audioSource3");
-
-  const audioFiles_v1 = [{
-      name: "Foreword",
-      src: url + "08d44eef3826406f1f16c197c78ddbd0b791ea90/assets/Vol1/Foreword.mp3"
-    },
-    {
-      name: "Chapter 1",
-      src: url + "e7fae4a58ac668b85d2eeb731882ef88771f55f5/assets/Vol1/Chapter-01.mp3"
-    },
-    {
-      name: "Chapter 2",
-      src: url + "e7fae4a58ac668b85d2eeb731882ef88771f55f5/assets/Vol1/Chapter-02.mp3"
-    },
-    {
-      name: "Chapter 3",
-      src: url + "b5f3ec240740d1a1302ccccc858066dbd11a15bc/assets/Vol1/Chapter-03.mp3"
-    },
-    {
-      name: "Chapter 4",
-      src: url + "b5f3ec240740d1a1302ccccc858066dbd11a15bc/assets/Vol1/Chapter-04.mp3"
-    },
-    {
-      name: "Chapter 5",
-      src: url + "b5f3ec240740d1a1302ccccc858066dbd11a15bc/assets/Vol1/Chapter-05.mp3"
-    },
-    {
-      name: "Chapter 6",
-      src: url + "b5f3ec240740d1a1302ccccc858066dbd11a15bc/assets/Vol1/Chapter-06.mp3"
-    },
-    {
-      name: "Chapter 7",
-      src: url + "b5f3ec240740d1a1302ccccc858066dbd11a15bc/assets/Vol1/Chapter-07.mp3"
-    },
-    {
-      name: "Chapter 8",
-      src: url + "b5f3ec240740d1a1302ccccc858066dbd11a15bc/assets/Vol1/Chapter-08.mp3"
-    },
-    {
-      name: "Chapter 9",
-      src: url + "b5f3ec240740d1a1302ccccc858066dbd11a15bc/assets/Vol1/Chapter-09.mp3"
-    },
-  ];
-
-
-
-  const audioFiles_v2 = [{
-      name: "Foreword",
-      src: url + "c36191b6e89dbd60ba952f484663b7c5b9e07037/assets/Vol2/Foreword.mp3"
-    },
-    {
-      name: "Chapter 1",
-      src: url + "c36191b6e89dbd60ba952f484663b7c5b9e07037/assets/Vol2/Chapter-01.mp3"
-    },
-    {
-      name: "Chapter 2",
-      src: url + "c36191b6e89dbd60ba952f484663b7c5b9e07037/assets/Vol2/Chapter-02.mp3"
-    },
-    {
-      name: "Chapter 3",
-      src: url + "c36191b6e89dbd60ba952f484663b7c5b9e07037/assets/Vol2/Chapter-03.mp3"
-    },
-    {
-      name: "Chapter 4",
-      src: url + "a2a34f52937d0e97874c4b1deb130ad347f6f65e/assets/Vol2/Chapter-04.mp3"
-    },
-    {
-      name: "Chapter 5",
-      src: url + "468caa05c45096df36c39fb4bec12fb279070de0/assets/Vol2/Chapter-05.mp3"
-    },
-    {
-      name: "Chapter 6",
-      src: url + "468caa05c45096df36c39fb4bec12fb279070de0/assets/Vol2/Chapter-06.mp3"
-    },
-    {
-      name: "Chapter 7",
-      src: url + "095dc79d7af3978e947615afe84117ee97c678e1/assets/Vol2/Chapter-07.mp3"
-    },
-    {
-      name: "Chapter 8",
-      src: url + "095dc79d7af3978e947615afe84117ee97c678e1/assets/Vol2/Chapter-08.mp3"
-    },
-    {
-      name: "Chapter 9",
-      src: url + "095dc79d7af3978e947615afe84117ee97c678e1/assets/Vol2/Chapter-09.mp3"
-    },
-    {
-      name: "Chapter 10",
-      src: url + "095dc79d7af3978e947615afe84117ee97c678e1/assets/Vol2/Chapter-10.mp3"
-    },
-    {
-      name: "Chapter 11",
-      src: url + "973bfecaf9e647c28c7df5b270c95a0c9d3b6832/assets/Vol2/Chapter-11.mp3"
-    },
-  ];
-
-
-
-  const audioFiles_v3 = [{
-      name: 'Foreword',
-      src: url + '973bfecaf9e647c28c7df5b270c95a0c9d3b6832/assets/Vol3/Foreword.mp3'
-    },
-    {
-      name: 'Discourse 1',
-      src: url + '973bfecaf9e647c28c7df5b270c95a0c9d3b6832/assets/Vol3/Discourse-01.mp3'
-    },
-    {
-      name: 'Discourse 2',
-      src: url + '973bfecaf9e647c28c7df5b270c95a0c9d3b6832/assets/Vol3/Discourse-02.mp3'
-    },
-    {
-      name: 'Discourse 3',
-      src: url + '973bfecaf9e647c28c7df5b270c95a0c9d3b6832/assets/Vol3/Discourse-03.mp3'
-    },
-    {
-      name: 'Discourse 4',
-      src: url + '973bfecaf9e647c28c7df5b270c95a0c9d3b6832/assets/Vol3/Discourse-04.mp3'
-    },
-    {
-      name: 'Discourse 5',
-      src: url + '973bfecaf9e647c28c7df5b270c95a0c9d3b6832/assets/Vol3/Discourse-05.mp3'
-    },
-    {
-      name: 'Discourse 6',
-      src: url + '973bfecaf9e647c28c7df5b270c95a0c9d3b6832/assets/Vol3/Discourse-06.mp3'
-    },
-    {
-      name: 'Discourse 7',
-      src: url + '973bfecaf9e647c28c7df5b270c95a0c9d3b6832/assets/Vol3/Discourse-07.mp3'
-    },
-    {
-      name: 'Discourse 8',
-      src: url + '973bfecaf9e647c28c7df5b270c95a0c9d3b6832/assets/Vol3/Discourse-08.mp3'
-    },
-    {
-      name: 'Discourse 9',
-      src: url + '973bfecaf9e647c28c7df5b270c95a0c9d3b6832/assets/Vol3/Discourse-09.mp3'
-    },
-    {
-      name: 'Discourse 10',
-      src: url + '973bfecaf9e647c28c7df5b270c95a0c9d3b6832/assets/Vol3/Discourse-10.mp3'
-    },
-    {
-      name: 'Discourse 11',
-      src: url + '973bfecaf9e647c28c7df5b270c95a0c9d3b6832/assets/Vol3/Discourse-11.mp3'
-    },
-    {
-      name: 'Discourse 12',
-      src: url + '973bfecaf9e647c28c7df5b270c95a0c9d3b6832/assets/Vol3/Discourse-12.mp3'
-    },
-    {
-      name: 'Discourse 13',
-      src: url + '973bfecaf9e647c28c7df5b270c95a0c9d3b6832/assets/Vol3/Discourse-13.mp3'
-    },
-    {
-      name: 'Discourse 14',
-      src: url + '973bfecaf9e647c28c7df5b270c95a0c9d3b6832/assets/Vol3/Discourse-14.mp3'
-    },
-    {
-      name: 'Discourse 15',
-      src: url + '973bfecaf9e647c28c7df5b270c95a0c9d3b6832/assets/Vol3/Discourse-15.mp3'
-    },
-    {
-      name: 'Discourse 16',
-      src: url + '973bfecaf9e647c28c7df5b270c95a0c9d3b6832/assets/Vol3/Discourse-16.mp3'
-    },
-    {
-      name: 'Discourse 17',
-      src: url + '251f176f5a76fc30251b8effd5634d294597a47d/assets/Vol3/Discourse-17.mp3'
-    },
-    {
-      name: 'Discourse 18',
-      src: url + '251f176f5a76fc30251b8effd5634d294597a47d/assets/Vol3/Discourse-18.mp3'
-    },
-    {
-      name: 'Discourse 19',
-      src: url + '251f176f5a76fc30251b8effd5634d294597a47d/assets/Vol3/Discourse-19.mp3'
-    },
-    {
-      name: 'Discourse 20',
-      src: url + '251f176f5a76fc30251b8effd5634d294597a47d/assets/Vol3/Discourse-20.mp3'
-    },
-    {
-      name: 'Discourse 21',
-      src: url + '251f176f5a76fc30251b8effd5634d294597a47d/assets/Vol3/Discourse-21.mp3'
-    },
-    {
-      name: 'Discourse 22',
-      src: url + '251f176f5a76fc30251b8effd5634d294597a47d/assets/Vol3/Discourse-22.mp3'
-    },
-    {
-      name: 'Discourse 23',
-      src: url + '251f176f5a76fc30251b8effd5634d294597a47d/assets/Vol3/Discourse-23.mp3'
-    },
-    {
-      name: 'Discourse 24',
-      src: url + '251f176f5a76fc30251b8effd5634d294597a47d/assets/Vol3/Discourse-24.mp3'
-    },
-    {
-      name: 'Discourse 25',
-      src: url + '251f176f5a76fc30251b8effd5634d294597a47d/assets/Vol3/Discourse-25.mp3'
-    },
-    {
-      name: 'Discourse 26',
-      src: url + '251f176f5a76fc30251b8effd5634d294597a47d/assets/Vol3/Discourse-26.mp3'
-    },
-    {
-      name: 'Discourse 27',
-      src: url + '251f176f5a76fc30251b8effd5634d294597a47d/assets/Vol3/Discourse-27.mp3'
-    },
-    {
-      name: 'Discourse 28',
-      src: url + '251f176f5a76fc30251b8effd5634d294597a47d/assets/Vol3/Discourse-28.mp3'
-    },
-    {
-      name: 'Discourse 29',
-      src: url + '251f176f5a76fc30251b8effd5634d294597a47d/assets/Vol3/Discourse-29.mp3'
-    },
-    {
-      name: 'Discourse 30',
-      src: url + '251f176f5a76fc30251b8effd5634d294597a47d/assets/Vol3/Discourse-30.mp3'
-    },
-    {
-      name: 'Discourse 31',
-      src: url + '251f176f5a76fc30251b8effd5634d294597a47d/assets/Vol3/Discourse-31.mp3'
-    },
-    {
-      name: 'Discourse 32',
-      src: url + '251f176f5a76fc30251b8effd5634d294597a47d/assets/Vol3/Discourse-32.mp3'
-    },
-    {
-      name: 'Discourse 33',
-      src: url + '251f176f5a76fc30251b8effd5634d294597a47d/assets/Vol3/Discourse-33.mp3'
-    }
-  ];
-
-
-  document.addEventListener("DOMContentLoaded", function() {
-    function populateDropdown(audioFiles, selectElement) {
-      audioFiles.forEach((audio, index) => {
-        const option = document.createElement('option');
-        option.value = index;
-        option.textContent = audio.name;
-        selectElement.appendChild(option);
-      });
-    }
-
-    function setAudioSource(audioElement, sourceElement, audioFiles, index) {
-      const source = audioFiles[index].src;
-      sourceElement.src = source;
-      audioElement.load();
-
-      audioElement.addEventListener('loadedmetadata', function() {
-        const seekBarId = 'customSeekBar' + audioElement.id.slice(-1);
-        const seekBar = document.getElementById(seekBarId);
-        seekBar.value = 0;
-      });
-    }
-
-    function resetPlayPauseButton(playerId) {
-      const playPauseButton = document.querySelector(`#${playerId} .playPauseButton`);
-      playPauseButton.src = 'https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/95d2e1ef131bd1841959300e908665d7aa72a9b8/assets/Img/IAM_Play.png';
-    }
-
-    function updateAudioTime() {
-      const audioId = this.id.replace('customSeekBar', 'audioPlayer');
-      const audio = document.getElementById(audioId);
-      if (audio) {
-        audio.currentTime = (this.value / 100) * audio.duration;
-      }
-    }
-
-    function formatTime(seconds) {
-      const minutes = Math.floor(seconds / 60);
-      const remainderSeconds = Math.floor(seconds % 60);
-      const formattedSeconds = remainderSeconds < 10 ? '0' + remainderSeconds : remainderSeconds;
-      return `${minutes}:${formattedSeconds}`;
-    }
-
-    // Populating dropdowns
-    populateDropdown(audioFiles_v1, audioSelect1);
-    populateDropdown(audioFiles_v2, audioSelect2);
-    populateDropdown(audioFiles_v3, audioSelect3);
-
-    // Event listeners for dropdowns
-    audioSelect1.addEventListener("change", function() {
-      const selectedIndex = this.value;
-      setAudioSource(audioPlayer1, audioSource1, audioFiles_v1, selectedIndex);
-      resetPlayPauseButton('customAudioPlayer1');
-    });
-
-    audioSelect2.addEventListener("change", function() {
-      const selectedIndex = this.value;
-      setAudioSource(audioPlayer2, audioSource2, audioFiles_v2, selectedIndex);
-      resetPlayPauseButton('customAudioPlayer2');
-    });
-
-    audioSelect3.addEventListener("change", function() {
-      const selectedIndex = this.value;
-      setAudioSource(audioPlayer3, audioSource3, audioFiles_v3, selectedIndex);
-      resetPlayPauseButton('customAudioPlayer3');
-    });
-
-    // Play/Pause Button functionality
-    document.querySelectorAll('.playPauseButton').forEach(button => {
-      button.addEventListener('click', function() {
-        const audio = this.parentNode.querySelector('audio');
-        if (audio.paused) {
-          audio.play();
-          this.src = 'https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/cefb44d04013542471ecaa590d45ccfc2b4bfc16/assets/Img/IAM_Pause.png';
-        } else {
-          audio.pause();
-          this.src = 'https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/95d2e1ef131bd1841959300e908665d7aa72a9b8/assets/Img/IAM_Play.png';
-        }
-      });
-    });
-
-    /* Bug fix, error on audio players without time stamp.
-    // Time Update
-    document.querySelectorAll('audio').forEach(audio => {
-      audio.addEventListener('timeupdate', function() {
-        const progressBar = this.parentNode.querySelector('input[type="range"]');
-        progressBar.value = (this.currentTime / this.duration) * 100;
-        const currentTime = this.parentNode.querySelector('#currentTime' + audio.id.slice(-1));
-        currentTime.textContent = formatTime(this.currentTime);
-      });
-    });
-
-    // Duration Update
-    document.querySelectorAll('audio').forEach(audio => {
-      audio.addEventListener('durationchange', function() {
-        const duration = this.parentNode.querySelector('#duration' + audio.id.slice(-1));
-        duration.textContent = formatTime(this.duration);
-      });
-    });
-    */
-
-    // Time Update - Updated 5/29/2024
-    document.querySelectorAll('audio').forEach(audio => {
-      const currentTime = document.querySelector('#currentTime' + audio.id.slice(-1));
-      if (currentTime) {
-        audio.addEventListener('timeupdate', function() {
-          const progressBar = this.parentNode.querySelector('input[type="range"]');
-          progressBar.value = (this.currentTime / this.duration) * 100;
-          currentTime.textContent = formatTime(this.currentTime);
-        });
-      }
-    });
-
-
-    // Duration Update - if statement added 5/29/2024
-    document.querySelectorAll('audio').forEach(audio => {
-      const duration = document.querySelector('#duration' + audio.id.slice(-1));
-      if (duration) {
-        audio.addEventListener('durationchange', function() {
-          duration.textContent = formatTime(this.duration);
-        });
-      }
-    });
-
-    // Seekbar functionality
-    document.querySelectorAll('input[type="range"]').forEach(seekBar => {
-      seekBar.addEventListener('input', updateAudioTime);
-      seekBar.addEventListener('change', updateAudioTime);
-    });
-
-    // Preload audio for the first file in each array
-    preloadAudio(audioPlayer1, audioSource1, audioFiles_v1, 0);
-    preloadAudio(audioPlayer2, audioSource2, audioFiles_v2, 0);
-    preloadAudio(audioPlayer3, audioSource3, audioFiles_v3, 0);
-  });
-
-
-  function preloadAudio(audioElement, sourceElement, audioFiles, index) {
-
-    const source = audioFiles[index].src;
-    sourceElement.src = source;
-    audioElement.load();
-
-    // Reset time scroller to zero after loading
-    audioElement.onloadeddata = function() {
-      audioElement.currentTime = 0;
-    };
-  }
-
+  loadJSFiles(jsFiles);
 </script>
