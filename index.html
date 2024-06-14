@@ -545,19 +545,391 @@
 
   </body>
 
-  <script>
-    const url = 'https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/db43ce984fb79bb97dbb0c89e3ef2652b2ea9813/js/JS/';
-    var jsFiles = [url + 'Books.js', url + 'Copy.js', url + 'FlamePlay.js', url + 'PDF.js', url + 'Radio.js', url + 'URL.js'];
-  
-    function loadJSFiles(files) {
-      files.forEach(function(file) {
-        var script = document.createElement('script');
-        script.src = file;
-        document.head.appendChild(script);
+  <!-- Didn't load code. CDN blocked for this feature.
+    <script>
+      const url = ''
+      var jsFiles = [url + 'Books.js', url + 'Copy.js', url + 'FlamePlay.js', url + 'PDF.js', url + 'Radio.js', url + 'URL.js'];
+    
+      function loadJSFiles(files) {
+        files.forEach(function(file) {
+          var script = document.createElement('script');
+          script.src = file;
+          document.head.appendChild(script);
+        });
+      }
+    
+      loadJSFiles(jsFiles);
+    </script>
+  -->
+</html>
+
+
+<script>
+  function copyToClipboard(textToCopy) {
+    navigator.clipboard.writeText(textToCopy)
+      .then(() => {
+        alert("Text copied to clipboard!");
+      })
+      .catch(err => {
+        console.error('Failed to copy: ', err);
+      });
+  }
+</script>
+
+<script>
+document.addEventListener('visibilitychange', function() {
+  var video = document.getElementById('background-video');
+  if (!video) {
+    // console.error("Video element not found!");
+    return;
+  }
+  if (document.visibilityState === 'hidden') {
+    if (!video.paused) {
+      video.pause();
+      // console.log("Video paused.");
+    }
+  } else {
+    if (video.paused) {
+      video.play();
+      // console.log("Video played.");
+    }
+  }
+});
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var music = document.getElementById('music');
+    var playmusic = document.getElementById('button-music');
+
+    var voice = document.getElementById('voice');
+    var playvoice = document.getElementById('button-voice');
+
+    var flame = document.getElementById('flame');
+    var playflame = document.getElementById('button-flame');
+    var playImg = 'https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/95d2e1ef131bd1841959300e908665d7aa72a9b8/assets/Img/IAM_Play.png';
+    var pauseImg = 'https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/cefb44d04013542471ecaa590d45ccfc2b4bfc16/assets/Img/IAM_Pause.png';
+
+    // 5/31/2024 Fix for audio load on webpage load and change for audio src keep assign each time played...
+
+    function togglePlayPause(audio, button) {
+      var src = audio.getAttribute('data-src');
+      if (audio.paused) {
+        if (src) {
+          if (audio.src === "") {
+            audio.src = src;
+          }
+          audio.play();
+          button.src = pauseImg;
+        }
+      } else {
+        audio.pause();
+        button.src = playImg;
+      }
+    }
+
+    playmusic.addEventListener('click', function() {
+      togglePlayPause(music, playmusic);
+    });
+
+    playvoice.addEventListener('click', function() {
+      togglePlayPause(voice, playvoice);
+    });
+
+    playflame.addEventListener('click', function() {
+      togglePlayPause(flame, playflame);
+    });
+  });
+</script>
+
+<script>
+// Updated PDF viewer code 5/31/2024 --- V2
+const frame = document.getElementById('Digital-book');
+  const base = "https://drive.google.com/viewerng/viewer?embedded=true&url=https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/e6ac4aa9608aa6749dfdbf1a8f0b99b017defca6/assets/";
+  const books = {
+    V1: `${base}Vol1.pdf#toolbar=0&scrollbar=0`,
+    V2: `${base}Vol2.pdf#toolbar=0&scrollbar=0`,
+    V3: `${base}Vol3.pdf#toolbar=0&scrollbar=0`
+  };
+
+  function toggleFrame(input) {
+    const currentSrc = frame.src;
+
+    if (frame.style.display === 'none' || !currentSrc || currentSrc !== books[input]) {
+      frame.style.display = 'block';
+      frame.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+
+      if (input && books[input]) {
+        frame.src = books[input];
+      }
+    } else {
+      frame.style.display = 'none';
+    }
+  }
+
+  document.querySelectorAll('.purchase-button').forEach(button => {
+    const book = button.getAttribute('book');
+    if (book) {
+      // console.log(book);
+      button.addEventListener('click', function() {
+        toggleFrame(book);
       });
     }
-  
-    loadJSFiles(jsFiles);
-  </script>
+  });
+</script>
 
-</html>
+<script>
+  //Updated 6/14/2024
+  const url = 'https://media.githubusercontent.com/media/ProgramingGuy/SGF_PHX/main/assets/';
+
+  const audioSelect1 = document.getElementById("audioSelect_v1");
+  const audioSelect2 = document.getElementById("audioSelect_v2");
+  const audioSelect3 = document.getElementById("audioSelect_v3");
+  const audioSelect4 = document.getElementById("audioSelect_v4");
+
+  const audioPlayer1 = document.getElementById("audioPlayer1");
+  const audioPlayer2 = document.getElementById("audioPlayer2");
+  const audioPlayer3 = document.getElementById("audioPlayer3");
+  const audioPlayer4 = document.getElementById("audioPlayer4");
+
+  const audioSource1 = document.getElementById("audioSource1");
+  const audioSource2 = document.getElementById("audioSource2");
+  const audioSource3 = document.getElementById("audioSource3");
+  const audioSource4 = document.getElementById("audioSource4");
+
+// Update audioFiles_v1 to audioFiles_v4
+const audioFiles_v1 = [
+    { name: "Foreword", src: url + "Vol1/Foreword.mp3" },
+    { name: "Chapter 1", src: url + "Vol1/Chapter-01.mp3" },
+    { name: "Chapter 2", src: url + "Vol1/Chapter-02.mp3" },
+    { name: "Chapter 3", src: url + "Vol1/Chapter-03.mp3" },
+    { name: "Chapter 4", src: url + "Vol1/Chapter-04.mp3" },
+    { name: "Chapter 5", src: url + "Vol1/Chapter-05.mp3" },
+    { name: "Chapter 6", src: url + "Vol1/Chapter-06.mp3" },
+    { name: "Chapter 7", src: url + "Vol1/Chapter-07.mp3" },
+    { name: "Chapter 8", src: url + "Vol1/Chapter-08.mp3" },
+    { name: "Chapter 9", src: url + "Vol1/Chapter-09.mp3" }
+];
+
+const audioFiles_v2 = [
+    { name: "Foreword", src: url + "Vol2/Foreword.mp3" },
+    { name: "Chapter 1", src: url + "Vol2/Chapter-01.mp3" },
+    { name: "Chapter 2", src: url + "Vol2/Chapter-02.mp3" },
+    { name: "Chapter 3", src: url + "Vol2/Chapter-03.mp3" },
+    { name: "Chapter 4", src: url + "Vol2/Chapter-04.mp3" },
+    { name: "Chapter 5", src: url + "Vol2/Chapter-05.mp3" },
+    { name: "Chapter 6", src: url + "Vol2/Chapter-06.mp3" },
+    { name: "Chapter 7", src: url + "Vol2/Chapter-07.mp3" },
+    { name: "Chapter 8", src: url + "Vol2/Chapter-08.mp3" },
+    { name: "Chapter 9", src: url + "Vol2/Chapter-09.mp3" },
+    { name: "Chapter 10", src: url + "Vol2/Chapter-10.mp3" },
+    { name: "Chapter 11", src: url + "Vol2/Chapter-11.mp3" }
+];
+
+const audioFiles_v3 = [
+    { name: 'Foreword', src: url + 'Vol3/Foreword.mp3' },
+    { name: 'Discourse 1', src: url + 'Vol3/Discourse-01.mp3' },
+    { name: 'Discourse 2', src: url + 'Vol3/Discourse-02.mp3' },
+    { name: 'Discourse 3', src: url + 'Vol3/Discourse-03.mp3' },
+    { name: 'Discourse 4', src: url + 'Vol3/Discourse-04.mp3' },
+    { name: 'Discourse 5', src: url + 'Vol3/Discourse-05.mp3' },
+    { name: 'Discourse 6', src: url + 'Vol3/Discourse-06.mp3' },
+    { name: 'Discourse 7', src: url + 'Vol3/Discourse-07.mp3' },
+    { name: 'Discourse 8', src: url + 'Vol3/Discourse-08.mp3' },
+    { name: 'Discourse 9', src: url + 'Vol3/Discourse-09.mp3' },
+    { name: 'Discourse 10', src: url + 'Vol3/Discourse-10.mp3' },
+    { name: 'Discourse 11', src: url + 'Vol3/Discourse-11.mp3' },
+    { name: 'Discourse 12', src: url + 'Vol3/Discourse-12.mp3' },
+    { name: 'Discourse 13', src: url + 'Vol3/Discourse-13.mp3' },
+    { name: 'Discourse 14', src: url + 'Vol3/Discourse-14.mp3' },
+    { name: 'Discourse 15', src: url + 'Vol3/Discourse-15.mp3' },
+    { name: 'Discourse 16', src: url + 'Vol3/Discourse-16.mp3' },
+    { name: 'Discourse 17', src: url + 'Vol3/Discourse-17.mp3' },
+    { name: 'Discourse 18', src: url + 'Vol3/Discourse-18.mp3' },
+    { name: 'Discourse 19', src: url + 'Vol3/Discourse-19.mp3' },
+    { name: 'Discourse 20', src: url + 'Vol3/Discourse-20.mp3' },
+    { name: 'Discourse 21', src: url + 'Vol3/Discourse-21.mp3' },
+    { name: 'Discourse 22', src: url + 'Vol3/Discourse-22.mp3' },
+    { name: 'Discourse 23', src: url + 'Vol3/Discourse-23.mp3' },
+    { name: 'Discourse 24', src: url + 'Vol3/Discourse-24.mp3' },
+    { name: 'Discourse 25', src: url + 'Vol3/Discourse-25.mp3' },
+    { name: 'Discourse 26', src: url + 'Vol3/Discourse-26.mp3' },
+    { name: 'Discourse 27', src: url + 'Vol3/Discourse-27.mp3' },
+    { name: 'Discourse 28', src: url + 'Vol3/Discourse-28.mp3' },
+    { name: 'Discourse 29', src: url + 'Vol3/Discourse-29.mp3' },
+    { name: 'Discourse 30', src: url + 'Vol3/Discourse-30.mp3' },
+    { name: 'Discourse 31', src: url + 'Vol3/Discourse-31.mp3' },
+    { name: 'Discourse 32', src: url + 'Vol3/Discourse-32.mp3' },
+    { name: 'Discourse 33', src: url + 'Vol3/Discourse-33.mp3' }
+];
+
+const audioFiles_v4 = [
+    { name: 'The Word I AM The Use of Li', src: url + 'Radio/01-The-Word-I-AM-The-Use-of-Li.mp3' },
+    { name: 'Beloved Jesus The I AM Stat', src: url + 'Radio/02-Beloved-Jesus-The-I-AM-Stat.mp3' },
+    { name: 'The I AM Presence Violet Fl', src: url + 'Radio/03-The-I-AM-Presence-Violet-Fl.mp3' },
+    { name: 'Attention Vision Qualificat', src: url + 'Radio/04-Attention-Vision-Qualificat.mp3' },
+    { name: 'Attention to the I AM Prese', src: url + 'Radio/05-Attention-to-the-I-AM-Prese.mp3' },
+    { name: 'Obedience to the I AM Prese', src: url + 'Radio/06-Obedience-to-the-I-AM-Prese.mp3' },
+    { name: 'Divine Service', src: url + 'Radio/07-Divine-Service-Americas-Rol.mp3' },
+    { name: 'Self-Control The Attention', src: url + 'Radio/08-Self-Control-The-Attention.mp3' },
+    { name: 'Contemplation Business', src: url + 'Radio/09-Contemplation-Business.mp3' },
+    { name: 'Love to the Mighty I AM Pre', src: url + 'Radio/10-Love-to-the-Mighty-I-AM-Pre.mp3' },
+    { name: 'Give to the Mighty I AM Pre', src: url + 'Radio/11-Give-to-the-Mighty-I-AM-Pre.mp3' },
+    { name: 'Use of the Mighty I AM Pres', src: url + 'Radio/12-Use-of-the-Mighty-I-AM-Pres.mp3' },
+    { name: 'Power of the I AM Presence', src: url + 'Radio/13-Power-of-the-I-AM-Presence.mp3' },
+    { name: 'Faith Hope and Charity', src: url + 'Radio/14-Faith-Hope-and-Charity.mp3' },
+    { name: 'Attention to the I AM Prese', src: url + 'Radio/15-Attention-to-the-I-AM-Prese.mp3' },
+    { name: 'Beloved Jesus Ray Other Ray', src: url + 'Radio/16-Beloved-Jesus-Ray-Other-Ray.mp3' },
+    { name: 'The I AM Presence and Ameri', src: url + 'Radio/17-The-I-AM-Presence-and-Ameri.mp3' },
+    { name: 'Gods Will and Free Will', src: url + 'Radio/18-Gods-Will-and-Free-Will.mp3' },
+    { name: 'Beloved Jesus and The Ascen', src: url + 'Radio/19-Beloved-Jesus-and-The-Ascen.mp3' },
+    { name: 'Anchor to the I AM Presence', src: url + 'Radio/20-Anchor-to-the-I-AM-Presence.mp3' },
+    { name: 'The I AM Presence The Word', src: url + 'Radio/21-The-I-AM-Presence-The-Word.mp3' },
+    { name: 'Attention to the I AM Prese', src: url + 'Radio/22-Attention-to-the-I-AM-Prese.mp3' },
+    { name: 'The I AM Beloved Jesus Teac', src: url + 'Radio/23-The-I-AM-Beloved-Jesus-Teac.mp3' },
+    { name: 'Self-Correction', src: url + 'Radio/24-Self-Correction.mp3' },
+    { name: 'I AM Creating Perfection', src: url + 'Radio/25-I-AM-Creating-Perfection.mp3' },
+    { name: 'I AM The Forgiving Sacred F', src: url + 'Radio/26-I-AM-The-Forgiving-Sacred-F.mp3' }
+];
+
+  document.addEventListener("DOMContentLoaded", function() {
+    function populateDropdown(audioFiles, selectElement) {
+      audioFiles.forEach((audio, index) => {
+        const option = document.createElement('option');
+        option.value = index;
+        option.textContent = audio.name;
+        selectElement.appendChild(option);
+      });
+    }
+
+    function setAudioSource(audioElement, sourceElement, audioFiles, index) {
+      const source = audioFiles[index].src;
+      sourceElement.src = source;
+      audioElement.load();
+
+      audioElement.addEventListener('loadedmetadata', function() {
+        const seekBarId = 'customSeekBar' + audioElement.id.slice(-1);
+        const seekBar = document.getElementById(seekBarId);
+        seekBar.value = 0;
+      });
+    }
+
+    function resetPlayPauseButton(playerId) {
+      const playPauseButton = document.querySelector(`#${playerId} .playPauseButton`);
+      playPauseButton.src = 'https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/95d2e1ef131bd1841959300e908665d7aa72a9b8/assets/Img/IAM_Play.png';
+    }
+
+    function updateAudioTime() {
+      const audioId = this.id.replace('customSeekBar', 'audioPlayer');
+      const audio = document.getElementById(audioId);
+      if (audio) {
+        audio.currentTime = (this.value / 100) * audio.duration;
+      }
+    }
+
+    function formatTime(seconds) {
+      const minutes = Math.floor(seconds / 60);
+      const remainderSeconds = Math.floor(seconds % 60);
+      const formattedSeconds = remainderSeconds < 10 ? '0' + remainderSeconds : remainderSeconds;
+      return `${minutes}:${formattedSeconds}`;
+    }
+
+    // Populating dropdowns
+    populateDropdown(audioFiles_v1, audioSelect1);
+    populateDropdown(audioFiles_v2, audioSelect2);
+    populateDropdown(audioFiles_v3, audioSelect3);
+    populateDropdown(audioFiles_v4, audioSelect4);
+
+    // Event listeners for dropdowns
+    audioSelect1.addEventListener("change", function() {
+      const selectedIndex = this.value;
+      setAudioSource(audioPlayer1, audioSource1, audioFiles_v1, selectedIndex);
+      resetPlayPauseButton('customAudioPlayer1');
+    });
+
+    audioSelect2.addEventListener("change", function() {
+      const selectedIndex = this.value;
+      setAudioSource(audioPlayer2, audioSource2, audioFiles_v2, selectedIndex);
+      resetPlayPauseButton('customAudioPlayer2');
+    });
+
+    audioSelect3.addEventListener("change", function() {
+      const selectedIndex = this.value;
+      setAudioSource(audioPlayer3, audioSource3, audioFiles_v3, selectedIndex);
+      resetPlayPauseButton('customAudioPlayer3');
+    });
+
+    audioSelect4.addEventListener("change", function() {
+      const selectedIndex = this.value;
+      setAudioSource(audioPlayer4, audioSource4, audioFiles_v4, selectedIndex);
+      resetPlayPauseButton('customAudioPlayer4');
+    });
+
+    // Play/Pause Button functionality
+    document.querySelectorAll('.playPauseButton').forEach(button => {
+      button.addEventListener('click', function() {
+        const audio = this.parentNode.querySelector('audio');
+        if (audio.paused) {
+          audio.play();
+          this.src = 'https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/cefb44d04013542471ecaa590d45ccfc2b4bfc16/assets/Img/IAM_Pause.png';
+        } else {
+          audio.pause();
+          this.src = 'https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/95d2e1ef131bd1841959300e908665d7aa72a9b8/assets/Img/IAM_Play.png';
+        }
+      });
+    });
+
+    // Time Update - Updated 5/29/2024
+    document.querySelectorAll('audio').forEach(audio => {
+      const currentTime = document.querySelector('#currentTime' + audio.id.slice(-1));
+      if (currentTime) {
+        audio.addEventListener('timeupdate', function() {
+          const progressBar = this.parentNode.querySelector('input[type="range"]');
+          progressBar.value = (this.currentTime / this.duration) * 100;
+          currentTime.textContent = formatTime(this.currentTime);
+        });
+      }
+    });
+
+
+    // Duration Update - if statement added 5/29/2024
+    document.querySelectorAll('audio').forEach(audio => {
+      const duration = document.querySelector('#duration' + audio.id.slice(-1));
+      if (duration) {
+        audio.addEventListener('durationchange', function() {
+          duration.textContent = formatTime(this.duration);
+        });
+      }
+    });
+
+    // Seekbar functionality
+    document.querySelectorAll('input[type="range"]').forEach(seekBar => {
+      seekBar.addEventListener('input', updateAudioTime);
+      seekBar.addEventListener('change', updateAudioTime);
+    });
+
+    // Preload audio for the first file in each array
+    preloadAudio(audioPlayer1, audioSource1, audioFiles_v1, 0);
+    preloadAudio(audioPlayer2, audioSource2, audioFiles_v2, 0);
+    preloadAudio(audioPlayer3, audioSource3, audioFiles_v3, 0);
+    preloadAudio(audioPlayer4, audioSource4, audioFiles_v4, 0);
+  });
+
+
+  function preloadAudio(audioElement, sourceElement, audioFiles, index) {
+
+    const source = audioFiles[index].src;
+    sourceElement.src = source;
+    audioElement.load();
+    console.log('Audio Loded: ' + source)
+
+    // Reset time scroller to zero after loading
+    audioElement.onloadeddata = function() {
+      audioElement.currentTime = 0;
+    };
+  }
+
+</script>
