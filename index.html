@@ -545,18 +545,19 @@
 
   </body>
 
+  <script>
+    const url = 'https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/db43ce984fb79bb97dbb0c89e3ef2652b2ea9813/js/JS/';
+    var jsFiles = [url + 'Books.js', url + 'Copy.js', url + 'FlamePlay.js', url + 'PDF.js', url + 'Radio.js', url + 'URL.js'];
+  
+    function loadJSFiles(files) {
+      files.forEach(function(file) {
+        var script = document.createElement('script');
+        script.src = file;
+        document.head.appendChild(script);
+      });
+    }
+  
+    loadJSFiles(jsFiles);
+  </script>
+
 </html>
-
-<script>
-  var jsFiles = ['js/Books.js', 'js/Copy.js', 'js/FlamePlay.js', 'js/PDF.js', 'js/Radio.js', 'js/URL.js'];
-
-  function loadJSFiles(files) {
-    files.forEach(function(file) {
-      var script = document.createElement('script');
-      script.src = file;
-      document.head.appendChild(script);
-    });
-  }
-
-  loadJSFiles(jsFiles);
-</script>
