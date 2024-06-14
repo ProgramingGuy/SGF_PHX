@@ -65,7 +65,7 @@
           <ul class="nav-buttons">
             <li><button type="button" class="purchase-button" id="home">Home</button></li>
             <li><button type="button" class="purchase-button" id="test" data-url="test">Test</button></li>
-           <!-- <li><button type="button" class="purchase-button" id="admin" data-url="admin">Login</button></li> -->
+            <!-- <li><button type="button" class="purchase-button" id="admin" data-url="admin">Login</button></li> -->
           </ul>
         </nav>
 
@@ -80,10 +80,11 @@
             display: inline-block;
             margin-right: 10px;
           }
+
         </style>
 
         <h1>Page for testing new features.</h1>
-        
+
         <script>
           document.addEventListener('DOMContentLoaded', function() {
             function handleButtonClick(buttonId, defaultURL) {
@@ -132,142 +133,142 @@
 
 
       <!-- Audio Player 4 -->
-       <div class="radio">
-            <div class="audio-container">
-              <p>Audio Book</p>
-              <div id="customAudioPlayer4">
-                <audio id="audioPlayer4" controls>
-                  <source id="audioSource4" src="" type="audio/mpeg">
-                </audio>
-                <img class='playPauseButton' src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/95d2e1ef131bd1841959300e908665d7aa72a9b8/assets/Img/IAM_Play.png" width=100 height="100">
-                <div class="audio-controls">
-                  <input type="range" id="customSeekBar4" min="0" value="0" step="1">
-                  <span id="currentTime4">00:00</span> / <span id="duration4">00:00</span>
-                </div>
-              </div>
-              <div id="dropdownContainer">
-                <select id="audioSelect_v4">
-                  <!-- Options will be populated dynamically -->
-                </select>
-              </div>
+      <div class="radio">
+        <div class="audio-container">
+          <p>Audio Book</p>
+          <div id="customAudioPlayer4">
+            <audio id="audioPlayer4" controls>
+              <source id="audioSource4" src="" type="audio/mpeg">
+            </audio>
+            <img class='playPauseButton' src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/95d2e1ef131bd1841959300e908665d7aa72a9b8/assets/Img/IAM_Play.png" width=100 height="100">
+            <div class="audio-controls">
+              <input type="range" id="customSeekBar4" min="0" value="0" step="1">
+              <span id="currentTime4">00:00</span> / <span id="duration4">00:00</span>
             </div>
+          </div>
+          <div id="dropdownContainer">
+            <select id="audioSelect_v4">
+              <!-- Options will be populated dynamically -->
+            </select>
+          </div>
+        </div>
 
         <section id="Books" class="centered-section">
           <h2>Start Now</h2>
 
           <div class="book-container">
 
-          <div class="book-item">
-            <img src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/1cc1335ce32ce70f0bd09fe98f595ec94150eaeb/assets/Img/V1.png" width=auto height="180" alt="Volume 1">
+            <div class="book-item">
+              <img src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/1cc1335ce32ce70f0bd09fe98f595ec94150eaeb/assets/Img/V1.png" width=auto height="180" alt="Volume 1">
 
-            <!-- Hover Data / Text -->
-            <div class="hover-container">
-              <h1 class="hover-text">Volume 1. Unveiled Mysteries</h1>
-              <div class="info-box">Mr. G. W. Ballard wrote under the pen name of Godfre Ray King.</div>
-            </div>
+              <!-- Hover Data / Text -->
+              <div class="hover-container">
+                <h1 class="hover-text">Volume 1. Unveiled Mysteries</h1>
+                <div class="info-box">Mr. G. W. Ballard wrote under the pen name of Godfre Ray King.</div>
+              </div>
 
-            <button class="purchase-button">
-              <a href="https://saintgermainpress.com/volume-01-unveiled-mysteries/" target="_blank">Purchase a Physical Copy</a>
-            </button>
+              <button class="purchase-button">
+                <a href="https://saintgermainpress.com/volume-01-unveiled-mysteries/" target="_blank">Purchase a Physical Copy</a>
+              </button>
 
-            <button class="purchase-button" book="V1">View the Digital Copy</button>
+              <button class="purchase-button" book="V1">View the Digital Copy</button>
 
-            <!-- Audio Player 1 -->
-            <div class="audio-container">
-              <p>Audio Book</p>
-              <div id="customAudioPlayer1">
-                <audio id="audioPlayer1" controls>
-                  <source id="audioSource1" src="" type="audio/mpeg">
-                </audio>
-                <img class='playPauseButton' src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/95d2e1ef131bd1841959300e908665d7aa72a9b8/assets/Img/IAM_Play.png" width="100" height="100">
-                <div class="audio-controls">
-                  <input type="range" id="customSeekBar1" min="0" value="0" step="1">
-                  <span id="currentTime1">00:00</span> / <span id="duration1">00:00</span>
+              <!-- Audio Player 1 -->
+              <div class="audio-container">
+                <p>Audio Book</p>
+                <div id="customAudioPlayer1">
+                  <audio id="audioPlayer1" controls>
+                    <source id="audioSource1" src="" type="audio/mpeg">
+                  </audio>
+                  <img class='playPauseButton' src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/95d2e1ef131bd1841959300e908665d7aa72a9b8/assets/Img/IAM_Play.png" width="100" height="100">
+                  <div class="audio-controls">
+                    <input type="range" id="customSeekBar1" min="0" value="0" step="1">
+                    <span id="currentTime1">00:00</span> / <span id="duration1">00:00</span>
+                  </div>
+                </div>
+                <div id="dropdownContainer">
+                  <select id="audioSelect_v1">
+                    <!-- Options will be populated dynamically -->
+                  </select>
                 </div>
               </div>
-              <div id="dropdownContainer">
-                <select id="audioSelect_v1">
-                  <!-- Options will be populated dynamically -->
-                </select>
+
+            </div> <!-- end of book section -->
+
+            <div class="book-item">
+              <img src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/1cc1335ce32ce70f0bd09fe98f595ec94150eaeb/assets/Img/V2.png" width=auto height="180" alt="Volume 2">
+              <!-- Hover Data / Text -->
+              <div class="hover-container">
+                <h1 class="hover-text">Volume 2. The Magic Presence</h1>
+                <div class="info-box">By Godfre Ray King.</div>
               </div>
-            </div>
-
-          </div> <!-- end of book section -->
-
-          <div class="book-item">
-            <img src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/1cc1335ce32ce70f0bd09fe98f595ec94150eaeb/assets/Img/V2.png" width=auto height="180" alt="Volume 2">
-            <!-- Hover Data / Text -->
-            <div class="hover-container">
-              <h1 class="hover-text">Volume 2. The Magic Presence</h1>
-              <div class="info-box">By Godfre Ray King.</div>
-            </div>
 
 
-            <button class="purchase-button">
-              <a href="https://saintgermainpress.com/volume-02-the-magic-presence/" target="_blank">Purchase a Physical Copy</a>
-            </button>
+              <button class="purchase-button">
+                <a href="https://saintgermainpress.com/volume-02-the-magic-presence/" target="_blank">Purchase a Physical Copy</a>
+              </button>
 
-            <button class="purchase-button" book="V2">View the Digital Copy</button>
+              <button class="purchase-button" book="V2">View the Digital Copy</button>
 
-            <!-- Audio Player 2 -->
-            <div class="audio-container">
-              <p>Audio Book</p>
-              <div id="customAudioPlayer2">
-                <audio id="audioPlayer2" controls>
-                  <source id="audioSource2" src="" type="audio/mpeg">
-                </audio>
-                <img class='playPauseButton' src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/95d2e1ef131bd1841959300e908665d7aa72a9b8/assets/Img/IAM_Play.png" width="100" height="100">
-                <div class="audio-controls">
-                  <input type="range" id="customSeekBar2" min="0" value="0" step="1">
-                  <span id="currentTime2">00:00</span> / <span id="duration2">00:00</span>
+              <!-- Audio Player 2 -->
+              <div class="audio-container">
+                <p>Audio Book</p>
+                <div id="customAudioPlayer2">
+                  <audio id="audioPlayer2" controls>
+                    <source id="audioSource2" src="" type="audio/mpeg">
+                  </audio>
+                  <img class='playPauseButton' src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/95d2e1ef131bd1841959300e908665d7aa72a9b8/assets/Img/IAM_Play.png" width="100" height="100">
+                  <div class="audio-controls">
+                    <input type="range" id="customSeekBar2" min="0" value="0" step="1">
+                    <span id="currentTime2">00:00</span> / <span id="duration2">00:00</span>
+                  </div>
+                </div>
+                <div id="dropdownContainer">
+                  <select id="audioSelect_v2">
+                    <!-- Options will be populated dynamically -->
+                  </select>
                 </div>
               </div>
-              <div id="dropdownContainer">
-                <select id="audioSelect_v2">
-                  <!-- Options will be populated dynamically -->
-                </select>
+            </div> <!-- end of book section -->
+
+            <div class="book-item">
+              <img src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/1cc1335ce32ce70f0bd09fe98f595ec94150eaeb/assets/Img/V3.png" width=auto height="180" alt="Volume 3">
+
+              <!-- Hover Data / Text -->
+              <div class="hover-container">
+                <h1 class="hover-text">Volume 3. “I AM” Discourses</h1>
+                <div class="info-box">By Ascended Master Saint Germain.</div>
               </div>
-            </div>
-          </div> <!-- end of book section -->
-
-          <div class="book-item">
-            <img src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/1cc1335ce32ce70f0bd09fe98f595ec94150eaeb/assets/Img/V3.png" width=auto height="180" alt="Volume 3">
-
-            <!-- Hover Data / Text -->
-            <div class="hover-container">
-              <h1 class="hover-text">Volume 3. “I AM” Discourses</h1>
-              <div class="info-box">By Ascended Master Saint Germain.</div>
-            </div>
 
 
-            <button class="purchase-button">
-              <a href="https://saintgermainpress.com/volume-3-the-i-am-discourses/" target="_blank">Purchase a Physical Copy</a>
-            </button>
+              <button class="purchase-button">
+                <a href="https://saintgermainpress.com/volume-3-the-i-am-discourses/" target="_blank">Purchase a Physical Copy</a>
+              </button>
 
-            <button class="purchase-button" book="V3">View the Digital Copy</button>
+              <button class="purchase-button" book="V3">View the Digital Copy</button>
 
 
-            <!-- Audio Player 3 -->
-            <div class="audio-container">
-              <p>Audio Book</p>
-              <div id="customAudioPlayer3">
-                <audio id="audioPlayer3" controls>
-                  <source id="audioSource3" src="" type="audio/mpeg">
-                </audio>
-                <img class='playPauseButton' src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/95d2e1ef131bd1841959300e908665d7aa72a9b8/assets/Img/IAM_Play.png" width=100 height="100">
-                <div class="audio-controls">
-                  <input type="range" id="customSeekBar3" min="0" value="0" step="1">
-                  <span id="currentTime3">00:00</span> / <span id="duration3">00:00</span>
+              <!-- Audio Player 3 -->
+              <div class="audio-container">
+                <p>Audio Book</p>
+                <div id="customAudioPlayer3">
+                  <audio id="audioPlayer3" controls>
+                    <source id="audioSource3" src="" type="audio/mpeg">
+                  </audio>
+                  <img class='playPauseButton' src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/95d2e1ef131bd1841959300e908665d7aa72a9b8/assets/Img/IAM_Play.png" width=100 height="100">
+                  <div class="audio-controls">
+                    <input type="range" id="customSeekBar3" min="0" value="0" step="1">
+                    <span id="currentTime3">00:00</span> / <span id="duration3">00:00</span>
+                  </div>
+                </div>
+                <div id="dropdownContainer">
+                  <select id="audioSelect_v3">
+                    <!-- Options will be populated dynamically -->
+                  </select>
                 </div>
               </div>
-              <div id="dropdownContainer">
-                <select id="audioSelect_v3">
-                  <!-- Options will be populated dynamically -->
-                </select>
-              </div>
-            </div>
 
-          </div><!-- end of book section -->
+            </div><!-- end of book section -->
 
             <div id="pdfContainer"></div> <!-- Specify the target container -->
 
@@ -278,265 +279,283 @@
 
           <!DOCTYPE html>
           <html lang="en">
-          <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>PDF Viewer</title>
-            <style>
-              /* Hide scrollbar for the book container */
-              .pdf-container::-webkit-scrollbar {
-                display: none; /* For Chrome, Safari, and Opera */
-              }
-              .pdf-container {
-                scrollbar-width: none; /* For Firefox */
-                -ms-overflow-style: none; /* For Internet Explorer and Edge */
-              }
-          
-              /* Center the container */
-              .container {
-                display: flex;
-                flex-direction: column;
-                justify-content: center; /* Horizontally center */
-                align-items: center; /* Vertically center */
-              }
-          
-              .pdf-container {
-                overflow-y: auto; /* Enable vertical scrolling */
-                position: relative;
-              }
-          
-              .page {
-                margin-bottom: 20px; /* Add space between pages */
-              }
-          
-              #pageNumbers {
-                color: violet; /* Change text color to violet */
-                margin-bottom: 10px; /* Add space below the text */
-              }
-          
-              #fullscreenButton {
-                margin-top: 10px; /* Add space above the button */
-              }
-          
-              /* Set white background color in full-screen mode */
-              .container.fullscreen {
-                background-color: white;
-              }
-          
-              .hidden {
-                display: none;
-              }
-            </style>
-          </head>
-          <body>
-            <div id="pdfViewer"></div>
-          
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
-            <script>
-              let currentPdfViewer = null;
-              let currentPdfDocument = null;
-          
-              function loadPDF(pdfUrl) {
-                // Check if the PDF is already loaded
-                if (currentPdfDocument === pdfUrl) {
-                  // Toggle visibility of the PDF container
-                  const pdfContainer = document.getElementById('pdfContainer');
-                  pdfContainer.classList.toggle('hidden');
-                  return; // Exit the function, no need to load PDF again
+
+            <head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>PDF Viewer</title>
+              <style>
+                /* Hide scrollbar for the book container */
+                .pdf-container::-webkit-scrollbar {
+                  display: none;
+                  /* For Chrome, Safari, and Opera */
                 }
-          
-                // Remove previously loaded PDF viewer if exists
-                if (currentPdfViewer) {
-                  currentPdfViewer.remove();
+
+                .pdf-container {
+                  scrollbar-width: none;
+                  /* For Firefox */
+                  -ms-overflow-style: none;
+                  /* For Internet Explorer and Edge */
                 }
-          
-                const container = document.createElement('div');
-                container.classList.add('container');
-                currentPdfViewer = container;
-          
-                const fullscreenButton = document.createElement('button');
-                fullscreenButton.textContent = 'Full Screen';
-                fullscreenButton.id = 'fullscreenButton'; // Assign ID for styling
-                fullscreenButton.classList.add('purchase-button');
-          
-                const pageNumbersIndicator = document.createElement('span');
-                pageNumbersIndicator.id = 'pageNumbers';
-                pageNumbersIndicator.textContent = 'Page: 1, Book Page: Cover';
-          
-                const pdfContainer = document.createElement('div');
-                pdfContainer.classList.add('pdf-container');
-                pdfContainer.id = 'pdfContainer';
-          
-                container.appendChild(fullscreenButton);
-                container.appendChild(pageNumbersIndicator);
-                container.appendChild(pdfContainer);
-                
-                document.getElementById('pdfContainer').appendChild(container);
-          
-          
-                let pdfDocument;
-                const pagesRendered = {};
-          
-                pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.worker.min.js';
-          
-                pdfjsLib.getDocument(pdfUrl).promise.then(function(pdf) {
-                  pdfDocument = pdf;
-                  renderAllPages();
-                  updatePageNumbers();
-                }).catch(function(error) {
-                  console.error('Error loading PDF:', error);
-                });
-          
-                function renderAllPages() {
-                  for (let i = 1; i <= pdfDocument.numPages; i++) {
-                    renderPage(i);
+
+                /* Center the container */
+                .container {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  /* Horizontally center */
+                  align-items: center;
+                  /* Vertically center */
+                }
+
+                .pdf-container {
+                  overflow-y: auto;
+                  /* Enable vertical scrolling */
+                  position: relative;
+                }
+
+                .page {
+                  margin-bottom: 20px;
+                  /* Add space between pages */
+                }
+
+                #pageNumbers {
+                  color: violet;
+                  /* Change text color to violet */
+                  margin-bottom: 10px;
+                  /* Add space below the text */
+                }
+
+                #fullscreenButton {
+                  margin-top: 10px;
+                  /* Add space above the button */
+                }
+
+                /* Set white background color in full-screen mode */
+                .container.fullscreen {
+                  background-color: white;
+                }
+
+                .hidden {
+                  display: none;
+                }
+
+              </style>
+            </head>
+
+            <body>
+              <div id="pdfViewer"></div>
+
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+              <script>
+                let currentPdfViewer = null;
+                let currentPdfDocument = null;
+
+                function loadPDF(pdfUrl) {
+                  // Check if the PDF is already loaded
+                  if (currentPdfDocument === pdfUrl) {
+                    // Toggle visibility of the PDF container
+                    const pdfContainer = document.getElementById('pdfContainer');
+                    pdfContainer.classList.toggle('hidden');
+                    return; // Exit the function, no need to load PDF again
                   }
-                }
-          
-                function renderPage(pageNumber) {
-                  pdfDocument.getPage(pageNumber).then(function(page) {
-                    const viewport = page.getViewport({ scale: 1 });
-                    const scale = getScaleFactor(viewport);
-                    const viewportScaled = page.getViewport({ scale });
-          
-                    const canvas = document.createElement('canvas');
-                    const context = canvas.getContext('2d');
-                    canvas.width = viewportScaled.width;
-                    canvas.height = viewportScaled.height;
-          
-                    const renderContext = {
-                      canvasContext: context,
-                      viewport: viewportScaled
-                    };
-          
-                    page.render(renderContext).promise.then(function() {
-                      const pageDiv = document.createElement('div');
-                      pageDiv.className = 'page';
-                      pageDiv.appendChild(canvas);
-                      pdfContainer.appendChild(pageDiv);
-                      pagesRendered[pageNumber] = true;
-                      updateContainerSize();
+
+                  // Remove previously loaded PDF viewer if exists
+                  if (currentPdfViewer) {
+                    currentPdfViewer.remove();
+                  }
+
+                  const container = document.createElement('div');
+                  container.classList.add('container');
+                  currentPdfViewer = container;
+
+                  const fullscreenButton = document.createElement('button');
+                  fullscreenButton.textContent = 'Full Screen';
+                  fullscreenButton.id = 'fullscreenButton'; // Assign ID for styling
+                  fullscreenButton.classList.add('purchase-button');
+
+                  const pageNumbersIndicator = document.createElement('span');
+                  pageNumbersIndicator.id = 'pageNumbers';
+                  pageNumbersIndicator.textContent = 'Page: 1, Book Page: Cover';
+
+                  const pdfContainer = document.createElement('div');
+                  pdfContainer.classList.add('pdf-container');
+                  pdfContainer.id = 'pdfContainer';
+
+                  container.appendChild(fullscreenButton);
+                  container.appendChild(pageNumbersIndicator);
+                  container.appendChild(pdfContainer);
+
+                  document.getElementById('pdfContainer').appendChild(container);
+
+
+                  let pdfDocument;
+                  const pagesRendered = {};
+
+                  pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.worker.min.js';
+
+                  pdfjsLib.getDocument(pdfUrl).promise.then(function(pdf) {
+                    pdfDocument = pdf;
+                    renderAllPages();
+                    updatePageNumbers();
+                  }).catch(function(error) {
+                    console.error('Error loading PDF:', error);
+                  });
+
+                  function renderAllPages() {
+                    for (let i = 1; i <= pdfDocument.numPages; i++) {
+                      renderPage(i);
+                    }
+                  }
+
+                  function renderPage(pageNumber) {
+                    pdfDocument.getPage(pageNumber).then(function(page) {
+                      const viewport = page.getViewport({
+                        scale: 1
+                      });
+                      const scale = getScaleFactor(viewport);
+                      const viewportScaled = page.getViewport({
+                        scale
+                      });
+
+                      const canvas = document.createElement('canvas');
+                      const context = canvas.getContext('2d');
+                      canvas.width = viewportScaled.width;
+                      canvas.height = viewportScaled.height;
+
+                      const renderContext = {
+                        canvasContext: context,
+                        viewport: viewportScaled
+                      };
+
+                      page.render(renderContext).promise.then(function() {
+                        const pageDiv = document.createElement('div');
+                        pageDiv.className = 'page';
+                        pageDiv.appendChild(canvas);
+                        pdfContainer.appendChild(pageDiv);
+                        pagesRendered[pageNumber] = true;
+                        updateContainerSize();
+                      });
                     });
-                  });
-                }
-          
-                function updateContainerSize() {
-                  const pageDivs = document.querySelectorAll('.page');
-                  let maxWidth = 0;
-                  let maxHeight = 0;
-          
-                  pageDivs.forEach(function(pageDiv) {
-                    const rect = pageDiv.getBoundingClientRect();
-                    maxWidth = Math.max(maxWidth, rect.width);
-                    maxHeight = Math.max(maxHeight, rect.height);
-                  });
-          
-                  container.style.width = maxWidth + 'px';
-                  container.style.height = maxHeight + 'px';
-                }
-                
-                function updatePageNumbers() {
-                  const scrollTop = pdfContainer.scrollTop;
-                  const pageHeight = pdfContainer.scrollHeight / pdfDocument.numPages;
-                  const currentPage = Math.floor(scrollTop / pageHeight) + 1;
-                  const correspondingBookPage = getCorrespondingBookPage(currentPage);
-                  pageNumbersIndicator.textContent = `Page: ${currentPage}, Book Page: ${correspondingBookPage}`;
-                }
-          
-                function getCorrespondingBookPage(pdfPage) {
-                  if (pdfPage > 28) {
-                    return pdfPage - 28;
-                  } else if (pdfPage === 1) {
-                    return 'Cover';
-                  } else {
-                    return 'Forward';
                   }
+
+                  function updateContainerSize() {
+                    const pageDivs = document.querySelectorAll('.page');
+                    let maxWidth = 0;
+                    let maxHeight = 0;
+
+                    pageDivs.forEach(function(pageDiv) {
+                      const rect = pageDiv.getBoundingClientRect();
+                      maxWidth = Math.max(maxWidth, rect.width);
+                      maxHeight = Math.max(maxHeight, rect.height);
+                    });
+
+                    container.style.width = maxWidth + 'px';
+                    container.style.height = maxHeight + 'px';
+                  }
+
+                  function updatePageNumbers() {
+                    const scrollTop = pdfContainer.scrollTop;
+                    const pageHeight = pdfContainer.scrollHeight / pdfDocument.numPages;
+                    const currentPage = Math.floor(scrollTop / pageHeight) + 1;
+                    const correspondingBookPage = getCorrespondingBookPage(currentPage);
+                    pageNumbersIndicator.textContent = `Page: ${currentPage}, Book Page: ${correspondingBookPage}`;
+                  }
+
+                  function getCorrespondingBookPage(pdfPage) {
+                    if (pdfPage > 28) {
+                      return pdfPage - 28;
+                    } else if (pdfPage === 1) {
+                      return 'Cover';
+                    } else {
+                      return 'Forward';
+                    }
+                  }
+
+                  function getScaleFactor(viewport) {
+                    const screenWidth = window.screen.width;
+                    const screenHeight = window.screen.height;
+                    const scaleWidth = screenWidth / viewport.width;
+                    const scaleHeight = screenHeight / viewport.height;
+                    return Math.min(scaleWidth, scaleHeight);
+                  }
+
+                  pdfContainer.addEventListener('scroll', updatePageNumbers);
+                  window.addEventListener('resize', updatePageNumbers);
+
+                  fullscreenButton.addEventListener('click', function() {
+                    const container = document.querySelector('.container');
+                    if (container.requestFullscreen) {
+                      container.requestFullscreen();
+                    } else if (container.mozRequestFullScreen) {
+                      container.mozRequestFullScreen();
+                    } else if (container.webkitRequestFullscreen) {
+                      container.webkitRequestFullscreen();
+                    } else if (container.msRequestFullscreen) {
+                      container.msRequestFullscreen();
+                    }
+                    setTimeout(updateContainerSize, 1000);
+                  });
                 }
-          
-                function getScaleFactor(viewport) {
-                  const screenWidth = window.screen.width;
-                  const screenHeight = window.screen.height;
-                  const scaleWidth = screenWidth / viewport.width;
-                  const scaleHeight = screenHeight / viewport.height;
-                  return Math.min(scaleWidth, scaleHeight);
-                }
-          
-                pdfContainer.addEventListener('scroll', updatePageNumbers);
-                window.addEventListener('resize', updatePageNumbers);
-          
-                fullscreenButton.addEventListener('click', function() {
+
+                document.addEventListener('fullscreenchange', handleFullscreenChange);
+                document.addEventListener('webkitfullscreenchange', handleFullscreenChange);
+                document.addEventListener('mozfullscreenchange', handleFullscreenChange);
+                document.addEventListener('MSFullscreenChange', handleFullscreenChange);
+
+                function handleFullscreenChange() {
                   const container = document.querySelector('.container');
-                  if (container.requestFullscreen) {
-                    container.requestFullscreen();
-                  } else if (container.mozRequestFullScreen) {
-                    container.mozRequestFullScreen();
-                  } else if (container.webkitRequestFullscreen) {
-                    container.webkitRequestFullscreen();
-                  } else if (container.msRequestFullscreen) {
-                    container.msRequestFullscreen();
+                  if (document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement) {
+                    container.classList.add('fullscreen');
+                  } else {
+                    container.classList.remove('fullscreen');
                   }
-                  setTimeout(updateContainerSize, 1000);
+                }
+
+                const buttons = document.querySelectorAll('.purchase-button');
+                buttons.forEach(button => {
+                  const book = button.getAttribute('book');
+                  if (book) { // Check if the 'book' attribute exists
+                    button.addEventListener('click', function() {
+                      let pdfUrl;
+                      switch (book) {
+                        case 'V1':
+                          pdfUrl = 'https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/e6ac4aa9608aa6749dfdbf1a8f0b99b017defca6/assets/Vol1.pdf';
+                          break;
+                        case 'V2':
+                          pdfUrl = 'https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/e6ac4aa9608aa6749dfdbf1a8f0b99b017defca6/assets/Vol2.pdf';
+                          break;
+                        case 'V3':
+                          pdfUrl = 'https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/e6ac4aa9608aa6749dfdbf1a8f0b99b017defca6/assets/Vol3.pdf';
+                          break;
+                        default:
+                          break;
+                      }
+                      togglePDFVisibility(pdfUrl);
+                    });
+                  }
                 });
-              }
-          
-              document.addEventListener('fullscreenchange', handleFullscreenChange);
-              document.addEventListener('webkitfullscreenchange', handleFullscreenChange);
-              document.addEventListener('mozfullscreenchange', handleFullscreenChange);
-              document.addEventListener('MSFullscreenChange', handleFullscreenChange);
-          
-              function handleFullscreenChange() {
-                const container = document.querySelector('.container');
-                if (document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement) {
-                  container.classList.add('fullscreen');
-                } else {
-                  container.classList.remove('fullscreen');
+
+                function togglePDFVisibility(pdfUrl) {
+                  const pdfContainer = document.getElementById('pdfContainer');
+                  // Check if the same PDF is already loaded
+                  if (pdfContainer.getAttribute('data-loaded-pdf') === pdfUrl) {
+                    if (pdfContainer.classList.contains('hidden')) {
+                      // PDF is hidden, so make it visible
+                      pdfContainer.classList.remove('hidden');
+                    } else {
+                      // PDF is visible, so hide it
+                      pdfContainer.classList.add('hidden');
+                    }
+                  } else {
+                    loadPDF(pdfUrl);
+                    pdfContainer.setAttribute('data-loaded-pdf', pdfUrl);
+                  }
                 }
-              }
-          
-              const buttons = document.querySelectorAll('.purchase-button');
-          buttons.forEach(button => {
-            const book = button.getAttribute('book');
-            if (book) { // Check if the 'book' attribute exists
-              button.addEventListener('click', function() {
-                let pdfUrl;
-                switch (book) {
-                  case 'V1':
-                    pdfUrl = 'https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/e6ac4aa9608aa6749dfdbf1a8f0b99b017defca6/assets/Vol1.pdf';
-                    break;
-                  case 'V2':
-                    pdfUrl = 'https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/e6ac4aa9608aa6749dfdbf1a8f0b99b017defca6/assets/Vol2.pdf';
-                    break;
-                  case 'V3':
-                    pdfUrl = 'https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/e6ac4aa9608aa6749dfdbf1a8f0b99b017defca6/assets/Vol3.pdf';
-                    break;
-                  default:
-                    break;
-                }
-                togglePDFVisibility(pdfUrl);
-              });
-            }
-          });
-          
-          function togglePDFVisibility(pdfUrl) {
-            const pdfContainer = document.getElementById('pdfContainer');
-            // Check if the same PDF is already loaded
-            if (pdfContainer.getAttribute('data-loaded-pdf') === pdfUrl) {
-              if (pdfContainer.classList.contains('hidden')) {
-                // PDF is hidden, so make it visible
-                pdfContainer.classList.remove('hidden');
-              } else {
-                // PDF is visible, so hide it
-                pdfContainer.classList.add('hidden');
-              }
-            } else {
-              loadPDF(pdfUrl);
-              pdfContainer.setAttribute('data-loaded-pdf', pdfUrl);
-            }
-          }
-          
-          
-            </script>
-          </body>
+
+              </script>
+            </body>
+
           </html>
 
 
@@ -546,10 +565,10 @@
         </section>
 
     </main>
-    
-    
-    
-    
+
+
+
+
     <footer class="header">
 
       <video autoplay muted loop id="background-video">
@@ -626,7 +645,6 @@
 
 <script>
   const url = 'https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/';
-	const url2 = url + 'd8c8060ed5ae47622b77a684aef3f707c80bde77/assets/Radio/';
 
   const audioSelect1 = document.getElementById("audioSelect_v1");
   const audioSelect2 = document.getElementById("audioSelect_v2");
@@ -876,38 +894,116 @@
       src: url + '251f176f5a76fc30251b8effd5634d294597a47d/assets/Vol3/Discourse-33.mp3'
     }
   ];
+  
+const url2 = 'https://media.githubusercontent.com/media/ProgramingGuy/SGF_PHX/main/assets/Radio/'
+// GIT LFS URL
 
-const audioFiles_v4 = [
-    { 
-    name: 'The Word I AM The Use of Li', 
-    src: url + 'f293ba4de4df50fc77475aa63ee372775d785478/assets/Radio/01-The-Word-I-AM-The-Use-of-Li.mp3'
- },
-    { name: 'Beloved Jesus The I AM Stat', src: url2 + '02-Beloved-Jesus-The-I-AM-Stat.mp3' },
-    { name: 'The I AM Presence Violet Fl', src: url2 + '03-The-I-AM-Presence-Violet-Fl.mp3' },
-    { name: 'Attention Vision Qualificat', src: url2 + '04-Attention-Vision-Qualificat.mp3' },
-    { name: 'Attention to the I AM Prese', src: url2 + '05-Attention-to-the-I-AM-Prese.mp3' },
-    { name: 'Obedience to the I AM Prese', src: url2 + '06-Obedience-to-the-I-AM-Prese.mp3' },
-    { name: 'Divine Service', src: url2 + '07-Divine-Service-Americas-Rol.mp3' },
-    { name: 'Self-Control The Attention', src: url2 + '08-Self-Control-The-Attention.mp3' },
-    { name: 'Contemplation Business', src: url2 + '09-Contemplation-Business.mp3' },
-    { name: 'Love to the Mighty I AM Pre', src: url2 + '10-Love-to-the-Mighty-I-AM-Pre.mp3' },
-    { name: 'Give to the Mighty I AM Pre', src: url2 + '11-Give-to-the-Mighty-I-AM-Pre.mp3' },
-    { name: 'Use of the Mighty I AM Pres', src: url2 + '12-Use-of-the-Mighty-I-AM-Pres.mp3' },
-    { name: 'Power of the I AM Presence', src: url2 + '13-Power-of-the-I-AM-Presence.mp3' },
-    { name: 'Faith Hope and Charity', src: url2 + '14-Faith-Hope-and-Charity.mp3' },
-    { name: 'Attention to the I AM Prese', src: url2 + '15-Attention-to-the-I-AM-Prese.mp3' },
-    { name: 'Beloved Jesus Ray Other Ray', src: url2 + '16-Beloved-Jesus-Ray-Other-Ray.mp3' },
-    { name: 'The I AM Presence and Ameri', src: url2 + '17-The-I-AM-Presence-and-Ameri.mp3' },
-    { name: 'Gods Will and Free Will', src: url2 + '18-Gods-Will-and-Free-Will.mp3' },
-    { name: 'Beloved Jesus and The Ascen', src: url2 + '19-Beloved-Jesus-and-The-Ascen.mp3' },
-    { name: 'Anchor to the I AM Presence', src: url2 + '20-Anchor-to-the-I-AM-Presence.mp3' },
-    { name: 'The I AM Presence The Word', src: url2 + '21-The-I-AM-Presence-The-Word.mp3' },
-    { name: 'Attention to the I AM Prese', src: url2 + '22-Attention-to-the-I-AM-Prese.mp3' },
-    { name: 'The I AM Beloved Jesus Teac', src: url2 + '23-The-I-AM-Beloved-Jesus-Teac.mp3' },
-    { name: 'Self-Correction', src: url2 + '24-Self-Correction.mp3' },
-    { name: 'I AM Creating Perfection', src: url2 + '25-I-AM-Creating-Perfection.mp3' },
-    { name: 'I AM The Forgiving Sacred F', src: url2 + '26-I-AM-The-Forgiving-Sacred-F.mp3' }
+  const audioFiles_v4 = [{
+    name: 'The Word I AM The Use of Li',
+    src: url2 + '01-The-Word-I-AM-The-Use-of-Li.mp3'
+  },
+  {
+    name: 'Beloved Jesus The I AM Stat',
+    src: url2 + '02-Beloved-Jesus-The-I-AM-Stat.mp3'
+  },
+  {
+    name: 'The I AM Presence Violet Fl',
+    src: url2 + '03-The-I-AM-Presence-Violet-Fl.mp3'
+  },
+  {
+    name: 'Attention Vision Qualificat',
+    src: url2 + '04-Attention-Vision-Qualificat.mp3'
+  },
+  {
+    name: 'Attention to the I AM Prese',
+    src: url2 + '05-Attention-to-the-I-AM-Prese.mp3'
+  },
+  {
+    name: 'Obedience to the I AM Prese',
+    src: url2 + '06-Obedience-to-the-I-AM-Prese.mp3'
+  },
+  {
+    name: 'Divine Service',
+    src: url2 + '07-Divine-Service-Americas-Rol.mp3'
+  },
+  {
+    name: 'Self-Control The Attention',
+    src: url2 + '08-Self-Control-The-Attention.mp3'
+  },
+  {
+    name: 'Contemplation Business',
+    src: url2 + '09-Contemplation-Business.mp3'
+  },
+  {
+    name: 'Love to the Mighty I AM Pre',
+    src: url2 + '10-Love-to-the-Mighty-I-AM-Pre.mp3'
+  },
+  {
+    name: 'Give to the Mighty I AM Pre',
+    src: url2 + '11-Give-to-the-Mighty-I-AM-Pre.mp3'
+  },
+  {
+    name: 'Use of the Mighty I AM Pres',
+    src: url2 + '12-Use-of-the-Mighty-I-AM-Pres.mp3'
+  },
+  {
+    name: 'Power of the I AM Presence',
+    src: url2 + '13-Power-of-the-I-AM-Presence.mp3'
+  },
+  {
+    name: 'Faith Hope and Charity',
+    src: url2 + '14-Faith-Hope-and-Charity.mp3'
+  },
+  {
+    name: 'Attention to the I AM Prese',
+    src: url2 + '15-Attention-to-the-I-AM-Prese.mp3'
+  },
+  {
+    name: 'Beloved Jesus Ray Other Ray',
+    src: url2 + '16-Beloved-Jesus-Ray-Other-Ray.mp3'
+  },
+  {
+    name: 'The I AM Presence and Ameri',
+    src: url2 + '17-The-I-AM-Presence-and-Ameri.mp3'
+  },
+  {
+    name: 'Gods Will and Free Will',
+    src: url2 + '18-Gods-Will-and-Free-Will.mp3'
+  },
+  {
+    name: 'Beloved Jesus and The Ascen',
+    src: url2 + '19-Beloved-Jesus-and-The-Ascen.mp3'
+  },
+  {
+    name: 'Anchor to the I AM Presence',
+    src: url2 + '20-Anchor-to-the-I-AM-Presence.mp3'
+  },
+  {
+    name: 'The I AM Presence The Word',
+    src: url2 + '21-The-I-AM-Presence-The-Word.mp3'
+  },
+  {
+    name: 'Attention to the I AM Prese',
+    src: url2 + '22-Attention-to-the-I-AM-Prese.mp3'
+  },
+  {
+    name: 'The I AM Beloved Jesus Teac',
+    src: url2 + '23-The-I-AM-Beloved-Jesus-Teac.mp3'
+  },
+  {
+    name: 'Self-Correction',
+    src: url2 + '24-Self-Correction.mp3'
+  },
+  {
+    name: 'I AM Creating Perfection',
+    src: url2 + '25-I-AM-Creating-Perfection.mp3'
+  },
+  {
+    name: 'I AM The Forgiving Sacred F',
+    src: url2 + '26-I-AM-The-Forgiving-Sacred-F.mp3'
+  }
 ];
+
 
 
   document.addEventListener("DOMContentLoaded", function() {
@@ -957,7 +1053,7 @@ const audioFiles_v4 = [
     populateDropdown(audioFiles_v2, audioSelect2);
     populateDropdown(audioFiles_v3, audioSelect3);
     populateDropdown(audioFiles_v4, audioSelect4);
-    
+
     // Event listeners for dropdowns
     audioSelect1.addEventListener("change", function() {
       const selectedIndex = this.value;
@@ -976,7 +1072,7 @@ const audioFiles_v4 = [
       setAudioSource(audioPlayer3, audioSource3, audioFiles_v3, selectedIndex);
       resetPlayPauseButton('customAudioPlayer3');
     });
-    
+
     audioSelect4.addEventListener("change", function() {
       const selectedIndex = this.value;
       setAudioSource(audioPlayer4, audioSource4, audioFiles_v4, selectedIndex);
@@ -1039,6 +1135,7 @@ const audioFiles_v4 = [
     const source = audioFiles[index].src;
     sourceElement.src = source;
     audioElement.load();
+    console.log('Audio Loded: ' + source)
 
     // Reset time scroller to zero after loading
     audioElement.onloadeddata = function() {
