@@ -11,7 +11,6 @@
       body {
         font-family: Arial, sans-serif;
         background-color: purple;
-        /* Purple */
         margin: 0;
         padding: 0;
         display: flex;
@@ -64,7 +63,35 @@
         <input type="password" id="password" placeholder="Password">
         <button id="loginBtn">Login</button>
       </form>
+
+      <p>
+        <br>
+      </p>
+      <p id="ipAddress"></p>
     </div>
+
+    <script>
+      function fetchIpAddress() {
+        fetch('https://api64.ipify.org?format=json')
+          .then(response => {
+            if (!response.ok) {
+              throw new Error('Network response was not ok');
+            }
+            return response.json();
+          })
+          .then(data => {
+            document.getElementById('ipAddress').textContent = 'Your IP address is: ' + data.ip;
+          })
+          .catch(error => {
+            console.error('Error fetching IP address:', error);
+            //document.getElementById('ipAddress').textContent = '';
+            //'Failed to fetch IP address';
+          });
+      }
+
+      fetchIpAddress();
+
+    </script>
 
     <script>
       var loginAttempts = 0;
