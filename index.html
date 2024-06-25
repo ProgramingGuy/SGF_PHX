@@ -325,7 +325,11 @@
         </div>
 
 
-        <iframe id='Digital-book' scrolling="auto" height="530px" width="370px" style="background-color: white; border: 2px solid blue; border-radius: 10px; display: none;" sandbox="allow-scripts allow-same-origin"></iframe>
+        <iframe id='Digital-book-V1' scrolling="auto" height="530px" width="370px" style="background-color: white; border: 2px solid blue; border-radius: 10px; display: none;" sandbox="allow-scripts allow-same-origin"></iframe>
+        
+         <iframe id='Digital-book-V2' scrolling="auto" height="530px" width="370px" style="background-color: white; border: 2px solid blue; border-radius: 10px; display: none;" sandbox="allow-scripts allow-same-origin"></iframe>
+         
+          <iframe id='Digital-book-V3' scrolling="auto" height="530px" width="370px" style="background-color: white; border: 2px solid blue; border-radius: 10px; display: none;" sandbox="allow-scripts allow-same-origin"></iframe>
 
       </section>
 
@@ -613,18 +617,15 @@
   document.addEventListener('visibilitychange', function() {
     var video = document.getElementById('background-video');
     if (!video) {
-      // console.error("Video element not found!");
       return;
     }
     if (document.visibilityState === 'hidden') {
       if (!video.paused) {
         video.pause();
-        // console.log("Video paused.");
       }
     } else {
       if (video.paused) {
         video.play();
-        // console.log("Video played.");
       }
     }
   });
@@ -679,41 +680,57 @@
 
 <script>
   // Updated PDF viewer code 5/31/2024 --- V2
-  const frame = document.getElementById('Digital-book');
-  const base = "https://drive.google.com/viewerng/viewer?embedded=true&url=https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/e6ac4aa9608aa6749dfdbf1a8f0b99b017defca6/assets/";
-  const books = {
-    V1: `${base}Vol1.pdf#toolbar=0&scrollbar=0`,
-    V2: `${base}Vol2.pdf#toolbar=0&scrollbar=0`,
-    V3: `${base}Vol3.pdf#toolbar=0&scrollbar=0`
-  };
+  // Updated PDF viewer code 6/25/2024 --- V3
+const base = "https://drive.google.com/viewerng/viewer?embedded=true&url=https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/e6ac4aa9608aa6749dfdbf1a8f0b99b017defca6/assets/";
+const books = {
+  V1: `${base}Vol1.pdf#toolbar=0&scrollbar=0`,
+  V2: `${base}Vol2.pdf#toolbar=0&scrollbar=0`,
+  V3: `${base}Vol3.pdf#toolbar=0&scrollbar=0`
+};
 
-  function toggleFrame(input) {
-    const currentSrc = frame.src;
+function toggleFrame(bookId) {
+  const frameIdPrefix = 'Digital-book-';
+  const totalBooks = 3;
 
-    if (frame.style.display === 'none' || !currentSrc || currentSrc !== books[input]) {
-      frame.style.display = 'block';
-      frame.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
+  // Loop through all possible book ids and toggle their visibility
+  for (let i = 1; i <= totalBooks; i++) {
+    const currentFrameId = `${frameIdPrefix}V${i}`;
+    const currentFrame = document.getElementById(currentFrameId);
 
-      if (input && books[input]) {
-        frame.src = books[input];
+    if (currentFrame) {
+      if (currentFrameId === `Digital-book-${bookId}`) {
+        // Toggle the selected book's frame
+        currentFrame.style.display = currentFrame.style.display === 'none' ? 'block' : 'none';
+
+        if (currentFrame.style.display === 'block') {
+          // Scroll to the selected book's frame if it's displayed
+          currentFrame.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+
+          // Load the book if its source is not already set
+          if (currentFrame.src !== books[bookId]) {
+            currentFrame.src = books[bookId];
+          }
+        }
+      } else {
+        // Hide frames other than the selected book
+        currentFrame.style.display = 'none';
       }
-    } else {
-      frame.style.display = 'none';
     }
   }
+}
 
-  document.querySelectorAll('.purchase-button').forEach(button => {
-    const book = button.getAttribute('book');
-    if (book) {
-      // console.log(book);
-      button.addEventListener('click', function() {
-        toggleFrame(book);
-      });
-    }
-  });
+document.querySelectorAll('.purchase-button').forEach(button => {
+  const book = button.getAttribute('book');
+  if (book) {
+    button.addEventListener('click', function() {
+      toggleFrame(book);
+    });
+  }
+});
+
 
 </script>
 
