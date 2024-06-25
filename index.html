@@ -692,30 +692,25 @@ function toggleFrame(bookId) {
   const frameIdPrefix = 'Digital-book-';
   const totalBooks = 3;
 
-  // Loop through all possible book ids and toggle their visibility
   for (let i = 1; i <= totalBooks; i++) {
     const currentFrameId = `${frameIdPrefix}V${i}`;
     const currentFrame = document.getElementById(currentFrameId);
 
     if (currentFrame) {
       if (currentFrameId === `Digital-book-${bookId}`) {
-        // Toggle the selected book's frame
         currentFrame.style.display = currentFrame.style.display === 'none' ? 'block' : 'none';
 
         if (currentFrame.style.display === 'block') {
-          // Scroll to the selected book's frame if it's displayed
           currentFrame.scrollIntoView({
             behavior: 'smooth',
             block: 'start'
           });
 
-          // Load the book if its source is not already set
           if (currentFrame.src !== books[bookId]) {
             currentFrame.src = books[bookId];
           }
         }
       } else {
-        // Hide frames other than the selected book
         currentFrame.style.display = 'none';
       }
     }
