@@ -54,8 +54,8 @@
     -->
       </video>
 
-      <div class="header_content">
-        <img src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/8ca320a1c2c0f76d775f94c49146cdfab07848f9/assets/Img/Logo.png" alt="Logo">
+      <div class="header_content" id='Hover-Effect' style="transition: transform 0.3s ease;">
+        <img src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/8ca320a1c2c0f76d775f94c49146cdfab07848f9/assets/Img/Logo.png" alt="Logo" id='Hover-Effect' style="transition: transform 0.3s ease;">
         <h1>“I AM” Temple - Saint Germain Foundation</h1>
         <p>Phoenix, Arizona</p>
 
@@ -86,6 +86,12 @@
 
     <main>
       <!-- Page grouping -->
+      <style>
+        #Hover-Effect:hover {
+          transform: translateY(-5px);
+        }
+        
+      </style>
 
       <div class="item-container">
         <!-- Grouping for items above books. -->
@@ -205,14 +211,14 @@
         <!--Then Volume three and up which are the Authentic “I AM” Ascended Master Teachings from Saint Germain, Master Jesus, Arch Angel Michael, and other Great Ones.-->
         <div class="book-container">
 
-          <div class="book-item">
+          <div class="book-item" id='Hover-Effect' style="transition: transform 0.3s ease;">
 
             <!-- Hover Data / Text -->
             <div class="hover-container">
-              <h1 class="hover-text" style='margin: 0 auto;'>Volume 1. Unveiled Mysteries</h1>
+              <h1 class="hover-text" style='margin: 0 auto;'>Volume 1.<br>Unveiled Mysteries</h1>
               <div class="info-box">Mr. G. W. Ballard wrote under the pen name of Godfre Ray King.</div>
             </div>
-            
+
             <img src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/1cc1335ce32ce70f0bd09fe98f595ec94150eaeb/assets/Img/V1.png" width=auto height="180" alt="Volume 1">
 
             <button class="purchase-button">
@@ -243,14 +249,14 @@
 
           </div> <!-- end of book section -->
 
-          <div class="book-item">
-            
+          <div class="book-item" id='Hover-Effect' style="transition: transform 0.3s ease;">
+
             <!-- Hover Data / Text -->
             <div class="hover-container">
-              <h1 class="hover-text" style='margin: 0 auto;'>Volume 2. The Magic Presence</h1>
+              <h1 class="hover-text" style='margin: 0 auto;'>Volume 2.<br>The Magic Presence</h1>
               <div class="info-box">By Godfre Ray King.</div>
             </div>
-            
+
             <img src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/1cc1335ce32ce70f0bd09fe98f595ec94150eaeb/assets/Img/V2.png" width=auto height="180" alt="Volume 2">
 
             <button class="purchase-button">
@@ -280,16 +286,16 @@
             </div>
           </div> <!-- end of book section -->
 
-          <div class="book-item">
-            
+          <div class="book-item" id='Hover-Effect' style="transition: transform 0.3s ease;">
+
             <!-- Hover Data / Text -->
             <div class="hover-container">
-              <h1 class="hover-text" style='margin: 0 auto;'>Volume 3. “I AM” Discourses</h1>
+              <h1 class="hover-text" style='margin: 0 auto;'>Volume 3.<br>“I AM” Discourses</h1>
               <div class="info-box">By Ascended Master Saint Germain.</div>
             </div>
-            
+
             <img src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/1cc1335ce32ce70f0bd09fe98f595ec94150eaeb/assets/Img/V3.png" width=auto height="180" alt="Volume 3">
-            
+
             <button class="purchase-button">
               <a href="https://saintgermainpress.com/volume-3-the-i-am-discourses/" target="_blank">Purchase a Physical Copy</a>
             </button>
@@ -365,7 +371,9 @@
         <!-- Edit to not load audio files on web page load -->
         <section id="Radio" class="centered-section">
 
-          <section style='margin: 0 auto;'>
+
+
+          <div>
             <h2>“I AM” Radio Broadcasts</h2>
 
             <div class="radio-container">
@@ -385,39 +393,46 @@
               <a href="https://radio.securenetsystems.net/cwa/index.cfm?stationCallSign=SGFBV" target="_blank">“I AM” Music and Voice Source</a>
             </button>
 
-          </section>
+          </div>
 
-          <h2>“I AM” Recordings</h2>
-          <div class="radio-container">
-            <div class="player">
-              <h1>Violet Flame</h1>
-              <img id="button-flame" class="play-button" src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/95d2e1ef131bd1841959300e908665d7aa72a9b8/assets/Img/IAM_Play.png" width="100" height="100">
-              <audio id="flame" data-src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/9815ad2c0cb0813c42cdeddd2b16a8bb58853653/assets/Violet-Flame.mp3" type="audio/mpeg" loop></audio>
-            </div>
+          <div>
+            <!-- Grouping -->
+
+            <h2>“I AM” Recordings</h2>
+            <div class="radio-container">
+              <div class="player">
+                <h1>Violet Flame</h1>
+                <img id="button-flame" class="play-button" src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/95d2e1ef131bd1841959300e908665d7aa72a9b8/assets/Img/IAM_Play.png" width="100" height="100">
+                <audio id="flame" data-src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/9815ad2c0cb0813c42cdeddd2b16a8bb58853653/assets/Violet-Flame.mp3" type="audio/mpeg" loop></audio>
+              </div>
 
 
-            <!-- Audio Player 4 -->
-            <!-- Edit to match local players - 6/17/2024 -->
-            <div class="radio">
-              <div class="audio-container" style="border: 2px solid #5477f5; border-radius: 8px; background-color: rgba(241, 222, 241, 0.7); box-shadow: 0 2px 4px rgba(45, 45, 231, 0.5);">
-                <h1 style="color: #c111e5; margin: 0 auto;">Radio Recordings</h1>
-                <div id="customAudioPlayer4">
-                  <audio id="audioPlayer4" controls>
-                    <source id="audioSource4" src="" type="audio/mpeg">
-                  </audio>
-                  <img class='playPauseButton' src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/95d2e1ef131bd1841959300e908665d7aa72a9b8/assets/Img/IAM_Play.png" width=100 height="100">
-                  <div class="audio-controls">
-                    <input type="range" id="customSeekBar4" min="0" value="0" step="1">
-                    <span id="currentTime4">00:00</span> / <span id="duration4">00:00</span>
+              <!-- Audio Player 4 -->
+              <!-- Edit to match local players - 6/17/2024 -->
+              <div class="radio">
+                <div class="audio-container" style="border: 2px solid #5477f5; border-radius: 8px; background-color: rgba(241, 222, 241, 0.7); box-shadow: 0 2px 4px rgba(45, 45, 231, 0.5);">
+                  <h1 style="color: #c111e5; margin: 0 auto;">Radio Recordings</h1>
+                  <div id="customAudioPlayer4">
+                    <audio id="audioPlayer4" controls>
+                      <source id="audioSource4" src="" type="audio/mpeg">
+                    </audio>
+                    <img class='playPauseButton' src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/95d2e1ef131bd1841959300e908665d7aa72a9b8/assets/Img/IAM_Play.png" width=100 height="100">
+                    <div class="audio-controls">
+                      <input type="range" id="customSeekBar4" min="0" value="0" step="1">
+                      <span id="currentTime4">00:00</span> / <span id="duration4">00:00</span>
+                    </div>
                   </div>
-                </div>
-                <div id="dropdownContainer">
-                  <select id="audioSelect_v4" style="background-color: blueviolet;">
-                    <!-- Options will be populated dynamically -->
-                  </select>
+                  <div id="dropdownContainer">
+                    <select id="audioSelect_v4" style="background-color: blueviolet;">
+                      <!-- Options will be populated dynamically -->
+                    </select>
+                  </div>
                 </div>
               </div>
             </div>
+
+
+
           </div><!-- Radio container -->
         </section> <!-- End of radio -->
 
@@ -500,33 +515,33 @@
 
 
         <section id="Websites" class="centered-section">
-        <!-- Remade 6/25/2024 -->
+          <!-- Remade 6/25/2024 -->
           <h2>“I AM” Activity Official Websites</h2>
-          
+
           <div class="book-container">
-          <!-- Link #1 -->
-          <div class="centered-section" id='Hover-Effect' style="transition: transform 0.3s ease; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
-            <img class="website-image" src="https://i.imgur.com/zfjwv8q.jpeg" alt="Website Preview" style="border-radius: 8px;">
-            <button class="purchase-button">
-              <a href="https://www.saintgermainfoundation.org/" target="_blank">Saint Germain Foundation</a>
-            </button>
-          </div>
-          
-          <!-- Link #2 -->
-          <div class="centered-section" id='Hover-Effect' style="transition: transform 0.3s ease; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
-            <img class="website-image" src="https://i.imgur.com/rgkqSfP.jpeg" alt="Website Preview" style="border-radius: 8px;">
-            <button class="purchase-button">
-              <a href="https://saintgermainpress.com/" target="_blank">Saint Germain Press</a>
-            </button>
-          </div>
-          
-          <!-- Link #3 -->
-          <div class="centered-section" id='Hover-Effect' style="transition: transform 0.3s ease; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
-            <img class="website-image" src="https://i.imgur.com/1Kimcwv.jpeg" alt="Website Preview" style="border-radius: 8px;">
-            <button class="purchase-button">
-              <a href="https://www.iam-activity.eu/" target="_blank">“I AM” Activity Europe</a>
-            </button>
-          </div>
+            <!-- Link #1 -->
+            <div class="centered-section" id='Hover-Effect' style="transition: transform 0.3s ease; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+              <img class="website-image" src="https://i.imgur.com/zfjwv8q.jpeg" alt="Website Preview" style="border-radius: 8px;">
+              <button class="purchase-button">
+                <a href="https://www.saintgermainfoundation.org/" target="_blank">Saint Germain Foundation</a>
+              </button>
+            </div>
+
+            <!-- Link #2 -->
+            <div class="centered-section" id='Hover-Effect' style="transition: transform 0.3s ease; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+              <img class="website-image" src="https://i.imgur.com/rgkqSfP.jpeg" alt="Website Preview" style="border-radius: 8px;">
+              <button class="purchase-button">
+                <a href="https://saintgermainpress.com/" target="_blank">Saint Germain Press</a>
+              </button>
+            </div>
+
+            <!-- Link #3 -->
+            <div class="centered-section" id='Hover-Effect' style="transition: transform 0.3s ease; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+              <img class="website-image" src="https://i.imgur.com/1Kimcwv.jpeg" alt="Website Preview" style="border-radius: 8px;">
+              <button class="purchase-button">
+                <a href="https://www.iam-activity.eu/" target="_blank">“I AM” Activity Europe</a>
+              </button>
+            </div>
           </div>
         </section>
 
