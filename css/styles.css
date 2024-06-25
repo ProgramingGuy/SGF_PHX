@@ -17,16 +17,16 @@ body {
 
 /* Desktop background */
 @media (min-width: 769px) {
-    body {
-        background-image: url('https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/1c1bb344e46d367cd698815b24c5e30a3dc58f74/assets/Desktop_BG.jpg');
-    }
+  body {
+    background-image: url('https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/1c1bb344e46d367cd698815b24c5e30a3dc58f74/assets/Desktop_BG.jpg');
+  }
 }
 
 /* Mobile background */
 @media (max-width: 768px) {
-    body {
-        background-image: url('https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/1c1bb344e46d367cd698815b24c5e30a3dc58f74/assets/Mobile_BG.jpg');
-    }
+  body {
+    background-image: url('https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/1c1bb344e46d367cd698815b24c5e30a3dc58f74/assets/Mobile_BG.jpg');
+  }
 }
 
 header {
@@ -281,8 +281,8 @@ footer p {
   font-size: 1rem;
 }
 
-.hover-text:hover + .info-box,
-.hover-text:hover + .info-box-c {
+.hover-text:hover+.info-box,
+.hover-text:hover+.info-box-c {
   display: block;
   border-color: #5477f5;
 }
@@ -435,6 +435,10 @@ select {
   gap: 10px;
 }
 
-.radio-container > * {
+.radio-container>* {
   margin: 0 5px;
+}
+
+#Hover-Effect:hover {
+  transform: translateY(-5px);
 }
