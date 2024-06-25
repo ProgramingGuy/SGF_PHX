@@ -56,7 +56,7 @@ header::after {
   position: absolute;
   bottom: -2px;
   transform: translateX(-50%);
-  width: calc(100%);
+  width: 100%;
   background-color: transparent;
   box-shadow: 0px 0px 8px 4px rgba(138, 43, 226, 5);
 }
@@ -65,19 +65,6 @@ main {
   padding: 20px;
 }
 
-/* how come these wouldn't work???
-put them into the html with style and worked??? :l
-.nav-buttons {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.nav-buttons li {
-  display: inline-block;
-  margin-right: 10px;
-}
-*/
 section {
   margin-bottom: 20px;
 }
@@ -121,7 +108,40 @@ footer::before {
   flex-direction: column;
 }
 
-@media screen and (max-width: 600px) {
+/* For small mobile devices, old flip phones/smaller budget devices */
+@media screen and (max-width: 400px) {
+    img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  footer {
+    font-size: 0.7rem;
+  }
+
+  footer p {
+    font-size: 0.7rem;
+  }
+}
+
+/* For mobile devices, Modern Smart Phones */
+@media screen and (min-width: 401px) and (max-width: 768px) {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  footer {
+    font-size: 1rem;
+  }
+
+  footer p {
+    font-size: 1rem;
+  }
+}
+
+/* For tablet devices */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   img {
     max-width: 100%;
     height: auto;
@@ -136,18 +156,19 @@ footer::before {
   }
 }
 
-@media screen and (max-width: 400px) {
+/* For desktop devices */
+@media screen and (min-width: 1025px) {
   img {
     max-width: 100%;
     height: auto;
   }
-
+  
   footer {
-    font-size: 0.8rem;
+    font-size: 1.5rem;
   }
 
   footer p {
-    font-size: 0.8rem;
+    font-size: 1.5rem;
   }
 }
 
