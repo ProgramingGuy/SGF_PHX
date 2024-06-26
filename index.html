@@ -1266,13 +1266,12 @@
     var isVisible = audioContainer.style.display !== 'none';
     
     if (!loadedStatus[Version]) {
-      console.log('Audio not loaded: ' + Version);
       loadedStatus[Version] = true;
       var audioPlayer = document.getElementById(`audioPlayer${Version}`);
       var audioFile = 'audioFiles_v' + Version.toString();
       preloadAudio(audioPlayer, audioSource, audioFiles_v1, 0);
     }
-
+    
     audioContainer.style.display = isVisible ? 'none' : 'block';
     toggleButton.textContent = isVisible ? 'Show Audio Book' : 'Hide Audio Book';
   }
