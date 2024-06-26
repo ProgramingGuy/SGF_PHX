@@ -227,7 +227,7 @@
 
             <button class="purchase-button" book="V1">View the Digital Copy</button>
 
-            <button class="purchase-button" onclick="toggleAudio('audioContainer1', 'toggleAudio1')">Show Audio Book</button>
+            <button id="toggleButton1" class="purchase-button" onclick="toggleAudio('1')">Show Audio Book</button>
 
             <!-- Audio Player 1 -->
             <div class="audio-container" id="audioContainer1" style="display: none; border: 2px solid #5477f5; border-radius: 8px; background-color: rgba(241, 222, 241, 0.7); box-shadow: 0 2px 4px rgba(45, 45, 231, 0.5);">
@@ -266,7 +266,7 @@
 
             <button class="purchase-button" book="V2">View the Digital Copy</button>
 
-            <button class="purchase-button" onclick="toggleAudio('audioContainer2', 'toggleAudio2')">Show Audio Book</button>
+            <button id="toggleButton2" class="purchase-button" onclick="toggleAudio('2')">Show Audio Book</button>
 
             <!-- Audio Player 2 -->
             <div class="audio-container" id="audioContainer2" style="display: none; border: 2px solid #5477f5; border-radius: 8px; background-color: rgba(241, 222, 241, 0.7); box-shadow: 0 2px 4px rgba(45, 45, 231, 0.5);">
@@ -296,7 +296,7 @@
               <div class="info-box">By Ascended Master Saint Germain.</div>
             </div>
 
-            <img src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/1cc1335ce32ce70f0bd09fe98f595ec94150eaeb/assets/Img/V3.png" width="auto" height="140" alt="Volume 3">
+            <img src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/1cc1335ce32ce70f0bd09fe98f595ec94150eaeb/assets/Img/V3.png" width="auto" height="180" alt="Volume 3">
 
             <button class="purchase-button">
               <a href="https://saintgermainpress.com/volume-3-the-i-am-discourses/" target="_blank">Purchase a Physical Copy</a>
@@ -304,7 +304,7 @@
 
             <button class="purchase-button" book="V3">View the Digital Copy</button>
 
-            <button class="purchase-button" onclick="toggleAudio('audioContainer3', 'toggleAudio3')">Show Audio Book</button>
+            <button id="toggleButton3" class="purchase-button" onclick="toggleAudio('3')">Show Audio Book</button>
 
             <div class="audio-container" id="audioContainer3" style="display: none; border: 2px solid #5477f5; border-radius: 8px; background-color: rgba(241, 222, 241, 0.7); box-shadow: 0 2px 4px rgba(45, 45, 231, 0.5);">
               <div id="customAudioPlayer3">
@@ -324,22 +324,6 @@
               </div>
             </div>
           </div> <!-- end of book -->
-
-          <script>
-            function toggleAudio(audioContainerId, toggleButtonId) {
-              var audioContainer = document.getElementById(audioContainerId);
-              var toggleButton = document.getElementById(toggleButtonId);
-
-              if (audioContainer.style.display === 'none' || audioContainer.style.display === '') {
-                audioContainer.style.display = 'block';
-                toggleButton.textContent = 'Hide Audio Book';
-              } else {
-                audioContainer.style.display = 'none';
-                toggleButton.textContent = 'Show Audio Book';
-              }
-            }
-
-          </script>
 
         </div><!-- end of book section -->
 
@@ -1252,9 +1236,9 @@
     });
 
     // Preload audio for the first file in each array
-    preloadAudio(audioPlayer1, audioSource1, audioFiles_v1, 0);
-    preloadAudio(audioPlayer2, audioSource2, audioFiles_v2, 0);
-    preloadAudio(audioPlayer3, audioSource3, audioFiles_v3, 0);
+    //preloadAudio(audioPlayer1, audioSource1, audioFiles_v1, 0);
+    //preloadAudio(audioPlayer2, audioSource2, audioFiles_v2, 0);
+    //preloadAudio(audioPlayer3, audioSource3, audioFiles_v3, 0);
     preloadAudio(audioPlayer4, audioSource4, audioFiles_v4, 0);
   });
 
@@ -1269,6 +1253,28 @@
     audioElement.onloadeddata = function() {
       audioElement.currentTime = 0;
     };
+  }
+
+  //Added Toggle UI/Function 6/26/2024
+  const loadedStatus = {};//Only load audio on request, less data to load website.
+
+  function toggleAudio(Version) {
+    var audioContainer = document.getElementById(`audioContainer${Version}`);
+    var toggleButton = document.getElementById(`toggleButton${Version}`);
+    var audioPlayer = document.getElementById(`audioPlayer${Version}`);
+    var audioSource = document.getElementById(`audioSource${Version}`);
+    var isVisible = audioContainer.style.display !== 'none';
+    
+    if (!loadedStatus[Version]) {
+      console.log('Audio not loaded: ' + Version);
+      loadedStatus[Version] = true;
+      var audioPlayer = document.getElementById(`audioPlayer${Version}`);
+      var audioFile = 'audioFiles_v' + Version.toString();
+      preloadAudio(audioPlayer, audioSource, audioFiles_v1, 0);
+    }
+
+    audioContainer.style.display = isVisible ? 'none' : 'block';
+    toggleButton.textContent = isVisible ? 'Show Audio Book' : 'Hide Audio Book';
   }
 
 </script>
