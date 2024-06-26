@@ -1257,7 +1257,7 @@
 
   //Added Toggle UI/Function 6/26/2024
   const loadedStatus = {};//Only load audio on request, less data to load website.
-
+      
   function toggleAudio(Version) {
     var audioContainer = document.getElementById(`audioContainer${Version}`);
     var toggleButton = document.getElementById(`toggleButton${Version}`);
@@ -1268,8 +1268,25 @@
     if (!loadedStatus[Version]) {
       loadedStatus[Version] = true;
       var audioPlayer = document.getElementById(`audioPlayer${Version}`);
-      var audioFile = 'audioFiles_v' + Version.toString();
-      preloadAudio(audioPlayer, audioSource, audioFile, 0);
+      //Horrible code, temp fix? Would nee to remake arrays.
+      var VersionNumber = parseInt(Version);
+      switch (VersionNumber) {
+        case 1:
+          preloadAudio(audioPlayer, audioSource, audioFiles_v1, 0);
+          break;
+        case 2:
+          preloadAudio(audioPlayer, audioSource, audioFiles_v2, 0);
+          break;
+        case 3:
+          preloadAudio(audioPlayer, audioSource, audioFiles_v3, 0);
+          break;
+        case 4:
+          preloadAudio(audioPlayer, audioSource, audioFiles_v4, 0);
+          break;
+        default:
+        	console.log('Version Error')
+          break;
+      }
     }
     
     audioContainer.style.display = isVisible ? 'none' : 'block';
