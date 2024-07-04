@@ -688,27 +688,27 @@
     var flame = document.getElementById('flame');
     var playflame = document.getElementById('button-flame');
     var playImg = 'https://media.githubusercontent.com/media/ProgramingGuy/SGF_PHX/main/assets/Img/IAM_Play.png';
-    var pauseImg = 'https://media.githubusercontent.com/media/ProgramingGuy/SGF_PHX/main/assets/Img/IAM_Pause.png'; < !--https: //raw.githubusercontent.com/ProgramingGuy/SGF_PHX/95d2e1ef131bd1841959300e908665d7aa72a9b8/assets/Img/IAM_Play.png -->
-      <
-      !--https: //raw.githubusercontent.com/ProgramingGuy/SGF_PHX/cefb44d04013542471ecaa590d45ccfc2b4bfc16/assets/Img/IAM_Pause.png -->
+    var pauseImg = 'https://media.githubusercontent.com/media/ProgramingGuy/SGF_PHX/main/assets/Img/IAM_Pause.png';
+    // https: //raw.githubusercontent.com/ProgramingGuy/SGF_PHX/95d2e1ef131bd1841959300e908665d7aa72a9b8/assets/Img/IAM_Play.png
+    // https: //raw.githubusercontent.com/ProgramingGuy/SGF_PHX/cefb44d04013542471ecaa590d45ccfc2b4bfc16/assets/Img/IAM_Pause.png
 
-      // 5/31/2024 Fix for audio load on webpage load and change for audio src keep assign each time played...
+    // 5/31/2024 Fix for audio load on webpage load and change for audio src keep assign each time played...
 
-      function togglePlayPause(audio, button) {
-        var src = audio.getAttribute('data-src');
-        if (audio.paused) {
-          if (src) {
-            if (audio.src === "") {
-              audio.src = src;
-            }
-            audio.play();
-            button.src = pauseImg;
+    function togglePlayPause(audio, button) {
+      var src = audio.getAttribute('data-src');
+      if (audio.paused) {
+        if (src) {
+          if (audio.src === "") {
+            audio.src = src;
           }
-        } else {
-          audio.pause();
-          button.src = playImg;
+          audio.play();
+          button.src = pauseImg;
         }
+      } else {
+        audio.pause();
+        button.src = playImg;
       }
+    }
 
     playmusic.addEventListener('click', function() {
       togglePlayPause(music, playmusic);
