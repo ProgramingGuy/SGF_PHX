@@ -85,19 +85,30 @@
     <main>
       <!-- Page grouping -->
       <style>
+        /* won't display on mobile if in css file? */
         #Hover-Effect:hover {
           transform: translateY(-5px);
         }
 
         header::after {
-            content: '';
-            position: absolute;
-            bottom: -2px;
-            transform: translateX(-50%);
-            width: 100%;
-            background-color: transparent;
-            box-shadow: 0px 0px 8px 4px rgba(138, 43, 226, 5);
-          }
+          content: '';
+          position: absolute;
+          bottom: -2px;
+          transform: translateX(-50%);
+          width: 100%;
+          background-color: transparent;
+          box-shadow: 0px 0px 8px 4px rgba(138, 43, 226, 5);
+        }
+
+        footer::before {
+          content: '';
+          position: absolute;
+          transform: translateX(-50%);
+          width: 100%;
+          background-color: transparent;
+          box-shadow: 0px 0px 8px 4px rgba(138, 43, 226, 5);
+        }
+
       </style>
 
       <div class="item-container">
