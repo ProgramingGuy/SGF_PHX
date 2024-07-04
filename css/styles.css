@@ -18,14 +18,14 @@ body {
 /* Desktop background */
 @media (min-width: 769px) {
   body {
-    background-image: url('https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/1c1bb344e46d367cd698815b24c5e30a3dc58f74/assets/Desktop_BG.jpg');
+    background-image: url('https://media.githubusercontent.com/media/ProgramingGuy/SGF_PHX/main/assets/Desktop_BG.jpg');
   }
 }
 
 /* Mobile background */
 @media (max-width: 768px) {
   body {
-    background-image: url('https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/1c1bb344e46d367cd698815b24c5e30a3dc58f74/assets/Mobile_BG.jpg');
+    background-image: url('https://media.githubusercontent.com/media/ProgramingGuy/SGF_PHX/main/assets/Mobile_BG.jpg');
   }
 }
 
