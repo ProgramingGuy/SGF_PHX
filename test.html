@@ -9,23 +9,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Prload images -->
-    <link rel="preload" href="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/8ca320a1c2c0f76d775f94c49146cdfab07848f9/assets/Img/Logo.png" as="image" importance="high">
+    <link rel="preload" href="https://media.githubusercontent.com/media/ProgramingGuy/SGF_PHX/main/assets/Img/Logo.png" as="image" importance="high">
 
     <!-- Regular stylesheet link -->
     <link rel="stylesheet" href="css/styles.css">
 
     <meta name="description" content="Discover the transformative teachings of the I AM Activity at the Temple in Phoenix AZ, part of the Saint Germain Foundation.">
 
-    <title>“I AM” Activity - Phoenix</title>
+    <title>Test</title>
     <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/8ca320a1c2c0f76d775f94c49146cdfab07848f9/assets/Img/Logo.png" alt="Logo">
 
-    <!--
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="folder" href="folder/folder">
-    -->
-
-    <!-- Link Icon -->
-    <meta property="og:image" content="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/8ca320a1c2c0f76d775f94c49146cdfab07848f9/assets/Img/Logo.png" alt="Logo">
+    <meta property="og:image" content="https://media.githubusercontent.com/media/ProgramingGuy/SGF_PHX/main/assets/Img/Logo.png" alt="Logo">
     <meta property="og:image:width" content="500">
     <meta property="og:image:height" content="500">
 
@@ -50,22 +44,23 @@
 
       <video autoplay muted loop id="background-video">
         <!-- Desktop video -->
-        <source src="https://i.imgur.com/1DlAmZ0.mp4" type="video/mp4" media="(min-width: 769px)">
+        <source src="https://media.githubusercontent.com/media/ProgramingGuy/SGF_PHX/main/assets/VF_Desktop.mp4" type="video/mp4" media="(min-width: 769px)">
+
         <!-- Mobile video -->
-        <source src="https://i.imgur.com/VEhZkXc.mp4" type="video/mp4" media="(max-width: 768px)">
+        <source src="https://media.githubusercontent.com/media/ProgramingGuy/SGF_PHX/main/assets/VF.mp4" type="video/mp4" media="(max-width: 768px)">
         Your browser does not support the video tag.
+
       </video>
 
       <div class="header_content">
-        <img src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/8ca320a1c2c0f76d775f94c49146cdfab07848f9/assets/Img/Logo.png" alt="Logo">
+        <img src="https://media.githubusercontent.com/media/ProgramingGuy/SGF_PHX/main/assets/Img/Logo.png" alt="Logo">
         <h1>“I AM” Temple - Saint Germain Foundation</h1>
-        <p>Phoenix, Arizona</p>
-
+        <p>Page for testing new features.</p>
         <nav>
           <ul class="nav-buttons">
             <li><button type="button" class="purchase-button" id="home">Home</button></li>
             <li><button type="button" class="purchase-button" id="test" data-url="test">Test</button></li>
-            <li><button type="button" class="purchase-button" id="admin" data-url="admin">Login</button></li>
+            <!-- <li><button type="button" class="purchase-button" id="admin" data-url="admin">Login</button></li> -->
           </ul>
         </nav>
 
@@ -81,9 +76,17 @@
             margin-right: 10px;
           }
 
-        </style>
+          header::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            transform: translateX(-50%);
+            width: 100%;
+            background-color: transparent;
+            box-shadow: 0px 0px 8px 4px rgba(138, 43, 226, 5);
+          }
 
-        <h1>Page for testing new features.</h1>
+        </style>
 
         <script>
           document.addEventListener('DOMContentLoaded', function() {
@@ -129,7 +132,7 @@
     </script>
 
     <main>
-    <style>
+      <style>
         #Hover-Effect:hover {
           transform: translateY(-5px);
         }
@@ -146,347 +149,347 @@
       </style>
       <!-- Page grouping -->
 
-        <section id="Books" class="centered-section">
-          <h2>Start Now</h2>
+      <section id="Books" class="centered-section">
+        <h2>Start Now</h2>
 
-          <div class="book-container">
+        <div class="book-container">
 
-            <div class="book-item">
-              <img src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/1cc1335ce32ce70f0bd09fe98f595ec94150eaeb/assets/Img/V1.png" width=auto height="180" alt="Volume 1">
+          <div class="book-item">
+            <img src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/1cc1335ce32ce70f0bd09fe98f595ec94150eaeb/assets/Img/V1.png" width=auto height="180" alt="Volume 1">
 
-              <!-- Hover Data / Text -->
-              <div class="hover-container">
-                <h1 class="hover-text">Volume 1. Unveiled Mysteries</h1>
-                <div class="info-box">Mr. G. W. Ballard wrote under the pen name of Godfre Ray King.</div>
-              </div>
-              
-              <button class="purchase-button" book="V1">View the Digital Copy</button>
+            <!-- Hover Data / Text -->
+            <div class="hover-container">
+              <h1 class="hover-text">Volume 1. Unveiled Mysteries</h1>
+              <div class="info-box">Mr. G. W. Ballard wrote under the pen name of Godfre Ray King.</div>
+            </div>
 
-            </div> <!-- end of book section -->
+            <button class="purchase-button" book="V1">View the Digital Copy</button>
 
-            <div class="book-item">
-              <img src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/1cc1335ce32ce70f0bd09fe98f595ec94150eaeb/assets/Img/V2.png" width=auto height="180" alt="Volume 2">
-              <!-- Hover Data / Text -->
-              <div class="hover-container">
-                <h1 class="hover-text">Volume 2. The Magic Presence</h1>
-                <div class="info-box">By Godfre Ray King.</div>
-              </div>
+          </div> <!-- end of book section -->
 
-              <button class="purchase-button" book="V2">View the Digital Copy</button>
-              
-            </div> <!-- end of book section -->
+          <div class="book-item">
+            <img src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/1cc1335ce32ce70f0bd09fe98f595ec94150eaeb/assets/Img/V2.png" width=auto height="180" alt="Volume 2">
+            <!-- Hover Data / Text -->
+            <div class="hover-container">
+              <h1 class="hover-text">Volume 2. The Magic Presence</h1>
+              <div class="info-box">By Godfre Ray King.</div>
+            </div>
 
-            <div class="book-item">
-              <img src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/1cc1335ce32ce70f0bd09fe98f595ec94150eaeb/assets/Img/V3.png" width=auto height="180" alt="Volume 3">
+            <button class="purchase-button" book="V2">View the Digital Copy</button>
 
-              <!-- Hover Data / Text -->
-              <div class="hover-container">
-                <h1 class="hover-text">Volume 3. “I AM” Discourses</h1>
-                <div class="info-box">By Ascended Master Saint Germain.</div>
-              </div>
+          </div> <!-- end of book section -->
 
-              <button class="purchase-button" book="V3">View the Digital Copy</button>
-              
-            </div><!-- end of book section -->
+          <div class="book-item">
+            <img src="https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/1cc1335ce32ce70f0bd09fe98f595ec94150eaeb/assets/Img/V3.png" width=auto height="180" alt="Volume 3">
 
-            <div id="pdfContainer"></div> <!-- Specify the target container -->
+            <!-- Hover Data / Text -->
+            <div class="hover-container">
+              <h1 class="hover-text">Volume 3. “I AM” Discourses</h1>
+              <div class="info-box">By Ascended Master Saint Germain.</div>
+            </div>
 
-          </div> <!-- end of book-container -->
+            <button class="purchase-button" book="V3">View the Digital Copy</button>
 
+          </div><!-- end of book section -->
 
+          <div id="pdfContainer"></div> <!-- Specify the target container -->
+
+        </div> <!-- end of book-container -->
 
 
-          <!DOCTYPE html>
-          <html lang="en">
 
-            <head>
-              <meta charset="UTF-8">
-              <meta name="viewport" content="width=device-width, initial-scale=1.0">
-              <title>PDF Viewer</title>
-              <style>
-                /* Hide scrollbar for the book container */
-                .pdf-container::-webkit-scrollbar {
-                  display: none;
-                  /* For Chrome, Safari, and Opera */
+
+        <!DOCTYPE html>
+        <html lang="en">
+
+          <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>PDF Viewer</title>
+            <style>
+              /* Hide scrollbar for the book container */
+              .pdf-container::-webkit-scrollbar {
+                display: none;
+                /* For Chrome, Safari, and Opera */
+              }
+
+              .pdf-container {
+                scrollbar-width: none;
+                /* For Firefox */
+                -ms-overflow-style: none;
+                /* For Internet Explorer and Edge */
+              }
+
+              /* Center the container */
+              .container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                /* Horizontally center */
+                align-items: center;
+                /* Vertically center */
+              }
+
+              .pdf-container {
+                overflow-y: auto;
+                /* Enable vertical scrolling */
+                position: relative;
+              }
+
+              .page {
+                margin-bottom: 20px;
+                /* Add space between pages */
+              }
+
+              #pageNumbers {
+                color: violet;
+                /* Change text color to violet */
+                margin-bottom: 10px;
+                /* Add space below the text */
+              }
+
+              #fullscreenButton {
+                margin-top: 10px;
+                /* Add space above the button */
+              }
+
+              /* Set white background color in full-screen mode */
+              .container.fullscreen {
+                background-color: white;
+              }
+
+              .hidden {
+                display: none;
+              }
+
+            </style>
+          </head>
+
+          <body>
+            <div id="pdfViewer"></div>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+            <script>
+              let currentPdfViewer = null;
+              let currentPdfDocument = null;
+
+              function loadPDF(pdfUrl) {
+                // Check if the PDF is already loaded
+                if (currentPdfDocument === pdfUrl) {
+                  // Toggle visibility of the PDF container
+                  const pdfContainer = document.getElementById('pdfContainer');
+                  pdfContainer.classList.toggle('hidden');
+                  return; // Exit the function, no need to load PDF again
                 }
 
-                .pdf-container {
-                  scrollbar-width: none;
-                  /* For Firefox */
-                  -ms-overflow-style: none;
-                  /* For Internet Explorer and Edge */
+                // Remove previously loaded PDF viewer if exists
+                if (currentPdfViewer) {
+                  currentPdfViewer.remove();
                 }
 
-                /* Center the container */
-                .container {
-                  display: flex;
-                  flex-direction: column;
-                  justify-content: center;
-                  /* Horizontally center */
-                  align-items: center;
-                  /* Vertically center */
-                }
+                const container = document.createElement('div');
+                container.classList.add('container');
+                currentPdfViewer = container;
 
-                .pdf-container {
-                  overflow-y: auto;
-                  /* Enable vertical scrolling */
-                  position: relative;
-                }
+                const fullscreenButton = document.createElement('button');
+                fullscreenButton.textContent = 'Full Screen';
+                fullscreenButton.id = 'fullscreenButton'; // Assign ID for styling
+                fullscreenButton.classList.add('purchase-button');
 
-                .page {
-                  margin-bottom: 20px;
-                  /* Add space between pages */
-                }
+                const pageNumbersIndicator = document.createElement('span');
+                pageNumbersIndicator.id = 'pageNumbers';
+                pageNumbersIndicator.textContent = 'Page: 1, Book Page: Cover';
 
-                #pageNumbers {
-                  color: violet;
-                  /* Change text color to violet */
-                  margin-bottom: 10px;
-                  /* Add space below the text */
-                }
+                const pdfContainer = document.createElement('div');
+                pdfContainer.classList.add('pdf-container');
+                pdfContainer.id = 'pdfContainer';
 
-                #fullscreenButton {
-                  margin-top: 10px;
-                  /* Add space above the button */
-                }
+                container.appendChild(fullscreenButton);
+                container.appendChild(pageNumbersIndicator);
+                container.appendChild(pdfContainer);
 
-                /* Set white background color in full-screen mode */
-                .container.fullscreen {
-                  background-color: white;
-                }
-
-                .hidden {
-                  display: none;
-                }
-
-              </style>
-            </head>
-
-            <body>
-              <div id="pdfViewer"></div>
-
-              <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
-              <script>
-                let currentPdfViewer = null;
-                let currentPdfDocument = null;
-
-                function loadPDF(pdfUrl) {
-                  // Check if the PDF is already loaded
-                  if (currentPdfDocument === pdfUrl) {
-                    // Toggle visibility of the PDF container
-                    const pdfContainer = document.getElementById('pdfContainer');
-                    pdfContainer.classList.toggle('hidden');
-                    return; // Exit the function, no need to load PDF again
-                  }
-
-                  // Remove previously loaded PDF viewer if exists
-                  if (currentPdfViewer) {
-                    currentPdfViewer.remove();
-                  }
-
-                  const container = document.createElement('div');
-                  container.classList.add('container');
-                  currentPdfViewer = container;
-
-                  const fullscreenButton = document.createElement('button');
-                  fullscreenButton.textContent = 'Full Screen';
-                  fullscreenButton.id = 'fullscreenButton'; // Assign ID for styling
-                  fullscreenButton.classList.add('purchase-button');
-
-                  const pageNumbersIndicator = document.createElement('span');
-                  pageNumbersIndicator.id = 'pageNumbers';
-                  pageNumbersIndicator.textContent = 'Page: 1, Book Page: Cover';
-
-                  const pdfContainer = document.createElement('div');
-                  pdfContainer.classList.add('pdf-container');
-                  pdfContainer.id = 'pdfContainer';
-
-                  container.appendChild(fullscreenButton);
-                  container.appendChild(pageNumbersIndicator);
-                  container.appendChild(pdfContainer);
-
-                  document.getElementById('pdfContainer').appendChild(container);
+                document.getElementById('pdfContainer').appendChild(container);
 
 
-                  let pdfDocument;
-                  const pagesRendered = {};
+                let pdfDocument;
+                const pagesRendered = {};
 
-                  pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.worker.min.js';
+                pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.worker.min.js';
 
-                  pdfjsLib.getDocument(pdfUrl).promise.then(function(pdf) {
-                    pdfDocument = pdf;
-                    renderAllPages();
-                    updatePageNumbers();
-                  }).catch(function(error) {
-                    console.error('Error loading PDF:', error);
-                  });
-
-                  function renderAllPages() {
-                    for (let i = 1; i <= pdfDocument.numPages; i++) {
-                      renderPage(i);
-                    }
-                  }
-
-                  function renderPage(pageNumber) {
-                    pdfDocument.getPage(pageNumber).then(function(page) {
-                      const viewport = page.getViewport({
-                        scale: 1
-                      });
-                      const scale = getScaleFactor(viewport);
-                      const viewportScaled = page.getViewport({
-                        scale
-                      });
-
-                      const canvas = document.createElement('canvas');
-                      const context = canvas.getContext('2d');
-                      canvas.width = viewportScaled.width;
-                      canvas.height = viewportScaled.height;
-
-                      const renderContext = {
-                        canvasContext: context,
-                        viewport: viewportScaled
-                      };
-
-                      page.render(renderContext).promise.then(function() {
-                        const pageDiv = document.createElement('div');
-                        pageDiv.className = 'page';
-                        pageDiv.appendChild(canvas);
-                        pdfContainer.appendChild(pageDiv);
-                        pagesRendered[pageNumber] = true;
-                        updateContainerSize();
-                      });
-                    });
-                  }
-
-                  function updateContainerSize() {
-                    const pageDivs = document.querySelectorAll('.page');
-                    let maxWidth = 0;
-                    let maxHeight = 0;
-
-                    pageDivs.forEach(function(pageDiv) {
-                      const rect = pageDiv.getBoundingClientRect();
-                      maxWidth = Math.max(maxWidth, rect.width);
-                      maxHeight = Math.max(maxHeight, rect.height);
-                    });
-
-                    container.style.width = maxWidth + 'px';
-                    container.style.height = maxHeight + 'px';
-                  }
-
-                  function updatePageNumbers() {
-                    const scrollTop = pdfContainer.scrollTop;
-                    const pageHeight = pdfContainer.scrollHeight / pdfDocument.numPages;
-                    const currentPage = Math.floor(scrollTop / pageHeight) + 1;
-                    const correspondingBookPage = getCorrespondingBookPage(currentPage);
-                    pageNumbersIndicator.textContent = `Page: ${currentPage}, Book Page: ${correspondingBookPage}`;
-                  }
-
-                  function getCorrespondingBookPage(pdfPage) {
-                    if (pdfPage > 28) {
-                      return pdfPage - 28;
-                    } else if (pdfPage === 1) {
-                      return 'Cover';
-                    } else {
-                      return 'Forward';
-                    }
-                  }
-
-                  function getScaleFactor(viewport) {
-                    const screenWidth = window.screen.width;
-                    const screenHeight = window.screen.height;
-                    const scaleWidth = screenWidth / viewport.width;
-                    const scaleHeight = screenHeight / viewport.height;
-                    return Math.min(scaleWidth, scaleHeight);
-                  }
-
-                  pdfContainer.addEventListener('scroll', updatePageNumbers);
-                  window.addEventListener('resize', updatePageNumbers);
-
-                  fullscreenButton.addEventListener('click', function() {
-                    const container = document.querySelector('.container');
-                    if (container.requestFullscreen) {
-                      container.requestFullscreen();
-                    } else if (container.mozRequestFullScreen) {
-                      container.mozRequestFullScreen();
-                    } else if (container.webkitRequestFullscreen) {
-                      container.webkitRequestFullscreen();
-                    } else if (container.msRequestFullscreen) {
-                      container.msRequestFullscreen();
-                    }
-                    setTimeout(updateContainerSize, 1000);
-                  });
-                }
-
-                document.addEventListener('fullscreenchange', handleFullscreenChange);
-                document.addEventListener('webkitfullscreenchange', handleFullscreenChange);
-                document.addEventListener('mozfullscreenchange', handleFullscreenChange);
-                document.addEventListener('MSFullscreenChange', handleFullscreenChange);
-
-                function handleFullscreenChange() {
-                  const container = document.querySelector('.container');
-                  if (document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement) {
-                    container.classList.add('fullscreen');
-                  } else {
-                    container.classList.remove('fullscreen');
-                  }
-                }
-
-                const buttons = document.querySelectorAll('.purchase-button');
-                buttons.forEach(button => {
-                  const book = button.getAttribute('book');
-                  if (book) { // Check if the 'book' attribute exists
-                    button.addEventListener('click', function() {
-                      let pdfUrl;
-                      switch (book) {
-                        case 'V1':
-                          pdfUrl = 'https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/e6ac4aa9608aa6749dfdbf1a8f0b99b017defca6/assets/Vol1.pdf';
-                          break;
-                        case 'V2':
-                          pdfUrl = 'https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/e6ac4aa9608aa6749dfdbf1a8f0b99b017defca6/assets/Vol2.pdf';
-                          break;
-                        case 'V3':
-                          pdfUrl = 'https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/e6ac4aa9608aa6749dfdbf1a8f0b99b017defca6/assets/Vol3.pdf';
-                          break;
-                        default:
-                          break;
-                      }
-                      togglePDFVisibility(pdfUrl);
-                    });
-                  }
+                pdfjsLib.getDocument(pdfUrl).promise.then(function(pdf) {
+                  pdfDocument = pdf;
+                  renderAllPages();
+                  updatePageNumbers();
+                }).catch(function(error) {
+                  console.error('Error loading PDF:', error);
                 });
 
-                function togglePDFVisibility(pdfUrl) {
-                  const pdfContainer = document.getElementById('pdfContainer');
-                  // Check if the same PDF is already loaded
-                  if (pdfContainer.getAttribute('data-loaded-pdf') === pdfUrl) {
-                    if (pdfContainer.classList.contains('hidden')) {
-                      // PDF is hidden, so make it visible
-                      pdfContainer.classList.remove('hidden');
-                    } else {
-                      // PDF is visible, so hide it
-                      pdfContainer.classList.add('hidden');
-                    }
-                  } else {
-                    loadPDF(pdfUrl);
-                    pdfContainer.setAttribute('data-loaded-pdf', pdfUrl);
+                function renderAllPages() {
+                  for (let i = 1; i <= pdfDocument.numPages; i++) {
+                    renderPage(i);
                   }
                 }
 
-              </script>
-            </body>
+                function renderPage(pageNumber) {
+                  pdfDocument.getPage(pageNumber).then(function(page) {
+                    const viewport = page.getViewport({
+                      scale: 1
+                    });
+                    const scale = getScaleFactor(viewport);
+                    const viewportScaled = page.getViewport({
+                      scale
+                    });
 
-          </html>
+                    const canvas = document.createElement('canvas');
+                    const context = canvas.getContext('2d');
+                    canvas.width = viewportScaled.width;
+                    canvas.height = viewportScaled.height;
+
+                    const renderContext = {
+                      canvasContext: context,
+                      viewport: viewportScaled
+                    };
+
+                    page.render(renderContext).promise.then(function() {
+                      const pageDiv = document.createElement('div');
+                      pageDiv.className = 'page';
+                      pageDiv.appendChild(canvas);
+                      pdfContainer.appendChild(pageDiv);
+                      pagesRendered[pageNumber] = true;
+                      updateContainerSize();
+                    });
+                  });
+                }
+
+                function updateContainerSize() {
+                  const pageDivs = document.querySelectorAll('.page');
+                  let maxWidth = 0;
+                  let maxHeight = 0;
+
+                  pageDivs.forEach(function(pageDiv) {
+                    const rect = pageDiv.getBoundingClientRect();
+                    maxWidth = Math.max(maxWidth, rect.width);
+                    maxHeight = Math.max(maxHeight, rect.height);
+                  });
+
+                  container.style.width = maxWidth + 'px';
+                  container.style.height = maxHeight + 'px';
+                }
+
+                function updatePageNumbers() {
+                  const scrollTop = pdfContainer.scrollTop;
+                  const pageHeight = pdfContainer.scrollHeight / pdfDocument.numPages;
+                  const currentPage = Math.floor(scrollTop / pageHeight) + 1;
+                  const correspondingBookPage = getCorrespondingBookPage(currentPage);
+                  pageNumbersIndicator.textContent = `Page: ${currentPage}, Book Page: ${correspondingBookPage}`;
+                }
+
+                function getCorrespondingBookPage(pdfPage) {
+                  if (pdfPage > 28) {
+                    return pdfPage - 28;
+                  } else if (pdfPage === 1) {
+                    return 'Cover';
+                  } else {
+                    return 'Forward';
+                  }
+                }
+
+                function getScaleFactor(viewport) {
+                  const screenWidth = window.screen.width;
+                  const screenHeight = window.screen.height;
+                  const scaleWidth = screenWidth / viewport.width;
+                  const scaleHeight = screenHeight / viewport.height;
+                  return Math.min(scaleWidth, scaleHeight);
+                }
+
+                pdfContainer.addEventListener('scroll', updatePageNumbers);
+                window.addEventListener('resize', updatePageNumbers);
+
+                fullscreenButton.addEventListener('click', function() {
+                  const container = document.querySelector('.container');
+                  if (container.requestFullscreen) {
+                    container.requestFullscreen();
+                  } else if (container.mozRequestFullScreen) {
+                    container.mozRequestFullScreen();
+                  } else if (container.webkitRequestFullscreen) {
+                    container.webkitRequestFullscreen();
+                  } else if (container.msRequestFullscreen) {
+                    container.msRequestFullscreen();
+                  }
+                  setTimeout(updateContainerSize, 1000);
+                });
+              }
+
+              document.addEventListener('fullscreenchange', handleFullscreenChange);
+              document.addEventListener('webkitfullscreenchange', handleFullscreenChange);
+              document.addEventListener('mozfullscreenchange', handleFullscreenChange);
+              document.addEventListener('MSFullscreenChange', handleFullscreenChange);
+
+              function handleFullscreenChange() {
+                const container = document.querySelector('.container');
+                if (document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement) {
+                  container.classList.add('fullscreen');
+                } else {
+                  container.classList.remove('fullscreen');
+                }
+              }
+
+              const buttons = document.querySelectorAll('.purchase-button');
+              buttons.forEach(button => {
+                const book = button.getAttribute('book');
+                if (book) { // Check if the 'book' attribute exists
+                  button.addEventListener('click', function() {
+                    let pdfUrl;
+                    switch (book) {
+                      case 'V1':
+                        pdfUrl = 'https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/e6ac4aa9608aa6749dfdbf1a8f0b99b017defca6/assets/Vol1.pdf';
+                        break;
+                      case 'V2':
+                        pdfUrl = 'https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/e6ac4aa9608aa6749dfdbf1a8f0b99b017defca6/assets/Vol2.pdf';
+                        break;
+                      case 'V3':
+                        pdfUrl = 'https://raw.githubusercontent.com/ProgramingGuy/SGF_PHX/e6ac4aa9608aa6749dfdbf1a8f0b99b017defca6/assets/Vol3.pdf';
+                        break;
+                      default:
+                        break;
+                    }
+                    togglePDFVisibility(pdfUrl);
+                  });
+                }
+              });
+
+              function togglePDFVisibility(pdfUrl) {
+                const pdfContainer = document.getElementById('pdfContainer');
+                // Check if the same PDF is already loaded
+                if (pdfContainer.getAttribute('data-loaded-pdf') === pdfUrl) {
+                  if (pdfContainer.classList.contains('hidden')) {
+                    // PDF is hidden, so make it visible
+                    pdfContainer.classList.remove('hidden');
+                  } else {
+                    // PDF is visible, so hide it
+                    pdfContainer.classList.add('hidden');
+                  }
+                } else {
+                  loadPDF(pdfUrl);
+                  pdfContainer.setAttribute('data-loaded-pdf', pdfUrl);
+                }
+              }
+
+            </script>
+          </body>
+
+        </html>
 
 
 
-          <iframe id='Digital-book' scrolling="auto" height="530px" width="370px" style="background-color: white; border: 2px solid blue; border-radius: 10px; display: none;" sandbox="allow-scripts allow-same-origin"></iframe>
+        <iframe id='Digital-book' scrolling="auto" height="530px" width="370px" style="background-color: white; border: 2px solid blue; border-radius: 10px; display: none;" sandbox="allow-scripts allow-same-origin"></iframe>
 
-        </section>
+      </section>
 
 
-       
 
-        
+
+
     </main>
 
 
@@ -496,56 +499,19 @@
 
       <video autoplay muted loop id="background-video">
         <!-- Desktop video -->
-        <source src="https://i.imgur.com/1DlAmZ0.mp4" type="video/mp4" media="(min-width: 769px)">
+        <source src="https://media.githubusercontent.com/media/ProgramingGuy/SGF_PHX/main/assets/VF_Desktop.mp4" type="video/mp4" media="(min-width: 769px)">
+
         <!-- Mobile video -->
-        <source src="https://i.imgur.com/VEhZkXc.mp4" type="video/mp4" media="(max-width: 768px)">
+        <source src="https://media.githubusercontent.com/media/ProgramingGuy/SGF_PHX/main/assets/VF.mp4" type="video/mp4" media="(max-width: 768px)">
         Your browser does not support the video tag.
+
       </video>
 
       <div class="header_content">
-        <div class="footer-content">
-
-          <div>
-            <h2>Address</h2>
-
-            <p><a class="map-link" href="https://maps.app.goo.gl/tCqYmX7VeFkEDpjK8" target="_blank"><i class="fas fa-map-marker-alt"></i> View on Google Maps</a></p>
-            <p> <br> </p>
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-            <button class='CopyButton' onclick="copyToClipboard('1625 N 3rd St Phoenix, Arizona 85004')">📋 1625 N 3rd St<br>Phoenix, Arizona 85004</button>
-
-          </div>
-
-          <div>
-            <h2>Contact Info</h2>
-            <button class='CopyButton' onclick="copyToClipboard('602-800-6112')">📋 (602) 800-6112</button>
-            <p> <br> </p>
-            <button class='CopyButton' onclick="copyToClipboard('IAMTemplePhoenix@gmail.com')">📋 IAMTemplePhoenix@gmail.com</button>
-          </div>
-
-
-          <div>
-            <h2>Mailing Address</h2>
-            <button class='CopyButton' onclick="copyToClipboard('The Saint Germain Foundation P.O. Box 30645 Phoenix, Arizona 85046')">📋 Saint Germain Foundation<br>P.O. Box 30645<br>Phoenix, Arizona 85046</button>
-          </div>
-        </div>
-
-        <!-- Copy right section -->
-        <div class="hover-container">
-          <p>
-            <br>
-          </p>
-          <p class="hover-text">© Saint Germain Foundation 2024</p>
-
-          <div class="info-box-c">
-            <!-- Updated text 6/3/2024 -->
-            <h2 style="color: blueviolet;">Protection of Copyrights</h2>
-            <p style="color: blue;">All materials within the Saint Germain Series, including books, "I AM" radio broadcasts, sound and video recordings, films, sheet music, pictures, and any derived excerpts, are protected by copyright. Worldwide rights are reserved, including translations. Reproduction or copying in any form, including electronic or mechanical methods, without written permission from the publisher is prohibited.</p>
-            <p style="color: blueviolet;">&copy;Saint Germain Foundation <br> &copy;Saint Germain Press</p>
-          </div>
-
-        </div>
-
+        <p>
+          <br>
+        </p>
+        <p>&copy;Saint Germain Foundation</p>
       </div>
     </footer>
 
